@@ -1,0 +1,88 @@
+---
+title: "Revisión de la calidad"
+---
+
+```{r options_communes, include=FALSE}
+source("options_communes.R")
+```
+
+
+<div class="important">
+This chapter is not written yet.
+</div>
+
+
+Para revisar la calidad de una evaluación de necesidades multisectorial, y basándonos en la [metodología](https://www.gppi.net/media/grand_bargain_needs_assessments_quality_criteria_and_eval_methodology.pdf) desarrollada dentro del "[Grand Bargain](https://interagencystandingcommittee.org/about-the-grand-bargain)", se deben considerar los siguientes aspectos:
+
+
+
+## RELEVANCIA
+
+La evaluación fue desencadenada por una de las siguientes situaciones:
+
+- un cambio significativo en la situación;
+- la necesidad de cubrir vacíos de información críticos, identificados a través de una revisión de datos secundarios;
+- la necesidad de informar un ejercicio importante de planificación; o
+- una solicitud del gobierno afectado.
+2. El informe establece los objetivos generales y específicos de la evaluación en términos de áreas geográficas, sectores, áreas temáticas y grupos de población a evaluar.3. Los responsables de la toma de decisiones relevantes, los datos, el tema y los expertos en contexto participaron en la definición de los objetivos y el alcance de la evaluación para garantizar que satisfaga sus necesidades de información. 
+
+## EXHAUSTIVIDAD
+
+Las áreas evaluadas incluyen todos los tipos de áreas geográficas relevantes para el ejercicio de planificación que la evaluación pretende informar.
+
+La evaluación cubre todos los sectores y subsectores relevantes para el ejercicio de planificación que la evaluación pretende informar.
+
+La evaluación cubre todos los grupos potencialmente afectados por la crisis (dependiendo del contexto, por ejemplo, refugiados, migrantes, desplazados internos, comunidades de acogida, etc.)
+
+La evaluación identifica características que aumentan la vulnerabilidad de los diferentes grupos en el contexto dado (por ejemplo, género, edad, discapacidad, condición de minoría, desplazamiento, etc.). 
+
+## ETICA DE LA INVESTIGACION
+
+Existen medidas de protección de datos para proteger la identidad de los encuestados, incluida la seguridad para el almacenamiento de los datos, protección con contraseña y anonimato al compartir datos.
+
+Los encuestados son informados sobre cómo se utilizarán los datos y se les pregunta formalmente si están dispuestos a participar a través del consentimiento informado.
+
+El diseño de la evaluación se basa en el principio humanitario de "no hacer daño", identifica los riesgos potenciales para las poblaciones afectadas y enumeradores, y proporciona medidas relevantes de mitigación.
+
+Existen estrategias para prevenir y abordar el acoso sexual, la explotación y el abuso durante el proceso de evaluación (esto puede incluir, por ejemplo, políticas, orientación, informes, capacitación o mecanismos de queja). |
+
+## RIGOR METODOLOGICO
+
+La evaluación indica las fuentes de datos secundarios, hallazgos clave y gráficos.
+
+La evaluación es transparente sobre las limitaciones y los vacíos de información y su impacto en los hallazgos clave.
+
+La evaluación proporciona acceso a los instrumentos utilizados para la recopilación de datos.
+
+La evaluación triangula la información derivada de diferentes fuentes (como datos secundarios, entrevistas a informantes clave o encuestas de hogares).
+
+La evaluación triangula la información recopilada a través de diferentes métodos.
+
+La evaluación utiliza una estrategia de muestreo adecuada, que puede incluir un muestreo aleatorio o no aleatorio.
+
+La evaluación informa de las necesidades humanitarias que las personas afectadas y/o sus representantes consideran prioritarias.
+
+Las herramientas de recopilación de datos se prueban en el contexto antes de usarlas.21. Los enumeradores están capacitados en objetivos de evaluación, metodología, cuestionario y técnicas de entrevista. |
+
+## VALOR ANALITICO
+
+La recopilación y el análisis de datos se guían por un marco analítico acordado conjuntamente, que incluye un marco teórico, una recopilación de datos y un plan de análisis.
+
+La evaluación identifica las formas más importantes en que la crisis afecta a las personas, incluidos los riesgos de protección.
+
+La evaluación identifica los factores que impulsan y explican las condiciones humanitarias.
+
+La evaluación estima y compara la gravedad de las condiciones humanitarias y el número de personas necesitadas por sector o área temática.
+
+La evaluación estima y compara la gravedad de las condiciones humanitarias y el número de personas necesitadas por área geográfica.
+
+La evaluación estima y compara la gravedad de las condiciones humanitarias y el número de personas necesitadas por grupo afectado.
+
+La evaluación es transparente sobre la metodología utilizada para estimar el número de personas necesitadas y la gravedad de las condiciones humanitarias.
+
+La evaluación identifica posibles eventos futuros que podrían afectar a las condiciones humanitarias. |
+
+## PERTINENCIA TEMPORAL
+
+Los resultados preliminares o finales se comparten con los planificadores de respuestas antes del análisis de respuesta y el proceso de planificación / toma de decisiones.
+ |

@@ -1,0 +1,274 @@
+---
+title: "Recolección de datos"
+---
+
+```{r options_communes, include=FALSE}
+source("options_communes.R")
+```
+
+
+<div class="important">
+This chapter is not written yet.
+</div>
+
+
+## Vacíos de información
+
+Los vacíos de información se pueden identificar en el plan de análisis de datos, una vez actualizado con la información encontrada durante la revisión de datos secundarios. En general, se suelen encontrar cuatro tipos principales de vacíos de información:
+
+- Geográfico (es decir, no hay información sobre un área afectada debido a la falta de cobertura)
+- Temático (por ejemplo, sectores o temas específicos no están cubiertos por los datos existentes)
+- Tiempo (por ejemplo, las tendencias históricas están disponibles, pero no hay información actualizada sobre el desplazamiento de la población)
+- Desagregada (por ejemplo, hay información disponible sobre la situación de seguridad alimentaria, pero no es posible desglosar estos datos por edad, género u otras consideraciones de diversidad).
+
+## Recolección de datos primarios
+
+Si durante la revisión de datos secundarios se identifican vacíos de información entonces será necesario recolectar datos primarios. Antes de comenzar con el diseño de la metodología de recolección de datos, basándonos en los hallazgos resultantes de la revisión de datos secundarios, se deberán revisar los objetivos de la evaluación de necesidades para refinar el propósito y el alcance de la recolección de datos primarios. El plan de análisis de datos deberá ser revisado en este punto para identificar los indicadores y los vacíos de necesidades de información existentes.
+
+### Paso 1. Diseñar metodología: Técnicas de recolección de datos y unidades de análisis**
+
+La idoneidad y viabilidad de las diferentes metodologías de recopilación de datos dependerán de los objetivos del ejercicio de recopilación de datos primarios (es decir, preguntas de la investigación), limitaciones (tiempo, recursos, acceso, etc.) y beneficios y costos esperados (en términos de resultados de protección, riesgos de seguridad, etc.). El contexto también es importante, y los principales elementos a considerar son:
+
+- Escala de la emergencia (por ejemplo, en términos del número de personas y/o áreas afectadas, o la severidad de las necesidades);
+- Estabilidad de la crisis y frecuencia con la que se producen cambios en el entorno operativo;
+- Contexto de seguridad para los encuestadores y encuestados.
+- Participación equitativa de hombres y mujeres entre encuestadores y encuestados.
+- Protocolos de privacidad y protección de datos. Hay que tener en cuenta por ejemplo el nivel de sensibilidad en los puntos de recolección, puntos de transferencia, puntos de intercambio, puntos de almacenamiento, etc.;
+- Valor e importancia operativa de la información que se recopilará;
+- Recursos y capacidad disponibles para recopilar los datos primarios;
+- Riesgos de protección, incluida violencia de género, asociados con la evaluación; y
+- Posible fatiga de cualquier grupo de población por el número de evaluaciones realizadas.
+
+Para cada ejercicio de recolección de datos se puede utilizar más de una técnica de recolección para lograr el objetivo del ejercicio. Al diseñar la metodología, como mínimo, se deberán tener en cuenta los siguientes factores:
+
+- Tipo de información que se debe recolectar;
+- Unidad de medida de la información, es decir, a nivel individual, hogar, comunidad, instituciones, etc.;
+- Técnicas de recolección de datos, grupos focales de discusiones, entrevistas con informantes clave, encuestas de hogares, etc.;
+- Métodos y estrategia de muestreo;
+- Herramientas de recolección de datos;
+- Métodos de captura de datos, papel, tabletas, teléfonos, etc.
+
+Distintas herramientas y estándares han sido desarrollados para hacer evaluaciones de necesidades para diferentes propósitos y contextos. En el Anexo 4 se puede consultar un listado de las herramientas y enfoques más comúnmente utilizadas en el contexto humanitario y en particular en la región.
+
+
+
+Existen __distintas técnicas de recolección de datos primarios__, cada una tiene sus ventajas y desventajas, y cada una provee información cuantitativa o cualitativa. Normalmente se combinan varias técnicas durante una evaluación de necesidades para complementar la información y asegurar que se incluyen puntos de vista diferentes. La Tabla 9 provee un resumen de las técnicas de recolección de datos más utilizadas en diferentes evaluaciones de necesidades.
+
+
+
+#### Entrevistas Informantes Clave (EIC)** | Cuestionarios semiestructurados
+
+Adaptados al conocimiento esperado de las personas encuestadas.[_Más información sobre esta técnica_](https://www.acaps.org/sites/acaps/files/resources/files/direct_observation_and_key_informant_interview_techniques_for_primary_data_collection_during_rapid_assessments_october_2011.pdf)
+ 
+ Individuales con conocimiento especifico de un problema, situación, grupo poblacional o localización 
+ Recopilar información sobre el impacto que tiene una crisis entre distintos grupos de población | InicialRápidaExhaustivaMonitoreo 
+ 
+
+####  OBSERVACION DIRECTA (OD)
+
+Observaciones estructuradas (se busca un tipo de información en concreto) y no estructuradas (sonidos, olores, impresiones, la presencia y ausencia de cosas y personas, etc.) [_Más información sobre esta técnica_](https://www.acaps.org/sites/acaps/files/resources/files/direct_observation_and_key_informant_interview_techniques_for_primary_data_collection_during_rapid_assessments_october_2011.pdf) 
+
+- Descubrir condiciones y características de un sitio afectado o una población
+- Descubrir que hay o no hay, que se siente o que esta fuera de lo normal
+- Triangular con información obtenida a través de otras técnicas
+
+ InicialRápidaExhaustivaMonitoreo
+
+#### DISCUSIONES DE GRUPO FOCALES
+
+Entrevistas semiestructuradas con un grupo de individuos para obtener información sobre condiciones, situaciones, experiencias, expectaciones o percepciones a través de la interacción del grupo 
+Grupos pequeños de la población que comparten ciertas características como por ejemplo edad, sexo, estatus económico, etc. 
+
+- Escuchar a la población afectada
+- Identificar prioridades, necesidades, capacidades y riesgos de protección identificados por distintos grupos específicos.
+- Entender factores subyacentes, riesgos, amenazas y causas.
+- Profundizar en el conocimiento ganado a través de otras técnicas
+- Asegurar, en lo posible, grupos con mujeres por separado
+
+
+ExhaustivaMonitoreo 
+[Diagnósticos participativos Costa Rica ACNUR](https://www.acnur.org/fileadmin/Documentos/Publicaciones/2016/10908.pdf?file=fileadmin/Documentos/Publicaciones/2016/10908) 
+
+#### DISCUSIONES DE GRUPOS COMUNITARIOS
+
+Discusiones con un grupo diverso de individuos de una comunidad especifica
+
+Grupos diversos de individuos de comunidades seleccionadas que representan diferentes grupos, hogares, situaciones y características 
+
+- Obtener información sobre condiciones, experiencia, expectaciones o percepciones para asegurar distintos puntos de vista
+- Identificar prioridades, necesidades y riesgos de protección identificados por la comunidad
+- Profundizar en el conocimiento ganado a través de otras técnicas
+- Asegurar, en lo posible, grupos con mujeres por separado
+
+
+RápidaMonitoreo 
+
+####  VISITAS A HOGARES
+
+Entrevistas estructuradas con miembros de hogares para obtener información sobre condiciones humanitarias, experiencias, expectaciones, o percepciones.Los equipos de recolección de información observan las condiciones de vida de los hogares encuestados. 
+
+Representantes/Responsables del hogar 
+
+- Entender las condiciones y situación de los hogares basados en indicadores predefinidos
+- Identificar prioridades, necesidades y riesgos de protección identificados por los representantes del hogar
+
+
+ExhaustivaMonitoreo
+[Gran Encuesta Integrada de Hogares 2019 Colombia](http://microdatos.dane.gov.co/index.php/catalog/599/get_microdata) |
+
+#### TELEDETECCION
+
+Evaluación y determinación de otro tipo de información que se puede capturar visualmente cuando el acceso a la población afectada está restringido debido a diversos factores. 
+
+- Obtener información confiable de áreas de difícil acceso.
+- Identificar prioridades, necesidades y riesgos de protección identificados por los representantes del hogar.
+
+
+InicialRápidaExhaustivaMonitoreo
+
+[Mapeo UNOSAT](http://unosat-maps.web.cern.ch/unosat-maps/CO%5COT20180419COL/UNOSAT_A3_Quebrada%20Lizama_Cano_Muerto_OT20180410COL.pdf) |
+
+
+**Unidades de medida**
+
+Los datos generalmente se recolectan a un determinado nivel que viene definido por la unidad de medida. Existen cuatro unidades de medida que se utilizan en el ámbito humanitario y se explican a continuación. Es importante tener en cuenta que no se deben combinar en un solo formulario de recopilación de datos.
+
+- **Comunidad** : Se llevan a cabo en un vecindario, un pueblo o un campo de refugiados o asentamiento informal. El objetivo es evaluar la disponibilidad y calidad de los recursos compartidos por la comunidad, la existencia de necesidades, riesgos y amenazas a nivel comunitario; y los mecanismos de afrontamiento dentro de la comunidad. Se debe asegurar la participación activa y equitativa de mujeres, hombres, niñas y niños.
+- **Institución** : Se examina la disponibilidad y la calidad de los servicios y las condiciones de edificios públicos clave como escuelas y hospitales. En algunas situaciones puede haber más de un tipo de institución para una comunidad en particular, por ejemplo, dos escuelas y dos centros de salud para la comunidad X.
+- **Hogar:** Se realizan para evaluar las necesidades de un hogar y generalmente se llevan a cabo con un representante del hogar. Es muy importante definir que es un hogar antes de comenzar una evaluación. En general hogar se entiende como un grupo de personas (una o más) que viven juntas y realizan conjuntamente provisiones de comida y de otros elementos esenciales para vivir.
+- **Individual:** se evalúan las necesidades de los individuos. Estas evaluaciones se deben desglosar por sexo, edad y otros factores de diversidad.
+
+La unidad de medida que es utilizada en una evaluación de necesidades afecta directamente a los tipos de datos que se pueden recopilar y a los tipos de preguntas que se incluyen en el formulario de recopilación de datos. A continuación, se da un ejemplo de cómo pueden diferir las preguntas según la unidad de análisis utilizada:
+
+- Nivel comunitario: ¿Hay un centro de salud en funcionamiento en este pueblo?
+- Nivel de la institución: ¿cuántos médicos trabajan en este centro de salud?
+- Nivel del hogar: ¿Puede su familia comprar medicinas?
+- Nivel individual: ¿Qué vacunas se ha puesto?
+
+### Paso 2. Muestreo 
+
+Cuando es imposible recolectar datos sobre toda la población objetivo de la evaluación de necesidades, porque es grande y/o está geográficamente dispersa, deberemos elegir un subgrupo de esta población, a la cual se denominará **muestra**. La selección de la muestra se puede hacer a través de **métodos probabilísticos o no probabilísticos** , la selección del método dependerá del objetivo de la evaluación y de los recursos disponibles (tiempo, recursos humanos, financieros, etc.).
+
+**Métodos no probabilísticos**
+
+Un **muestreo no probabilístico** es por ejemplo aquel, en el que un equipo de encuestadores llama a todas las madres de una determinada comunidad para que traigan a sus hijos de entre 6 y 59 meses al centro de salud, para recolectar una serie de datos sobre esos niños. Es probable que algunas madres solo traigan a niños enfermos, pensando que recibirán tratamiento gratuito en el centro de salud; por otro lado, también podemos suponer que algunas madres solo traerán a niños sanos para evitar ser juzgadas por otras como "malas madres"; y se podría continuar con otras suposiciones con respecto al "tipo" de niños que serán llevados a ese centro de salud. Por lo tanto, para evitar este tipo de problemas, generalmente y dependiendo del objetivo de la evaluación y de los recursos disponibles, como se señalaba anteriormente, se deberá obtener una muestra representativa utilizando un método de muestreo probabilístico.
+
+Los métodos no probabilísticos no utilizan métodos de selección aleatoria, lo cual significa que no es posible extrapolar los resultados a una población más amplia. Este tipo de métodos solo deberían de ser utilizados cuando el contexto y los recursos no permiten utilizar un muestreo probabilístico o cuando se necesita más información sobre grupos específicos y vulnerabilidades de la población objetivo.
+
+La Tabla 10 presenta cuatro métodos de muestreo no probabilístico.
+
+_Tabla 10. Métodos no probabilísticos_
+
+| **Tipo** | **Método** | **Cuando aplicarlo** |
+| --- | --- | --- |
+| **MUESTREO POR CONVENIENCIA** | La muestra se selecciona en función de la accesibilidad y proximidad a los encuestados. Debido a que el sesgo de selección puede ocurrir fácilmente, es considerada una técnica de muestreo débil, y se recomienda utilizarla solo cuando sea absolutamente necesario.Es muy importante registrar las limitaciones de este método, particularmente la falta de capacidad para generalizar los hallazgos. | En algunos casos, quizás debido a problemas de acceso, se puede adoptar un muestreo de conveniencia.Se considera eficiente y rentable, y se usa más comúnmente en evaluaciones de necesidades iniciales cuando el acceso a la población afectada es limitado. |
+| --- | --- | --- |
+| **MUESTREO INTENCIONAL** | La muestra es seleccionada y construida para un propósito específico. En un muestreo intencional, el tamaño de la muestra se determina en base al concepto de saturación y no puede ser planificado con precisión antes de la evaluación. | Este método es el más apropiado cuando se necesita obtener información que es relevante y creíble en un determinado entorno y en un marco de tiempo relativamente rápido. |
+| **MUESTREO DE BOLA DE NIEVE O DIRIGIDO POR LOS PROPIOS ENCUESTADOS (RDS, POR SUS SIGLAS EN INGLES)** | Este método intenta descubrir nuevos informantes preguntando a las personas que ya han sido entrevistadas sobre otras personas que conozcan y que sepan de un tema en particular. | Esta técnica es particularmente útil para localizar poblaciones "ocultas", por ejemplo, desplazados internos en entornos urbanos. |
+| **muestreo opoRtunistico** | Guiado por un propósito específico, la muestra es seleccionada según las necesidades. Por ejemplo, si un asesor conoce a alguien que puede proporcionar información útil, o si las personas de interés ya están presentes en una ubicación para recibir información o un servicio. | Esta técnica es útil cuando queda poco tiempo disponible para evaluación. Se puede usar enparalelo a la entrega de ayuda. Aunque es eficiente y rentable, puede estar sujeta a un sesgo considerable. |
+
+**Métodos probabilísticos**
+
+Los métodos de muestreo probabilístico se emplean cuando se necesitan extrapolar los resultados a toda la población de la cual procede la muestra. La muestra representativa se extrae del **marco muestral** , un listado completo de la población objetivo o elementos a evaluar, por ejemplo, un listado con todas las direcciones de los hogares de un determinado barrio, si se busca la representatividad de una encuesta de hogares a nivel de barrio. Las fórmulas para determinar estadísticamente el tamaño de la muestra pueden variar ampliamente. En este [enlace](http://www.surveysystem.com/sscalc.htm) se encuentra disponible una calculadora online para el cálculo del tamaño de la muestra.
+
+Una **muestra representativa** debe tener las mismas características que la totalidad de la población objetivo de la evaluación. Por ejemplo, si nuestra población objetivo son niños de 6 a 59 meses que viven en una comunidad en particular, nuestra muestra debe contener niños de 6 a 59 meses que vivan en esta misma comunidad. La distribución de edad y sexo y otras características en nuestra muestra debe ser muy similar a la distribución observada en la totalidad de la población objetivo. Tener una muestra representativa también significa que:
+
+- **Cada individuo o unidad de muestreo en la población tiene una probabilidad conocida o distinta de cero de ser seleccionado.**
+- **La selección de un individuo es independiente de la selección de otro.**
+
+Dado que solo estamos recopilando datos sobre un subgrupo de la población cuando se realiza el muestreo, es importante recordar que el resultado obtenido solo será una estimación de los indicadores que se van a medir.
+
+En la Tabla 11 se describen cinco tipos de muestreo probabilísticos.
+
+_Tabla 11. Métodos de muestreo probabilísticos_
+
+| **Tipo** | **Método** | **Cuando aplicarlo** |
+| --- | --- | --- |
+| **Muestreo Aleatorio Simple** | Utiliza números generados aleatoriamente para la selección de la muestra.
+ | Este método es apropiado si la población es homogénea y si hay disponible una lista completa de todas las unidades de muestreo en la población, por ejemplo, en un distrito donde todas las familias que albergan refugiados son conocidas y están en la lista. |
+| --- | --- | --- |
+| **Muestreo sistemático** | Este método implica seleccionar elementos de un marco de muestreo ordenado desde el cual la selección sistemática es fácilmente posible. Por ejemplo, el número total de hogares se divide por el tamaño de muestra requerido y ofrece un intervalo de muestreo regular. | Este método es apropiado si la población de la muestra es geográficamente homogénea y está organizada en filas ordenadas (por ejemplo, un campo de refugiados bien planificado).Si hay patrones ocultos, no se recomienda utilizar este método. |
+| **Muestreo estratificado** |
+- La estratificación es el proceso de división de la población en subgrupos homogéneos antes del muestreo. Cada estrato debe ser mutuamente excluyente, con cada elemento en la población asignado a un solo estrato.
+- Los estratos también deben ser colectivamente exhaustivos, sin que ningún elemento de la población quede excluido.
+- Una vez que se han establecido los estratos, se puede aplicar muestreo aleatorio o muestreo sistemático para calcular el tamaño de la muestra de cada estrato.
+ | Este método es útil para muestrear cada subpoblación(cualquier estrato con características comunes) independientemente si la población de la muestra es heterogénea. |
+| **Muestreo por conglomerados** | Este método identifica una característica que permita dividir la población en grupos disjuntos (sin solapamiento) y de forma exhaustiva (todos los individuos deben estar en un grupo) de tal manera que los grupos no difieran entre sí en relación con aquello que queremos medir. Una vez hemos definido estos conglomerados, seleccionaremos al azar algunos de ellos para estudiarlos.
+ | Este método es usado cuando ya existen agrupaciones "naturales" y relativamente homogéneas entre la población de interés. Un criterio habitual para definir conglomerados es el geográfico. Por ejemplo, si queremos estudiar qué proporción de la población venezolana en Ecuador tiene estudios universitarios, podemos dividir el total de la población en provincias y seleccionar algunas de ellas para ser estudiadas. |
+| **Muestreo POR ETAPAS MULTIPLES** | También conocido como muestreo de conglomerados de etapas múltiples, es una forma más compleja de muestreo de conglomerados que contiene dos o más etapas en la selección de la muestra. | Este método se puede usar cuando no es factible tomar al azar una muestra, por ejemplo, si la población esta dispersa, el área de muestreo es muy amplia o no hay marco de muestreo apropiado. |
+
+En general, las evaluaciones iniciales o rápidas emplean métodos de muestreo no probabilísticos debido a la falta de tiempo, mientras que las evaluaciones exhaustivas utilizan métodos probabilísticos. Además, los métodos probabilísticos en general, consumen más recursos. Por tanto, a la hora de elegir el método, se buscará un balance entre la representatividad y la diversidad de la muestra, y la eficiencia y la rapidez con la cual se pueden recolectar los datos.
+
+Los factores que normalmente influencian la selección del método son:
+
+- Disponibilidad y calidad del marco muestral
+- Nivel de precisión requerido
+- Tipo y nivel de detalle que se espera del análisis
+- Disponibilidad de recursos (tiempo, humanos, materiales, financieros, tecnológicos)
+- Preocupaciones concernientes al contexto y la operación
+
+**Ejemplo de cálculo de una muestra**
+
+_Para más información sobre cómo realizar un muestreo:_
+
+- _UNHCR –_ [_Sampling decision assistance_](https://unhcr-sampling-assistant.firebaseapp.com/#/home)
+- [_Técnicas de muestreo. Sesgos más frecuentes_](https://www.revistaseden.org/files/9-CAP%209.pdf)
+
+### Paso 3. Diseño de la herramienta de recolección de datos.**
+
+La herramienta de recolección de datos depende de la unidad de análisis (comunidad, hogar, etc.) y de las técnicas de recolección de datos seleccionadas (observación directa, entrevista a informantes clave, etc.). Un ejercicio de recolección de datos primarios puede comprender más de una herramienta de recolección de datos, pero como se ha señalado anteriormente, no se pueden combinar diferentes unidades de medida en el mismo cuestionario de recolección de datos.
+
+Habitualmente para capturar información en evaluaciones de necesidades se utilizan cuestionarios estructurados o semiestructurados. Un cuestionario estructurado es aquel en el que las preguntas y posibles respuestas están formalizadas y estandarizadas (siempre en el mismo orden y de la misma forma). Los cuestionarios semiestructurados son aquellos que presentan un guion con las principales preguntas y el orden en que deben ser formuladas, el orden no es estricto y el enunciado de las preguntas puede variar.
+
+El marco analítico y el plan de análisis de datos descritos anteriormente guían el diseño de preguntas y respuestas asegurando que solo la información relevante es incluida en la herramienta. Al diseñar un cuestionario debe considerarse:
+
+- Las preguntas deben ser breves, basadas en las necesidades de información y la cantidad de tiempo disponible para completar el cuestionario.
+- Las preguntas deben formularse en un lenguaje sencillo, directo y al punto, se debe evitar la utilización de frases largas o palabras inusuales.
+- Hay que evitar la ambigüedad de forma que el encuestado o encuestada siempre sepa que se está preguntando. La ambigüedad se puede producir por dos razones, por la forma en la que se redacta la pregunta, o por la inclusión de dos preguntas en una sola.
+- Las preguntas deben ser neutrales y respetuosas con el contexto, cultura y género de las personas encuestadas.
+- Evitar la utilización de preguntas inductivas, es decir, aquellas fraseadas de tal manera que sugieran cual es la respuesta que se espera.
+
+Una vez finalizado el cuestionario, debe ser revisado con los encuestadores y pilotados con posibles encuestados para identificar cualquier riesgo de protección, incluida la violencia de género o preocupación de los encuestados y encuestadores, y desarrollar medidas de mitigación y prevención.
+
+_Otros recursos para apoyar el diseño de cuestionarios:_
+
+- Universidad de Granada – [Diseño del Cuestionario](https://www.ugr.es/~diploeio/documentos/tema2.pdf)
+- ACAPS, Technical brief – [Questionnaire Design, 2016](https://www.acaps.org/sites/acaps/files/resources/files/acaps_technical_brief_questionnaire_design_july_2016_0.pdf)
+
+### Paso 4. Herramientas de captura de datos. 
+
+Tradicionalmente, los datos han sido recolectados con papel y lápiz, y después digitalizados en bases de datos como Excel para su procesamiento, almacenamiento y análisis.
+
+Actualmente, la recolección de datos se hace por lo general con sistemas móviles de recolección de datos, a través de tabletas o celulares, permitiendo recolectar, almacenar, analizar y compartir los datos en tiempo real. Existen numerosas herramientas para recolección móvil de datos, pero la más utilizada en el sector humanitario es el **Open Data Kit (ODK)** o la versión personalizada [**KoBoToolbox**](https://www.kobotoolbox.org/), la cual facilita la construcción de cuestionarios para personas sin un perfil técnico.
+
+Para más información sobre herramientas y últimos desarrollos tecnológicos para mejorar la recolección móvil de datos, se puede consultar el proyecto [**NOMAD**](https://humanitarian-nomad.org/)(Humanitarian Operations Mobile Acquisition of Data, por sus siglas en ingles), liderado por iMMAP y CartONG.
+
+### Paso 5. Capacitar a los equipos de recolección de datos 
+
+Una vez se haya finalizado el cuestionario, se debe capacitar al equipo de recolección de datos. La duración de la capacitación puede variar entre un día para evaluaciones de necesidades rápidas, y una semana para evaluaciones de necesidades exhaustivas. Como mínimo, estas capacitaciones deben incluir lo siguiente:
+
+1. **Información sobre la evaluación** : objetivo de la evaluación, alcance, población objetivo y metodología.
+
+1. **Información operacional** :
+
+- Estructura del equipo de recolección de datos, roles y responsabilidades de cada enumerador, incluyendo los informes que deberán elaborar durante y después del ejercicio. Se deberán desarrollar términos de referencia tanto para el coordinador como para los enumeradores, y asegurar la participación de mujeres y hombres en el equipo.
+- Líneas de comunicación entre los componentes de cada equipo y el coordinador del ejercicio;
+- Arreglos administrativos y logísticos como transporte y alojamiento;
+- Protocolos de seguridad y emergencia;
+- Listados y/o mapas sobre las localizaciones donde se realizará la evaluación.
+
+1. **Técnicas y herramientas para la recolección de datos:**
+
+- Herramientas de recolección de datos, cuestionarios, grupos focales de discusión, observación directa, sistemas de recolección móvil, etc.;
+- Técnicas de entrevistas y habilidades interpersonales, incluyendo de género y culturales, que se debe hacer y no durante una entrevista.
+- Técnicas sobre cómo implementar un enfoque ético y centrado en la protección, incluyendo grupos de edad, género y otros aspectos de diversidad. Todos los enumeradores deberán comprender y firmar un código de conducta y un acuerdo de confidencialidad, un ejemplo de un código de conducta se puede encontrar en [este enlace](https://drive.google.com/open?id=143LUSHPoPCLzNLpGMJHOh_aIJKAxbBjx);
+- Estrategias para mejorar la calidad de los datos y reducir el sesgo.
+
+1. **Instrucciones sobre mecanismos de derivación de casos** para personas identificadas con necesidades urgentes de atención (por ejemplo, casos médicos, niños no acompañados, supervivientes de casos de violencia de género, trata de personas, etc.).
+
+Finalmente, es fundamental que los equipos de recopilación de información practiquen el uso de las herramientas de recopilación de datos a través por ejemplo de un juego de rol. Aprender haciendo, incluso en un entorno artificial, puede ayudar a que los equipos puedan comprender bien las herramientas y eviten algunos errores o posibles problemas que pudieran surgir durante la entrevista real.
+
+_Ejemplo de agenda e insumos para una capacitación pueden ser encontrados en los siguientes enlaces:_
+
+- GIFMM Caribe, Capacitación Piloto Evaluación Conjunta de Necesidades Barranquilla
+- ACAPS, [Technical brief: Building an Effective Assessment Teams](https://www.acaps.org/sites/acaps/files/resources/files/building_an_effective_assessment_team_march_2012.pdf)

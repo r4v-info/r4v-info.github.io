@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+
+<html lang="es" xml:lang="es">
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Necesidades de información</title>
+
+<script src="libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<script src="libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="libs/navigation-1.1/tabsets.js"></script>
+<meta name="robots" content="index, follow">
+<title>IFHS: Integrated Framework for Household Survey</title>
+<link rel="stylesheet" href="./include/conjut.css" />
+<script type="text/javascript" src="./libs/zeroclipboard-2.2.0/ZeroClipboard.js"></script>
+<link rel="stylesheet" href="./libs/colorbox-1.6.1/colorbox.css" />
+<script type="text/javascript" src="./libs/colorbox-1.6.1/jquery.colorbox-min.js"></script>
+<!--- favicon --->
+<link rel="apple-touch-icon" sizes="57x57" href="./images/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="./images/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="./images/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="./images/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="./images/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="./images/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="./images/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="./images/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="./images/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="./images/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+<link rel="manifest" href="./images/favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="./images/favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+<nav>
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Evaluaciones de necesidades conjuntas</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="design" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Planear <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu" id="menu_design">
+                <ul class="multi-column-dropdown">
+                  <li><a href="Objetivo.html">Definir objetivo y alcance</a></li>
+                  <li><a href="Coordinacion.html">Mecanismos de coordinación</a></li>
+                  <li><a href="Subcontratacion.html">Subcontratación de actividades </a></li>
+                </ul>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="collect" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Recolectar <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu" id="menu_collect">
+            <div class="row">
+              <div class="col-sm-8">
+                <ul class="multi-column-dropdown">
+                  <li><a href="Necesidades.html">Necesidades de información</a></li>
+                  <li><a href="Datos_secundarios.html">Datos secundarios</a></li>
+                  <li><a href="Recoleccion_de_datos.html">Recolección de datos</a></li>
+                </ul>
+              </div>
+            </div>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="analyse" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Analisar <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu" id="menu_analyse">
+            <div class="row">
+              <div class="col-sm-8">
+                <ul class="multi-column-dropdown">
+                  <li ><a href="Analisis.html">Extraer conclusiones: Análisis de necesidades</a></li>
+                  <li ><a href="Conjunto.html">Análisis conjunto</a></li>
+                </ul>
+              </div>
+            </div>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="analyse" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Distribuir <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu" id="menu_analyse">
+            <div class="row">
+              <div class="col-sm-8">
+                <ul class="multi-column-dropdown">
+                  <li ><a href="Calidad.html">Revisión de la calidad</a></li>
+                  <li ><a href="Diseminacion.html">Diseminación</a></li>
+                  <li ><a href="Rendicion_de_cuentas.html">Rendición de cuentas a poblaciones afectadas</a></li>
+                </ul>
+              </div>
+            </div>
+          </ul>
+        </li>
+        <li><a href="Evaluaciones_de_Necesidades_Conjuntas.pdf">PDF</a></li>
+      </ul>
+    <form id="rechercher" class="navbar-form navbar-right" role="search" style="padding-top: 5px;" method="get" action="https://tontonroger.org/">
+      <div class="form-group">
+        <input name="q" type="text" class="form-control input-sm" placeholder="Search">
+      </div>
+      <button type="submit" class="btn btn-default btn-sm" name="Search">
+        <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+      </button>
+    </form>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+</nav>
+
+<div class="row">
+
+<div class="col-sm-9" role="main">
+<article>
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Necesidades de información</h1>
+
+</div>
+
+<div id="TOC">
+<ul>
+<li><a href="#definir-necesidades-de-información">Definir necesidades de información</a><ul>
+<li><a href="#marco-analítico-regional">Marco analítico regional**</a></li>
+</ul></li>
+<li><a href="#plan-de-análisis-de-datos">Plan de análisis de datos</a></li>
+</ul>
+</div>
+
+<div class="important">
+<ul>
+<li>Realizar un plan de análisis desde el principio, asignando suficiente tiempo y recursos para ejercicios de análisis, como talleres de análisis conjuntos, análisis multisectorial y escalas de severidad.</li>
+</ul>
+</div>
+<div id="definir-necesidades-de-información" class="section level2">
+<h2>Definir necesidades de información</h2>
+<p>Los socios de la evaluación deberán definir qué información necesitan recolectar basándose en el objetivo de la evaluación, las decisiones que se quieren informar y el resto de los parámetros definidos en la sección 4.1. Por ejemplo, teniendo en cuenta los parámetros de nuestro escenario, las necesidades de información a definir estarán relacionadas con las necesidades multisectoriales de las poblaciones objetivo, dentro de los departamentos seleccionados, junto con información de la respuesta ya implementada y la capacidad existente en terreno tanto por parte del gobierno como de las organizaciones locales e internacionales presentes, o con capacidad para responder en el área.</p>
+<p>Una vez definida una lista inicial de necesidades de información, se deberá revisar la información existente en informes de situación disponibles, evaluaciones de necesidades y otros documentos relevantes para identificar la información que ya es conocida y la que no lo es.</p>
+<p>En la siguiente sección se introduce una metodología que ayuda a guiar el proceso de definición de necesidades de información a través de un marco de análisis.</p>
+<div id="marco-analítico-regional" class="section level3">
+<h3>Marco analítico regional**</h3>
+<p>Las necesidades de información se pueden detallar y estructurar de diferentes formas, y un método común es la utilización de un marco analítico. Este método ayuda a hacer un seguimiento de que datos deben ser recopilados, recolectados y de cómo analizarlos.</p>
+<p>El marco organiza todas las necesidades de información en diferentes categorías y subcategorías y muestra las relaciones entre conceptos clave. Además, ayuda a identificar vacíos de información y muestra cómo evolucionan las necesidades de información a lo largo del tiempo.</p>
+<p>El marco analítico propuesto en la Ilustración 1, está basado en el trabajo global realizado como parte del desarrollo del MIRA y el JIAG, y ha sido contextualizado para cumplir con las necesidades de información de la crisis de Venezuela. Desde el comienzo de 2019 ha sido utilizado para apoyar revisiones de datos secundarios y análisis de datos.</p>
+<p><em>Ilustración 1. Marco de análisis</em></p>
+<p>El marco contempla por un lado información de contexto, de la crisis, perfiles de desplazamiento, acceso humanitario e integración y soluciones sostenibles; por otro, información sectorial sobre las condiciones humanitarias, capacidad, respuesta y perspectivas de la población.</p>
+<p><em>Tabla 2. Descripción y ejemplos de categorías transversales del marco de análisis</em></p>
+<table>
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>CATEGORIA</strong></th>
+<th><strong>DESCRIPCIÓN</strong></th>
+<th><strong>EJEMPLO (esta información puede ser relevante a uno o más sectores)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>CONTEXTO</strong></td>
+<td>Información que contribuye a la comprensión de la situación general o del entorno operativo y no se relaciona con un sector específico: Datos demográficos, políticos, marcos legales, elementos socioeconómicos y culturales, situación de seguridad, medio ambiente, etc.</td>
+<td><strong>Marco legal</strong> - Normatividad específica para atender las crisis de personas refugiadas y migrantes provenientes de otros países.- Marco normativo para la regulación de la migración internacional (VISAS, permisos, etc.) <strong>Político</strong> - Gobierno nacional comprometido internacionalmente a apoyar a la población proveniente de Venezuela.- Elecciones locales que se llevarán a cabo el próximo mes de octubre, podría contener mensajes nacionalistas que afecten a las personas refugiadas y migrantes provenientes de Venezuela. <strong>Seguridad</strong> - Comunidades de acogida con presencia de grupos armados no estatales (persiste el conflicto, control social y territorial)- Reclutamiento forzado, violencia de género, trata de personas, especialmente explotación sexual y laboral, y tráfico de migrantes (trochas) <strong>Medio ambiente</strong> - Análisis de posibles impactos negativos al medio ambiente de proyectos de la cooperación internacional- Conocimiento / el nivel de conciencia de la población refugiada y migrante referente a los desafíos ambientales y su mitigación<strong>Sociocultural (incluyendo dimensiones de género, edad, etnia, etc.)</strong> - Diferencias culturales derivando en casos de xenofobia- Se ha agudizado la discriminación de género y los roles de género han cambiado, generando una mayor afectación y carga en las mujeres y niñas. <strong>Demografía</strong> - Un 55% de la población son hombres y el 45% son mujeres. - La mayor proporción de la población se concentra en el grupo etario de 18 a 30 años con un 57%, seguido por un 33% del grupo de 30 a 45 años. - 60% declaró ser soltero, 37% está casado o convive con alguien</td>
+</tr>
+<tr class="even">
+<td><strong>EVENTO/CRISIS</strong></td>
+<td>Descripción del evento o crisis que se evalúa/analiza, factores agravantes y vulnerabilidades preexistentes. Por ejemplo, desastre natural o conflicto – Crisis repentinas, de evolución lenta o prolongada, incluyendo impacto diferenciado según grupos de género y edad.</td>
+<td><strong>Crisis prolongada</strong> de carácter político, económico y social, que tuvo comienzo en 2013 y ha provocado la salida de más de cuatro millones y medio de personas de Venezuela a otros países de la región y otros continentes. <strong>Factores agravantes</strong> - Escasez sistémica de comida y medicamentos, agravada por la marcha del país de médicos y detención de trabajadores de salud que denuncian el estado del sistema sanitario.- Represión durante protestas sociales resultando en violaciones de derechos humanos.- Caída de los precios de petróleo, expropiaciones y restricciones del control de cambio de la moneda. <strong>Vulnerabilidades preexistentes</strong> - Comunidades tradicionalmente marginadas, incluidas las que viven por debajo del umbral de pobreza, ¿han sido las más afectadas por la crisis venezolana?</td>
+</tr>
+<tr class="odd">
+<td><strong>DESPLAZAMIENTO</strong></td>
+<td>Número de personas desplazadas y tipos de desplazamiento, factores de empuje y detalles sobre las intenciones de movimiento.</td>
+<td><strong>Número de personas por perfiles de desplazamiento</strong> - Personas refugiadas y migrantes venezolanas con vocación de permanencia (desagregados por sexo y edad)- Personas refugiadas y migrantes venezolanas pendular (movimiento en frontera para acceso a servicios y compra de bienes básicos; desagregados por sexo y edad)- Personas refugiadas y migrantes venezolanas en tránsito a terceros países (desagregados por sexo y edad)- Personas colombianas retornadas (desagregados por sexo y edad)- Personas desplazadas internas (desagregados por sexo y edad)- Población de acogida (desagregados por sexo y edad) <strong>Factores de empuje</strong> -Los continuos acontecimientos políticos, socioeconómicos y de derechos humanos en la República Bolivariana de Venezuela han provocado la salida de más de cuatro millones y medio de personas venezolanas a países vecinos y más lejanos <strong>Intenciones</strong> -82,9% del total de encuestados manifestó su intención de desplazarse a otros países en la región. De ellos el 35% son mujeres y el 65% son hombres.</td>
+</tr>
+<tr class="even">
+<td><strong>ACCESO HUMANITARIO</strong></td>
+<td>Limitaciones en la entrega de asistencia humanitaria y a que razones puede deberse.</td>
+<td>- Comunidades de acogida donde aún persiste el conflicto armado y hay control de grupos armados ilegales (control social y territorial). - Zonas afectadas por desastres naturales.- Monto individual para transferencias monetarias controladas por el gobierno, en concreto a caminantes.</td>
+</tr>
+<tr class="odd">
+<td><strong>INTEGRACION Y SOLUCIONES SOSTENIBLES</strong></td>
+<td>Soluciones que permiten la integración de los desplazados en los países de acogida, y otras, como reasentamiento o repatriación voluntaria.</td>
+<td>- Número de personas que necesitan ser reasentadas en otros países de la región.- Número de niños y niñas de familias venezolanas nacidos en Colombia que han recibido la nacionalidad.</td>
+</tr>
+</tbody>
+</table>
+<p><em>Tabla 3. Descripción de categorías y subcategorías del marco de análisis</em></p>
+<div class="line-block"></div>
+<table>
+<colgroup>
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>CATEGORIA</strong></th>
+<th><strong>SUB-CATEGORIA</strong></th>
+<th><strong>DESCRIPCIÓN</strong></th>
+<th><strong>ALOJAMIENTO</strong></th>
+<th><strong>AGUA, SANEAMIE, HIGIENE</strong></th>
+<th><strong>EDUCACION</strong></th>
+<th><strong>NUTRICION</strong></th>
+<th><strong>MEDIOS DE VIDA</strong></th>
+<th><strong>PROTECCION</strong></th>
+<th><strong>SALUD</strong></th>
+<th><strong>SEGURIDAD ALIMENTARIA</strong></th>
+<th><strong>INTERSECTORIAL</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>CONDICIONES HUMANITARIAS</strong></td>
+<td><strong>Acceso a servicios o bienes básicos</strong></td>
+<td>Consecuencias directas relacionadas con el acceso, disponibilidad, conciencia, uso y calidad de bienes y servicios básicos/esenciales. Por ejemplo, número de niños y niñas con acceso a educación formal, número de doctores por número de pacientes, etc.</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><strong>Bienestar físico y mental</strong></td>
+<td>Impacto directo en la salud física o mental de un individuo que puede ser como consecuencia de la falta de acceso a servicios y bienes básicos. Por ejemplo, tiempo prolongado sin acceso a alimentos resultando en casos de malnutrición o muerte.</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><strong>Mecanismos de afrontamiento</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Actividades adoptadas por personas, comunidades, etc., que utilizan habilidades y recursos a su alcance, para afrontar riesgos y condiciones adversas. La información sobre los mecanismos de afrontamiento generalmente se refiere a actividades negativas, como mujeres que acuden al sexo por supervivencia, pero también pueden ser positivas.</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><strong>Personas/Grupos con necesidades específicas</strong></td>
+<td>Grupos de población que pueden ser particularmente vulnerables debido a género, edad, etnia o discapacidad y que tienen derecho a asistencia especial. Generalmente se considera que tienen necesidades específicas los siguientes grupos: las niñas y los niños, incluidos los niños no acompañados o separados, mujeres en riesgo (gestantes, en periodo de lactancia, viajando solas, jefas de hogar), víctimas de trata de personas, sobrevivientes de violencia de género, las personas con enfermedades crónicas graves, los ancianos, las personas con discapacidad, hogares liderados por mujeres y personas con una orientación sexual o identidad de género diversa tienen necesidades específicas.</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><strong>Riesgos y vulnerabilidades nuevas o agravadas</strong></td>
+<td>Situaciones que potencialmente podrían deteriorar, si no se abordan las necesidades actuales. El riesgo se define como una función del peligro, la exposición, la vulnerabilidad y la capacidad, y debe estar relacionado con un evento, marco de tiempo y sistema específicos.</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><strong>RESPUESTA</strong></td>
+<td><strong>Gobierno nacional/local</strong></td>
+<td>Proyectos y recursos del gobierno nacional y local, o de las comunidades de acogida para responder a una crisis en curso.</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><strong>Cooperación internacional/local</strong></td>
+<td>Proyectos y recursos de la cooperación local e internacional, para responder a una crisis en curso.</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><strong>Perspectivas sobre las prioridades de la población afectada</strong></td>
+<td>Perspectivas de la población afectada sobre las intervenciones de respuesta requeridas/preferidas, diferenciadas de acuerdo a grupos de género y edad.</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><strong>CAPACIDADES</strong></td>
+<td><strong>Comunidad de acogida</strong></td>
+<td>Capacidad y recursos de las comunidades de acogida para responder a una crisis.</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><strong>Gobierno nacional/local</strong></td>
+<td>Capacidad y recursos de las comunidades de acogida para responder a una crisis, diferenciadas de acuerdo a grupos de género y edad.</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><strong>Cooperación internacional/local</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Proyectos y recursos de la cooperación local e internacional, para responder a una crisis en curso.</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><em>Tabla 4. Ejemplos de necesidades de información a nivel sectorial del marco de análisis</em></p>
+<table>
+<colgroup>
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>CATEGORIA</strong></th>
+<th><strong>SUB-CATEGORIA</strong></th>
+<th><strong>ALOJAMIENTO</strong></th>
+<th><strong>EDUCACION</strong></th>
+<th><strong>MEDIOS DE VIDA</strong></th>
+<th><strong>SALUD</strong></th>
+<th><strong>SEGURIDAD ALIMENTARIA</strong></th>
+<th><strong>NUTRICION</strong></th>
+<th><strong>PROTECCION</strong></th>
+<th><strong>WASH</strong></th>
+<th><strong>INTER</strong>** SECTORIAL**</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><strong>CONDICIONES HUMANITARIAS</strong></td>
+<td><strong>Acceso a servicios o bienes básicos</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>- Tipo de alojamiento ocupado- Dificultades para acceder a alojamiento (falta de recursos económicos, xenofobia, homolesbitransfobia, etc.)</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>- Número de niños y niñas que no asisten a educación formal, o no asisten regularmente, durante la temporada escolar- Razones por las que no asisten o no asisten regularmente, diferenciada para niña y para niños</td>
+<td>- % adultos en desempleo (desagregado por sexo y edad)- Principales fuentes de ingresos (para mujeres y hombres)- Dificultades en acceso a empleo formal para mujeres y para hombres.</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>- Acceso al sistema sanitario- Acceso a controles prenatales - Razones que imposibilitan acceso al sistema de salud y seguridad social (Falta de empleo formal, etc.)- Tasas de lactancia materna, exclusiva y continuada- Acceso a métodos anticonceptivos- Atención clínica de la violencia sexual</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>| - Número de comidas consumidas diariamente- Medios de acceso a alimentos para hombres y para mujeres | - Acceso a cantidad, calidad y variedad de alimentos para hombres y para mujeres ` | - Limitaciones en acceso a servicios de protección para personas sin estatus regular.- Obtención de visas y permisos (documentación)- Número de víctimas de abuso, trata/explotación sexual y laboral, violencia de género- Mujeres en riesgo (viajando solas, etc.)- Comunidad LGTBI, cifras, barreras de acceso a derechos/servicios.- Riesgos de protección para caminantes | - Acceso a agua segura y saneamiento en sitios clave de tránsito, asentamientos informales y planificados.- Acceso a servicios de higiene, incluyendo higiene menstrual. | Problemas para acceder a comprar bienes en un mercado o tienda - Riesgos de protección asociados, como violencia de género, diferenciados para mujeres y hombres. | | — | — | — | — | — | — | — | — | — | — | — | | <strong>Bienestar físico y mental</strong> | Problemas mentales y físicos derivados en las personas en situación de calle | | Estado mental derivado de no encontrar soluciones para subsistencia para responsables del hogar y sus miembros | - Afectaciones en salud con mayor prevalencia- Tasa de mortalidad infantil- Salud física de las mujeres (especialmente embarazadas) - Enfermedades infecciosas y crónicas- Cifras de mujeres en edad fértil, gestantes y lactantes con diagnóstico de VIH | Aumento de la morbilidad (hombres y mujeres) como resultado de una dieta insuficiente o inapropiada | Signos de malnutrición en niños/as menores de 5 años. | Impacto psicosocial y mental derivados del desplazamiento y de la falta de acceso a derechos/servicios básicos | Aumento de enfermedades transmitidas por el agua (como resultado de agua insuficiente o de baja calidad) | | | <strong>Mecanismos de afrontamiento</strong> | - Hacinamiento (riesgos de violencia de género)- Ocupación del espacio público o de inmuebles privados | - Educación informal a través de personal no cualificado- Enseñanza en el hogar | - Mendicidad, explotación laboral, prostitución forzada, sexo por supervivencia- Se establecen fuentes alternativas de ingresos, incluidos los servicios en línea. | - Consultas y tratamiento por no profesionales- Toma de medicamentos en mal estado | - Reducción en el número de comidas consumidas diariamente- Se comienza a cultivar alimentos en el huerto | Cambio de dieta (consumo de comida rápida, falta de variedad en los alimentos, sustitución de alimentos, reducción de las porciones, del número y calidad de comidas al día, prolongación del sueño para evitar el desayuno de los niños y niñas, mujeres ceden su porción de comida a sus hijos e hijas, etc.)</p>
+<p>| - Mendicidad/explotación laboral - Prostitución forzada/Sexo por supervivencia- Trabajo con grupos ilegales- Abuso de drogas y alcohol- Trabajo infantil | - Consumo insuficiente de agua o consumo de agua no segura- Disposición de excreta cuando infraestructura de saneamiento no está disponible- No disponibilidad de insumos de higiene, incluyendo higiene menstrual | Tomar préstamos abusivos y acudir a sexo por supervivencia para poder pagar las necesidades básicas. | | <strong>Personas/Grupos con necesidades específicas</strong> | - Niñas y mujeres- Mujeres cabeza de familia- Niños, niñas y adolescentes- Personas con necesidades médicas - Adultos y adultas mayores | Niños y niñas con discapacidades | - Adultos y adultas mayores- Jóvenes en edad productiva- Mujeres, niñas y adolescentes | - Mujeres embarazadas y en periodo de lactancia- Niños y niñas menores de 5 años- Adultos y adultas mayores- Víctimas /sobrevivientes de violencia de género- NNA | - Pueblos indígenas (especialmente mujeres, niñas y niños)- Comunidades remotas | - Niños, niñas y adolescentes, en particular menores de 5 años- Adultos y adultas mayores- Personas con necesidades médicas | - Personas con enfermedades crónicas (incluyendo VIH). - Pueblos indígenas- Población LGTBI- Personas con discapacidad - NNA (especial no acompañados)- Mujeres gestantes y en periodo de lactancia-Afrodescendientes (hombres y mujeres)- Adultos y adultas mayores | - Mujeres em riesgo: Cabeza de hogar, embarazadas y en periodo de lactancia- Niños, niñas y adolescentes - Personas con necesidades médicas particulares- Adultos y adultas mayores | Personas sobrevivientes de violencia de género | | <strong>Riesgos y vulnerabilidades nuevas o agravadas</strong> | - Principales actores proveedores de alojamiento incluyendo subsidios de arriendo finalicen sus actividades- Ocurrencia de violencia de género por hacinamiento | Reducción de oportunidades laborales y mayor informalidad para hombres y mujeres | - Mendicidad, explotación laboral, prostitución forzada, sexo por supervivencia- Aumento de hogares con cabeza de hogar femenina | - Falta de tratamiento para enfermedades como sífilis, VIH, tuberculosis- Deuda acumulada de los hospitales en departamentos de frontera- Falta de atención en salud sexual y reproductiva, especialmente salud materna y frente a violencia de género. | | Personas en riesgo nutricional enfrentando problemas de seguridad alimentaria, especialmente niñas, niños y mujeres. | - Incremento de violencia de género, especialmente violencia sexual y contra mujeres y niñas. | - Disminución de acceso a servicios e insumos de higiene, incluida higiene menstrual | | | <strong>RESPUESTA</strong> | <strong>Respuesta del gobierno local/nacional</strong> | - Número de personas alojadas en albergues de autoridades locales (desagregadas por sexo y edad) | | - Número de mujeres cabeza de familia que acceden a proyectos productivos. | - Número de personas orientadas en el sistema de salud de Colombia (desagregadas por sexo y edad)- Número de personas afiliadas al sistema de salud (desagregadas por sexo y edad)- Número de niños/as menores de 5 años vacunados - Número de eventos de interés público reportados al sistema nacional de vigilancia epidemiológica (desagregados por sexo y edad) - Generación de política pública para el acceso al sistema sanitario para la población proveniente de Venezuela | Número de mujeres cabeza de familia que son apoyadas con proyectos alimentarios | Número de mujeres gestantes y en periodo de lactancia que acceden a servicios nutricionales | Número de personas sobrevivientes de violencia de género que acceden a servicios, desagregados por sexo y edad. | - Iniciativas del gobierno para proveer servicios de acceso a saneamiento, higiene, incluyendo higiene menstrual, y fuentes de agua mejoradas | | | <strong>Respuesta cooperaci</strong>** ón local-internacional<strong> | - Número de personas que reciben subsidios de arriendo (desagregadas por sexo y edad) | | - Número de mujeres cabeza de familia que acceden a proyectos productivos. | Número de mujeres gestantes y en periodo de lactancia que acceden a servicios de salud | Número de mujeres cabeza de familia que son apoyadas con proyectos alimentarios | - Número de atención primaria de salud,- Número de consultas médicas para todas las edades, consultas prenatales, atención a pacientes crónicos, apoyo psicosocial- Número de vacunaciones a mujeres embarazadas y niños y niñas menores de 5 años | Número de personas víctimas de trata que acceden a servicios, desagregados por sexo y edad. | - Número de personas que acceden a servicios de saneamiento, higiene, incluyendo higiene menstrual, y fuentes de agua mejoradas. | | | </strong>Perspectivas sobre las prioridades<strong> | Diseño de alojamiento temporal preferido y considerando dimensiones de género, edad y etnia. | Apoyo preferido para transportar niños y niñas a la escuela primaria o secundaria. | La perspectiva de la población (hombres y mujeres) sobre las principales intervenciones requeridas para aumentar el acceso a fuentes de ingresos sostenibles. | Preferencias de la población sobre la forma de dar a luz y medidas de seguridad relacionadas. | Percepción sobre mecanismos de acceso a alimentos provistos, diferenciados por género y edad. | Percepción sobre acceso a medicamentos y sistema de salud | Perspectivas de la población sobre prioridades para sentirse más seguros en el país de acogida, considerando dimensiones de género, edad y diversidad. | | Modalidad de transferencia preferida por la población (por ejemplo, efectivo en mano, pagos por teléfono móvil, etc.) | | </strong>CAPACIDADES** | <strong>Capacidad de la población afectada</strong> | Establecimiento de alojamientos colectivos y otros mecanismos de solidaridad. | | | | Capacidad de producción para autoconsumo o consumo local | | Establecimiento de vigilancias vecinales y otros mecanismos de protección basados en la comunidad. | | | | <strong>Capacidad del gobierno local/nacional</strong> | Número de plazas disponibles en albergues del gobierno local/nacional | - Cupos en las aulas - Personal docente disponible | | - Servicios de urgencias de los hospitales. - Secretarías de salud departamentales vigilan eventos de interés en salud - Planes de contingencia incluyen salud- Planes financieros de choque o apoyo a la crisis migratoria- Planes de salud sexual y reproductiva | | - Número de cupos nuevos en el Programa de Alimentación Escolar (PAE) cubiertos por fondos municipales/departamentales | | | | | <strong>Capacidad cooperaci</strong>** ón local-internacional** | Número de plazas disponibles en albergues habilitados por la cooperación | | | - Centros de atención primaria, brigadas móviles, remisiones a hospitales, actividades de prevención y educación | | | | | |</p>
+</div>
+</div>
+<div id="plan-de-análisis-de-datos" class="section level2">
+<h2>Plan de análisis de datos</h2>
+<p>Una vez definidas las necesidades de información en el marco de análisis, se debe de desarrollar un plan de análisis de datos para guiar la compilación y recopilación de datos y para identificar indicadores de medida apropiados. El plan de análisis de datos debe redactarse antes de comenzar la recopilación de datos primarios y en paralelo con la revisión de datos secundarios. A su vez, el plan de análisis asegurara:</p>
+<ul>
+<li>Todos los datos necesarios son recopilados para su análisis.</li>
+<li>No se pierde tiempo en recopilar datos que ya están disponibles, datos que no son necesarios para para los objetivos de la evaluación, y/o no se utilizaran.</li>
+<li>Se establecen formalmente indicadores junto con su descripción.</li>
+<li>Se establecen los datos que se deben recopilar de fuentes primarias y secundarias, lo cual facilitara la identificación de vacíos de información.</li>
+</ul>
+<p>La plantilla del plan de análisis de datos presenta varias columnas, cada una correspondiente a un paso en el proceso de recopilación y análisis de información, como se muestra en el ejemplo en la Tabla 7, basado en el escenario de esta guía. La persona que lidera la evaluación de necesidades estará encargada de rellenar el plan de análisis con ayuda de expertos y expertas de cada sector y del grupo de trabajo técnico, si lo hubiera, y lo mantiene actualizado durante todo el proceso.</p>
+<p>Para desarrollar el plan de análisis:</p>
+<ol style="list-style-type: decimal">
+<li>Enumere las preguntas analíticas clave en función de las necesidades de información del marco analítico y establezca los indicadores correspondientes, los datos requeridos y la línea base disponible, considerando las dimensiones de género, edad y diversidad. Al seleccionar y definir indicadores es importante asegurar un balance razonable entre la importancia de la información y el tiempo y esfuerzo requeridos para obtenerlos.</li>
+<li>Incluya las fuentes de información secundarias relevantes, lo cual ayudara a la definición de vacíos de información.</li>
+<li>Evaluar el nivel de confianza de la fuente y la información.</li>
+<li>Describir los resultados analíticos planeados y las distintas relaciones entre elementos.</li>
+<li>Actualizar el plan de análisis de datos a medida que surge nueva información durante el ciclo de la evaluación de necesidades.</li>
+</ol>
+<p><em>Tabla 5. Ejemplo de plan de análisis de datos según varios ejemplos de necesidades de información definidos en la Tabla 6 y una vez realizada la revisión de datos secundarios.</em></p>
+<div class="line-block"><strong>CATEGORIA MA</strong> <strong># 8</strong> | <strong>SUBCATEGORIA MA</strong> | <strong>SECTOR MA</strong> | <strong>NECESIDAD DE INFORMACION</strong>** PREGUNTA ANALITICA ****MA** | <strong>DATOS REQUERIDOS</strong> | <strong>FUENTE</strong> | <strong>TIPO</strong> | <strong>CONFIABILIDAD</strong> | <strong>ESTADO</strong> | <strong>ANALISIS</strong>** COMPARACION** |<br />
+— | — | — | — | — | — | — | — | — | — |<br />
+<strong>Condiciones humanitarias</strong> | Bienestar físico y mental | Salud | Tendencias en la incidencia de enfermedades | % de hogares de Venezuela con al menos un miembro que requiere atención médica en los barrios X, Y y Z. | Encuesta de hogares | Primaria | N/A | PlaneadaInicio 2019 – fin de 2019 | Entre áreas geográficas | |<br />
+— | — | — | — | — | — | — | — | — | — | — |<br />
+<strong>Condiciones humanitarias</strong> | Bienestar físico y mental | Salud | Tendencias en la incidencia de enfermedades | Patrones de morbilidad y mortalidad de la población venezolana en los barrios X, Y y Z. | Ministerio de Salud | Secundaria | Confiable (Representativa) | CompletadaFebrero 2019 | Entre áreas geográficasEntre sexo y edad | |<br />
+<strong>Condiciones humanitarias</strong> | Acceso a servicios o bienes básicos | Salud | Barreras para acceder a la atención médica | % de hogares de Venezuela con al menos un miembro que requiere atención médica incapaz de recibir tratamiento ahora mismo, más la explicación del por qué, en los barrios X, Y y Z | Encuesta de hogares | Primaria | N/A | PlaneadaInicio 2019 – fin de 2019 | Entre áreas geográficas | |<br />
+</div>
+<p><strong>Respuesta</strong> | Respuesta cooperación local-internacional | Salud | Apoyo a los sistemas de salud. | Brechas en presencia y cobertura de actores de salud locales, nacionales e internacionales en los barrios X, Y y Z. | Ministerio de Salud Clúster de Salud | Secundaria | Confiable (Representativa) | Completada | Entre áreas geográficas | | | <strong>Capacidades</strong> | Gobierno nacional/local | Salud | Capacidad de la infraestructura sanitaria para satisfacer un incremento en la demanda | Número promedio de personal de salud y camas de hospital por población en los barrios X, Y y Z. Hospitales que reportan capacidad y recursos insuficientes para atender la demanda en los barrios X, Y y Z. | Ministerio de Salud Clúster de Salud | Secundaria | Confiable (Representativa) | Completada | Entre áreas geográficas | | | <strong>Respuesta</strong> | Acceso a servicios o bienes básicos | Salud | Acceso a atención sanitaria oportuna y adecuada para mujeres lactantes | Número de mujeres lactantes que reportan haber recibido atención sanitaria oportuna y adecuada en los barrios X, Y y Z | Ministerio de Salud Clúster de Salud | Primaria | Confiable (Representativa) | Completada | Entre áreas geográficas | | | <strong>Condiciones humanitarias</strong> | Acceso a servicios o bienes básicos | Educación | Acceso a educación | Número de niños y niñas que no asisten a la escuela | Ministerio de Educación | Secundaria | Confiable(Representativa) | Completada | Entre áreas geográficas | | | <strong>Condiciones humanitarias</strong> | Bienestar físico y mental | Agua,Saneamiento e Higiene | Tendencia en la incidencia de enfermedades relacionadas con el agua | Patrones de morbilidad y mortalidad de la población venezolana en los barrios X, Y y Z. | Ministerio de SaludClúster WASH | Secundaria | Confiable(Representativa) | Completada | Entre áreas geográficas | | | <strong>Respuesta</strong> | Perspectivas | Intersectorial | Perspectivas de la población sobre modalidades de respuesta | % de hogar de población venezolana que prefieren recibir apoyo en efectivo en los barrios X, Y y Z | Evaluación conjunta de Necesidades Caribe GIFMM | Primaria | Confiable(Representativa) | Completada | Entre áreas geográficas | |</p>
+</div>
+
+</article>
+</div>
+
+<div class="col-sm-3" role="complementary">
+<nav class="hidden-print hidden-xs" id="nav_sidebar">
+</nav>
+</div>
+
+</div>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+
+    // active menu
+    href = window.location.pathname;
+    href = href.substr(href.lastIndexOf('/') + 1);
+    if (href=='') href = 'index.html';
+    $('a[href="' + href + '"]').parent().addClass('active');
+    $('a[href="' + href + '"]').parent().parents('li').addClass('active');
+
+    // élargir la page d'accueil
+    if (href=='index.html') $('.col-sm-9').attr('class','col-sm-12');
+
+    // rechercher
+    $("#rechercher").submit(function(event) {
+      $('input[name="q"]').val($('input[name="q"]').val() + ' site:unhcr.github.io/Integrated-framework-household-survey');
+    });
+
+    // sidebar
+    $("#nav_sidebar").append($("#TOC").html());
+    $("#nav_sidebar ul").addClass("nav nav-stacked");
+    $("#TOC").addClass("visible-xs-block");
+    $('body').scrollspy({
+      target: '#nav_sidebar',
+      offset: 40
+    });
+
+    // Identifier les <pre> fermant
+    $('pre').next("*:not(pre)").prev().addClass('last'); // Dernier <pre> de chaque groupe contigu de <pre>
+    $('pre').parent().each(function (){
+      $(this).children('pre').last().addClass('last');
+    }); // Si <pre> est le dernier enfant de son parent
+
+    // Ajout liens rdocumentation et tooltip
+    $("code[data-pkg]").each(function( index ) {
+      pkg = $(this).attr('data-pkg');
+      if ($(this).attr('data-rdoc') !== undefined) {
+        rdocumentation = $(this).attr('data-rdoc');
+      } else {
+        rdocumentation = $(this).text();
+      }
+      fonction = $(this).text();
+      $(this).wrap('<a href="http://www.rdocumentation.org/packages/'+pkg+'/functions/'+rdocumentation+'">');
+      $(this).attr('data-toggle','tooltip');
+      $(this).attr('data-placement','top');
+      $(this).attr('title','package : ' + pkg);
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+
+    $("code.pkg").each(function( index ) {
+      $(this).wrap('<a href="http://www.rdocumentation.org/packages/'+$(this).text()+'">');
+    });
+
+    // Figures
+    $("figure").each(function( index ) {
+      if ($(this).children("figcaption").length > 0)
+        $(this).children("figcaption:first").prepend('<span class="figure-number">Figure '+(index+1)+'.</span> ');
+      else
+        $(this).append($("<figcaption>").append('<span class="figure-number">Figure '+(index+1)+'</span>'));
+    });
+
+    // Colorbox
+    jQuery('article div img').colorbox({
+      maxWidth: '90%',
+      maxHeight: '90%',
+      rel: 'figures',
+      current: "",
+      href: function(){
+        return $(this).attr('src');
+      },
+      title: function(){
+        return $(this).attr('alt');
+      }
+    });
+    jQuery('article div img').css('cursor', 'pointer');
+    jQuery('figure img').colorbox({
+      maxWidth: '90%',
+      maxHeight: '90%',
+      rel: 'figures',
+      current: "",
+      href: function(){
+        return $(this).attr('src');
+      },
+      title: function(){
+        return $(this).parent().children("figcaption").text();
+      }
+    });
+    jQuery('figure img').css('cursor', 'pointer');
+
+    // ZeroClipboard
+    $('pre.r').parent().each(function(){
+      $(this).children('pre.r').first().before('<div class="zero-clipboard hidden-print hidden-xs"><button class="btn-clipboard">Copy</button></div>');
+    }); // Il peut arriver que le pre ne soit pas précédé (cf. figures)
+    $('*:not(pre):not(.zero-clipboard) + pre.r').before('<div class="zero-clipboard hidden-print hidden-xs"><button class="btn-clipboard">Copy</button></div>');
+    $('pre.last').after(function() {
+      if ($(this).hasClass("r")) res = $(this).text(); else res = "";
+      $(this).prevUntil('*:not(pre)','pre.r').each(function() {
+        res = $(this).text() + '\n' + res;
+      });
+      return '<div class="clipboard">' + res + '</div>';
+    });
+    $('.zero-clipboard').each(function(index){
+      $(this).children('.btn-clipboard').attr('data-clipboard-target','clipboard_'+index);
+      $(this).nextAll("div.clipboard").first().attr('id','clipboard_'+index);
+    });
+    var client = new ZeroClipboard( $(".btn-clipboard") );
+    client.on( "ready", function( readyEvent ) {
+      // alert( "ZeroClipboard SWF is ready!" );
+      client.on( "aftercopy", function( event ) {
+        // `this` === `client`
+        // `event.target` === the element that was clicked
+        //event.target.style.display = "none";
+        $(event.target).parent().before('<div class="alert alert-success"><a href="#" class="close" data-dismiss="alert">&times;</a>The <strong>R</strong> code is now copied in your clipboard.</div>');
+      } );
+    } );
+
+});
+</script>
+
+<!-- disqus -->
+<div class="row">
+  <div id="disqus_thread" class="col-sm-9" role="complementary"></div>
+</div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'Integrated-framework-household-survey'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Activate JavaScript to see <a href="http://disqus.com/?ref_noscript">Disqus Comments.</a></noscript>
+    <!--<a href="http://disqus.com" class="dsq-brlink">Comments are hosted by <span class="logo-disqus">Disqus</span>.</a>-->
+
+<footer>
+  <div class="row">
+    <div class="col-lg-12">
+      <p>Powered by <a href="http://www.r-project.org/" rel="nofollow">R</a>, </a><a href="http://www.rstudio.com/" rel="nofollow">RStudio</a>, <a href="http://rmarkdown.rstudio.com/" rel="nofollow">R Markdown</a>, <a href="http://yihui.name/knitr/" rel="nofollow">knitr</a>, <a href="http://pandoc.org/" rel="nofollow">pandoc</a> and <a href="http://www.princexml.com/" rel="nofollow">Prince XML</a>. Hosted by <a href="https://github.com/" rel="nofollow">GitHub</a>.</p>
+    </div>
+  </div>
+</footer>
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+
+</body>
+</html>

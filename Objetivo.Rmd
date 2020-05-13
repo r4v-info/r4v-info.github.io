@@ -1,0 +1,91 @@
+---
+title: "Definir objetivo y alcance"
+---
+
+```{r options_communes, include=FALSE}
+source("options_communes.R")
+```
+
+
+<div class="important">
+Definir preguntas de investigación, alcance, vacíos de información y necesidades de información al comienzo del proceso de evaluación.
+</div>
+ 
+
+El primer paso durante la planificación de una evaluación de necesidades consiste en la definición del objetivo y el alcance del ejercicio. Para ello, se deben considerar una serie de parámetros clave que son descritos en detalle en la Tabla 3.
+
+_Tabla 1. Descripción y ejemplos de objetivo y alcance de una evaluación de necesidades_
+
+## OBJETIVOS GENERALES
+
+Proporcionar a los responsables de toma de decisiones con información robusta y suficiente para que puedan tomar decisiones informadas durante el diseño de programas de respuesta, basadas en:
+- Necesidades clave y su gravedad, diferenciadas por género y edad.
+- Capacidades y mecanismos de afrontamiento existentes, diferenciados por género y edad.
+- Información inicial sobre preferencias de la población afectada, incluyendo la modalidad de respuesta (en efectivo, en especie, o combinación de ambas)
+- Riesgos de protección y amenazas diferenciadas para las poblaciones afectadas y comunidades de acogida según grupos de género y edad.
+
+_Ejemplo escenario_: Apoyar la priorización de las intervenciones de respuesta en 2020 entre los actores humanitarios clave, a través de información actualizada sobre necesidades y prioridades multisectoriales para los hogares de población refugiada y migrante del país de Venezuela en los departamentos fronterizos de Colombia. Este análisis servirá de línea de base y permitirá el seguimiento de las condiciones de los/las refugiados/as y migrantes en 2020._
+
+## PREGUNTAS DE LA INVESTIGACIÓN
+
+Definir las preguntas de investigación que se quieren responder con la evaluación de necesidades, teniendo en cuenta que deben ser:
+1. Claras: proporcionan suficientes detalles para que la audiencia pueda comprender fácilmente su propósito sin necesidad de una explicación adicional.
+2. Focalizadas: son suficientemente cerradas para que puedan ser respondidas por completo, pero sin llegar a ser pregunta abiertas.
+3. Concisas: se expresan con la menor cantidad de palabras posible.
+4. Compleja: no se responden con un simple "sí" o "no", requieren síntesis y análisis de ideas y otras fuentes de información antes de componer una respuesta.
+5. Discutibles: sus posibles respuestas están abiertas a debate.
+6. Relevantes: están vinculadas a acciones humanitarias, ya sea en términos de abogacía o diseño de programas.
+
+Un número limitado de preguntas de investigación hace que sea más fácil cubrir los temas en profundidad y proporcionar una dirección más clara para mapear y obtener datos relevantes.
+
+_Ejemplo escenario __:__ Condiciones humanitarias: ¿Cuál es la prevalencia y severidad de las necesidades multisectoriales?; ¿En qué medida estas necesidades son diferentes en función del sexo, edad y otras variables diferenciales?; ¿Cuáles son los factores inmediatos y estructurales asociados con estas necesidades? __Respuesta: ¿Qué proporción ha recibido asistencia humanitaria?__ Perspectivas: ¿Cuáles son las prioridades de la población objetivo?_
+
+## ALCANCE Y COBERTURA GEOGRÁFICA
+
+Establecer el alcance geográfico y las unidades de medida y análisis:Alcance geográfico:
+- Unidades administrativas (barrios, distritos, municipios, provincias, departamentos, etc.)
+
+Unidad de medida:
+- Comunidad, barrio, hogar, individual, institución.
+
+Unidad de análisis:
+- Estatus regular vs estatus irregular
+- Áreas afectadas vs. áreas no afectadas.
+- Población en viviendas vs. población en asentamientos informales.
+- Entornos urbanos versus rurales.
+
+_Ejemplo escenario_: Encuestas de hogar en los barrios con mayor concentración de población venezolana en los departamentos fronterizos de Arauca, Cesar, La Guajira y Norte de Santander._ |
+
+## GRUPOS POBLACIONALES META
+
+Definir claramente los grupos a evaluar:
+- Personas de interés: refugiados y migrantes, desplazados internos, apátridas, solicitantes de asilo, comunidades de acogida y repatriados, incluyendo a los perfiles más vulnerables.
+- Personas que enfrentan riesgos adicionales, incluidas mujeres y niñas, no acompañadas y separadas. niños, mujeres y hombres mayores, personas de minorías religiosas, culturales y / o lingüísticas antecedentes, mujeres gestantes y en periodo de lactancia, hombres en edad de combatir y aquellos con necesidades específicas, como personas con discapacidades físicas y/o mentales, personas LGBTI+, personas mayores solteras, sobrevivientes de violencia de género, etc.
+- Género de las personas (Mujeres, hombres, transgeneristas), edad (menores de 18 años vs 18 y más años, etc.), etnia, discapacidad, identidad de género, etc.
+
+_Ejemplo escenario_: Personas refugiadas y migrantes de Venezuela con vocación de permanencia, pendulares y en tránsito desagregados por género, edad y minorías étnicas_.
+
+## SECTORES/TEMÁTICA
+
+Definir claramente los sectores/temas que van a ser evaluados.Ejemplo: agua, saneamiento e higiene, educación, prevención de violencia basada en género, trata de personas, seguridad alimentaria, nutrición, salud, medios de vida, etc.
+
+_Ejemplo escenario_: Alojamiento, Agua, Saneamiento e Higiene, Educación, Nutrición, Medios de vida, Nutrición, Protección, Salud, Seguridad Alimentaria y Protección._
+
+## PERIODO DE TIEMPO
+Establecer tiempos realistas, basados en el objetivo, recursos disponibles, tiempo de recopilación, procesamiento y análisis de datos requerido para informar decisiones en forma y tiempos relevantes.
+
+[_Ejemplo plan de trabajo para evaluación de necesidades conjunta._](https://drive.google.com/open?id=1fXTt2DqTO1mtPqX4CWSCzDnWhfZb8CLO)
+
+## MECANISMOS DE COORDINACION
+
+Identificar organizaciones, agencias o individuos a cargo de la coordinación de la evaluación, y definir sus respectivos roles y responsabilidades.
+[_Ejemplo términos de referencia para evaluación de necesidades conjunta._](https://drive.google.com/open?id=1z1ord6BKHVjbSZKsiFJAJTQrYPCRxKvU)
+
+## RESULTADOS
+
+Predefinir los resultados, como se van a presentar y planes de diseminación e intercambio de datos.
+- Plantillas y esquemas para los informes.
+- Tipo de gráficos y mapas.
+- Procedimiento operativos estándar para diseminación de resultados e intercambio de datos
+
+_Ejemplo_ |

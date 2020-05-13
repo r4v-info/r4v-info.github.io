@@ -1,0 +1,53 @@
+---
+title: "Mecanismos de coordinación"
+---
+
+```{r options_communes, include=FALSE}
+source("options_communes.R")
+```
+
+
+<div class="important">
+- Establecer procedimientos operativos estándar para ayudar a guiar las actividades de evaluación y análisis a nivel regional y nacional.
+- Coordinar las evaluaciones cuando sea posible para mejorar la coherencia, la calidad y el análisis de los datos y proporcionar mensajes claros a los responsables de la toma de decisiones.
+- Antes de comenzar una evaluación, es importante comunicarse con otros actores que realizan evaluaciones de necesidades en la plataforma regional y plataformas nacionales u otras plataformas de coordinación existentes, para comprobar si las necesidades de información están cubiertas por actividades de evaluación en curso o planeadas.
+- Consultar el registro de evaluaciones para comprobar las evaluaciones que están en curso y finalizadas.
+- Definir indicadores clave y ponerlos a disposición de los actores que planean una evaluación de necesidades.
+- Armonizar indicadores para facilitar el análisis entre distintas evaluaciones.
+- Identificar necesidades de información diferenciadas y promover la participación de organizaciones con experticia en género.
+</div>
+
+
+
+Para que las plataformas de coordinación y sus socios puedan garantizar una respuesta operativa, coherente y coordinada, es esencial que todos los ejercicios de evaluación de necesidades estén apropiadamente coordinados. Para tal efecto, y dependiendo del contexto, necesidades de cada país y capacidad existente, se recomienda la creación de un **grupo de trabajo para coordinación de evaluaciones** que posibilite:
+
+- Evitar duplicación de esfuerzos y que la población afectada se sature por el número de evaluaciones y reducida asistencia;
+- Identificación de vacíos de información e iniciar estrategias conjuntas para cubrirlas dentro del ciclo de planificación del RMRP u otros planes de respuesta existentes en la región;
+- Identificar y convenir una serie de indicadores centrales, de forma que permitan la comparabilidad entre evaluaciones, la medición de tendencias a lo largo del tiempo y sean sensibles a enfoques de género y la edad;
+- Promover el uso de estándares y denominadores comunes en todas las evaluaciones (incluidas agencias individuales y sectores/grupos);
+- Prepararse para evaluaciones rápidas de manera conjunta, multisectorial y diferenciada en caso de una escalada repentina de la situación humanitaria;
+- Servir como servicio de asistencia técnica para realización de evaluaciones, y recomendar y reclutar expertos adicionales para garantizar que existe la capacidad necesaria.
+- Asegurar la integración efectiva de los enfoques de género, edad y diversidad en las diferentes etapas de las evaluaciones de necesidades.
+
+En cuanto a las tareas comunes de coordinación para una evaluación conjunta, contando o no con la existencia de un grupo de trabajo, se incluyen:
+
+1. Realización de un **mapeo de actores** interesados en participar: agencias humanitarias y de desarrollo, organizaciones de la sociedad civil, contrapartes gubernamentales y personas con la experiencia y habilidades adecuadas, incluyendo organizaciones de mujeres y personas LGBTI, así como personas con experticia en género;
+2. Involucrar a las **comunidades afectadas y sus representantes** a lo largo del proceso de evaluación, diferenciando entre subgrupos con respecto a la edad, género, y diversidad, y asegurando la participación equitativa de mujeres y hombres;
+3. Establecer un **mecanismo de coordinación** apropiado para facilitar la coordinación de actividades e intercambio de datos;
+4. Establecer un **comité** para determinar el alcance, proporcionar el presupuesto, supervisar la implementación y respaldar los resultados de la evaluación de necesidades;
+5. Establecer un **grupo de trabajo técnico/equipo de análisis** que servirá como foro para desarrollar la metodología, compilación y análisis de datos secundarios, procesamiento y análisis datos primarios e implementación y coordinación de la evaluación y análisis conjunto.
+
+
+Para la coordinación de evaluaciones conjuntas a gran escala se requerirá un puesto de coordinación dedicado con las siguientes responsabilidades:
+
+- Facilitar el foro de evaluación (es decir, grupo directivo o comité);
+- Coordinación de equipos de evaluación (es decir, equipo de recolección de datos de campo y grupo de trabajo técnico, compuestos por mujeres y hombres);
+- Facilitar el consenso sobre los objetivos, las necesidades de información, el alcance del ejercicio, el plan de análisis de datos, las modalidades de intercambio de datos y el plan de diseminación;
+- Negociar con actores que tengan datos secundarios relevantes que pueden contribuir al análisis;
+- Movilización de recursos financieros, materiales y logísticos;
+- Planificación y movilización de recursos humanos adicionales en diferentes etapas de la implementación de la evaluación (por ejemplo, recolección de datos de campo, análisis, limpieza de datos, etc.);
+- Alentar a las partes interesadas y, cuando corresponda, al gobierno a participar en la evaluación;
+- Establecer contactos con actores externos y personas de interés para gestionar sus expectativas en torno a los resultados de la evaluación y garantizar la aceptación y la propiedad de la evaluación;
+- Promover y garantizar el uso de la información para la toma de decisiones y la planificación de respuestas. El coordinador trabajará con equipos multidisciplinarios y expertos del sector/grupo y puede contar con el apoyo de especialistas en gestión de la información, como aquellos con experiencia en análisis de datos, informes, SIG y/o estadísticas (si se requiere un muestreo representativo).
+
+En [este enlace](https://drive.google.com/open?id=12oDJJF-cS6WX_lnXTXW6MyyJXJWPz1-j) se encuentra un ejemplo de términos de referencia para al establecimiento de un **grupo de trabajo para coordinación de evaluaciones**.

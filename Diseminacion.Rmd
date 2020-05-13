@@ -1,0 +1,51 @@
+---
+title: "Diseminación"
+---
+
+```{r options_communes, include=FALSE}
+source("options_communes.R")
+```
+
+
+<div class="important">
+- Utilizar un lenguaje claro y directo en los cuestionarios y evitar utilizar términos demasiado técnicos y ambiguos que no se entiendan fácilmente. Los conceptos que son ambiguos o difíciles de traducir siempre deben venir acompañados de ejemplos contextualizados y estandarizados.
+- Recoger comentarios de los enumeradores sobre los cuestionarios para garantizar que las preguntas estén redactadas de manera inequívoca y entendidas por todos enumeradores.
+- Probar la capacidad de los enumeradores para explicar la terminología y las preguntas y respuestas con sus propias palabras, así como su sensibilidad en términos de género y diversidad. Realizar juegos de rol durante la capacitación de los enumeradores, para que practiquen repetidamente como preguntar y responder, de forma que se garantice la coherencia y la familiaridad con los cuestionarios.
+- Promover definiciones y terminología claras y consistentes en toda la comunidad humanitaria.
+- Realizar cuestionarios piloto con informantes clave o grupos focales para identificar qué preguntas son difíciles de comunicar y / o necesitan revisión.
+</div>
+
+
+
+Para que una evaluación de necesidades sirva a su propósito y tenga un impacto operativo en beneficio de las poblaciones afectadas, los resultados de la evaluación de necesidades deben comunicarse de manera pertinente en el tiempo, publicándolos lo antes posible para que sean relevantes al contexto existente, y de manera efectiva, difundiendo la información a todas las audiencias clave, incluyendo a la población afectada. Consecuentemente, _es fundamental establecer un plan de diseminación de resultados durante la fase de planeación del ejercicio, con audiencias claramente definidas, esquemas de los productos de información que se van a realizar y con los canales de distribución que se van a utilizar._
+
+
+## Diseminación de resultados  
+
+Como primer paso, para poder informar la respuesta rápidamente, se consolidarán los resultados preliminares y se presentarán claramente, junto con la metodología y sus limitaciones a las audiencias clave ([ejemplo](https://www.impact-repository.org/document/reach/340daf41/LBY_RM_MSNA_2019_KeyFindings_ISCG_final.pptx)). En cuanto al informe completode la evaluación, se debe incluir:
+
+- Una definición clara del objetivo y alcance de la evaluación;
+- Una descripción de las poblaciones y las áreas geográficas cubiertas por la evaluación y las fechas en las que tuvo lugar la recopilación de datos;
+- Una descripción detallada sobre las metodologías utilizadas para la recolección de datos, muestreo y limitaciones conocidas;
+- Una descripción del contexto incluyendo el alcance y la escala de la crisis, contexto sociopolítico evolución de los eventos y marcos legales aplicables;
+- Hallazgos, conclusiones y recomendaciones para ayudar a determinar qué acciones de respuesta son requeridas, considerando las dimensiones de género, edad y diversidad;
+- Uso estratégico de información visual, resaltando información clave, incluyendo datos desagregados por género y edad;
+- Descripción de los métodos de análisis utilizados, documentación de suposiciones y como se han alcanzado las conclusiones.
+- Reconocimiento a todas las organizaciones que han participado en el ejercicio.
+
+## Intercambio de datos 
+
+Para promover el intercambio de información, puede ser necesario crear diferentes versiones del informe para cumplir con las _políticas de protección de datos_ que se decidan aplicar, ya sean las de la propia organización que realiza el ejercicio, o en caso de ejercicios conjuntos, como se haya acordado durante la fase de planeación. Para la información recolectada, incluyendo los datos sin procesar, que no se consideran sensibles o no incluyen datos personales de los encuestados, deberían ser compartidos tan ampliamente como sea posible.
+
+Para informar y diseminar los hallazgos de la evaluación, se deben identificar canales de comunicación apropiados para alcanzar a todas las audiencias relevantes. Además de entregar copiar impresas de productos con información clave y del informe, existen muchos canales que permiten diseminar la información electrónicamente. Los más relevantes, para este contexto, son:
+
+- [Plataforma R4V](https://r4v.info/es/situations/platform)
+- [Librería en línea de la OIM](https://publications.iom.int/?language=es)
+- [Portal de datos de ACNUR](https://data2.unhcr.org/es/situations)
+- [Humanitarian Response](https://www.humanitarianresponse.info/es)
+- Listas de correo
+- Páginas web de sectores
+- Medios sociales como Twitter, Facebook, Yammer, etc.
+- Servicios de alojamiento de información en la nube como: Google Drive, Dropbox, SharePoint, etc.
+
+

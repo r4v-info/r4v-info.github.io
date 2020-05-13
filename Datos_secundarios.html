@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+
+<html lang="es" xml:lang="es">
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Datos secundarios</title>
+
+<script src="libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<script src="libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="libs/navigation-1.1/tabsets.js"></script>
+<meta name="robots" content="index, follow">
+<title>IFHS: Integrated Framework for Household Survey</title>
+<link rel="stylesheet" href="./include/conjut.css" />
+<script type="text/javascript" src="./libs/zeroclipboard-2.2.0/ZeroClipboard.js"></script>
+<link rel="stylesheet" href="./libs/colorbox-1.6.1/colorbox.css" />
+<script type="text/javascript" src="./libs/colorbox-1.6.1/jquery.colorbox-min.js"></script>
+<!--- favicon --->
+<link rel="apple-touch-icon" sizes="57x57" href="./images/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="./images/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="./images/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="./images/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="./images/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="./images/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="./images/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="./images/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="./images/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="./images/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+<link rel="manifest" href="./images/favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="./images/favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+<nav>
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Evaluaciones de necesidades conjuntas</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="design" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Planear <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu" id="menu_design">
+                <ul class="multi-column-dropdown">
+                  <li><a href="Objetivo.html">Definir objetivo y alcance</a></li>
+                  <li><a href="Coordinacion.html">Mecanismos de coordinación</a></li>
+                  <li><a href="Subcontratacion.html">Subcontratación de actividades </a></li>
+                </ul>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="collect" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Recolectar <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu" id="menu_collect">
+            <div class="row">
+              <div class="col-sm-8">
+                <ul class="multi-column-dropdown">
+                  <li><a href="Necesidades.html">Necesidades de información</a></li>
+                  <li><a href="Datos_secundarios.html">Datos secundarios</a></li>
+                  <li><a href="Recoleccion_de_datos.html">Recolección de datos</a></li>
+                </ul>
+              </div>
+            </div>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="analyse" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Analisar <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu" id="menu_analyse">
+            <div class="row">
+              <div class="col-sm-8">
+                <ul class="multi-column-dropdown">
+                  <li ><a href="Analisis.html">Extraer conclusiones: Análisis de necesidades</a></li>
+                  <li ><a href="Conjunto.html">Análisis conjunto</a></li>
+                </ul>
+              </div>
+            </div>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="analyse" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Distribuir <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu" id="menu_analyse">
+            <div class="row">
+              <div class="col-sm-8">
+                <ul class="multi-column-dropdown">
+                  <li ><a href="Calidad.html">Revisión de la calidad</a></li>
+                  <li ><a href="Diseminacion.html">Diseminación</a></li>
+                  <li ><a href="Rendicion_de_cuentas.html">Rendición de cuentas a poblaciones afectadas</a></li>
+                </ul>
+              </div>
+            </div>
+          </ul>
+        </li>
+        <li><a href="Evaluaciones_de_Necesidades_Conjuntas.pdf">PDF</a></li>
+      </ul>
+    <form id="rechercher" class="navbar-form navbar-right" role="search" style="padding-top: 5px;" method="get" action="https://tontonroger.org/">
+      <div class="form-group">
+        <input name="q" type="text" class="form-control input-sm" placeholder="Search">
+      </div>
+      <button type="submit" class="btn btn-default btn-sm" name="Search">
+        <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+      </button>
+    </form>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+</nav>
+
+<div class="row">
+
+<div class="col-sm-9" role="main">
+<article>
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Datos secundarios</h1>
+
+</div>
+
+<div id="TOC">
+<ul>
+<li><a href="#paso-1.-localizar-información-relevante">Paso 1. Localizar información relevante</a><ul>
+<li><a href="#información-precrisis">Información precrisis</a></li>
+<li><a href="#información-específica-de-la-crisis">Información específica de la crisis</a></li>
+</ul></li>
+<li><a href="#paso-2.-organizar-los-datos">Paso 2. Organizar los datos</a></li>
+<li><a href="#paso-3.-validación-de-la-información">Paso 3. Validación de la información</a></li>
+<li><a href="#paso-4.-consolidación-de-la-información">Paso 4. Consolidación de la información</a></li>
+<li><a href="#paso-5.-análisis-de-la-información">Paso 5. Análisis de la información</a></li>
+</ul>
+</div>
+
+<div class="important">
+<ul>
+<li>Para evitar la duplicación de evaluaciones de necesidades, se recomienda realizar una revisión exhaustiva de datos secundarios y del registro de evaluaciones al comienzo del proceso de evaluación, para identificar vacíos y necesidades de información.</li>
+<li>Compartir, almacenar y promover el uso de datos e informes a través de la plataforma regional y plataformas nacionales y otro tipo de medios disponibles como HumanitarianResponse, ReliefWeb, etc.</li>
+</ul>
+</div>
+<p>Antes de comenzar a recolectar datos en terreno es fundamental hacer una revisión de los datos ya existentes para evitar la duplicación de esfuerzos y ahorrar tiempo y recursos.</p>
+<p>Los datos secundarios se definen como fuentes de información que han sido recolectadas por otros actores, con propósitos distintos a los de la evaluación que se quiere llevar a cabo.</p>
+<p>Basándose en el plan de análisis de datos (sección 4.3.2), la revisión de datos secundaria establece la información conocida y no conocida sobre una situación concreta y su impacto, incluyendo detalles del volumen y el estado de las poblaciones afectadas y la severidad de sus condiciones humanitarias. La revisión involucra la recolección y análisis de información previa a la crisis y específica de la crisis, estadísticas, demografías y otros datos relevantes.</p>
+<p>Las principales tareas que hay que llevar a cabo durante una revisión de datos secundarios son detalladas a continuación:</p>
+<div id="paso-1.-localizar-información-relevante" class="section level2">
+<h2>Paso 1. Localizar información relevante</h2>
+<p>Localizar informes, conjuntos de datos y productos con análisis de información precrisis y de la crisis. Un registro de evaluaciones es un buen punto de partida, ya que proporciona un listado de los informes, estudios, evaluaciones de necesidades etc. que ya han sido realizados por otros actores. En este <a href="https://r4v.info/es/documents/details/71288">enlace</a> puede consultar el registro de evaluaciones del Grupo Inter agencial sobre Flujos Migratorios Mixtos en Colombia. Por otra parte, se <a href="http://pim.guide/wp-content/uploads/2018/05/Framework-for-Data-Sharing-in-Practice.pdf">puede consultar este documento</a>, el cual provee una guía para establecer un sistema para compartir información.</p>
+<p>Fuentes y ejemplos de información secundaria precrisis y de la crisis_</p>
+<div id="información-precrisis" class="section level3">
+<h3>Información precrisis</h3>
+<ul>
+<li>Oficinas nacionales de estadística, censos y ministerios relevantes</li>
+<li>Planes de operación en el país,</li>
+<li>Indicadores de desarrollo del Banco Mundial</li>
+<li>Perfiles epidemiológicos por país de la Organización Mundial de la Salud</li>
+<li>Análisis situacionales de salud</li>
+<li>Diagnósticos de Planes de desarrollo local</li>
+<li>Datos de Encuestas de Indicadores Múltiples por Conglomerados de UNICEF (MICS)</li>
+<li>Teledetección</li>
+<li>Sociedad civil e informes de agencias de la ONU</li>
+<li>Índice de gestión de riesgos (INFORM)</li>
+<li>Revistas y libros académicos (INASP)</li>
+</ul>
+</div>
+<div id="información-específica-de-la-crisis" class="section level3">
+<h3>Información específica de la crisis</h3>
+<ul>
+<li>Medios nacionales e internacionales</li>
+<li>ReliefWeb</li>
+<li>Intercambio de datos humanitarios (HDX por sus siglas en inglés)</li>
+<li>Conjuntos de datos operativos comunes (CODs por sus siglas en inglés) del IASC</li>
+<li>Noticias IRIN</li>
+<li>Portal de datos y portal de mapas</li>
+<li>Informes de situación de organizaciones de la sociedad civil, incluyendo organizaciones de mujeres y personas LGBTI, gobierno y agencias de la ONU</li>
+<li>Explorador de noticias de European Media Monitoring</li>
+<li>Informes de clúster y entre clústeres, sitios web y reuniones</li>
+<li>Teledetección</li>
+<li>Redes sociales, otros medios, blogs, crowdsourcing</li>
+<li>Redes personales</li>
+<li>Apelaciones de fondos</li>
+<li>3, 4 o 5Ws</li>
+</ul>
+<p>Una vez se han recolectado las fuentes de datos, se deben almacenar de forma que se puedan encontrar fácilmente. Para ello, se recomienda utilizar un formato estandarizado para nombrar archivos, que incluya información sobre el autor, el título del informe, la fecha del informe y cómo se deben tratar los datos según su confidencialidad, por ejemplo: 20181104_GIFMM_EvaluaciónNecesidades_Protegido.</p>
+</div>
+</div>
+<div id="paso-2.-organizar-los-datos" class="section level2">
+<h2>Paso 2. Organizar los datos</h2>
+<p>El siguiente paso consiste en encontrar y organizar el contenido más relevante de toda la información recopilada. Para evitar perderse entre grandes cantidades de información, es importante utilizar una forma sistematizada de etiquetado y almacenamiento de la información.</p>
+<p>Las categorías más comunes de etiquetado incluyen:</p>
+<ul>
+<li><strong>Fuente de información</strong> : Fecha, autor, técnica de recolección de datos.</li>
+<li><strong>Alcance</strong> : áreas geográficas, sectores y grupos afectados.</li>
+<li><strong>Temática</strong> : usar una estructura preexistente de etiquetado, basada en el plan de análisis de datos. Esto es un requerimiento esencial si más de una analista está trabajando en el etiquetado.</li>
+<li><strong>Confidencialidad</strong> : proporcionar detalles sobre si los datos son: abiertos, restringidos, protegidos o confidenciales.</li>
+<li><strong>Confiabilidad de la fuente</strong> : definir si las fuentes son confiables, no confiables, etc. Existen varias técnicas para definir la confiabilidad de los datos, puede encontrar un ejemplo en este <a href="https://en.wikipedia.org/wiki/Intelligence_source_and_information_reliability">enlace</a>.</li>
+</ul>
+<p><em>Tabla 7. Ejemplo de estructura de etiquetado</em></p>
+<table style="width:100%;">
+<colgroup>
+<col width="14%" />
+<col width="14%" />
+<col width="14%" />
+<col width="14%" />
+<col width="14%" />
+<col width="14%" />
+<col width="14%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Fuente</strong></th>
+<th><strong>Fecha</strong></th>
+<th><strong>Área geográfica</strong></th>
+<th><strong>Narrativo</strong></th>
+<th><strong>Sector</strong></th>
+<th><strong>Confiabilidad</strong></th>
+<th><strong>Confidencialidad</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Ministerio</strong>** de Salud**</td>
+<td>Noviembre2019</td>
+<td>Arauca</td>
+<td>En el año 2017, hubo 348 atenciones en migrantes. En el año 2018, hubo 2.083 atenciones en migrantes. En lo que va de año en 2019, van 3.235 atenciones a migrantes. Este es un hospital de segundo nivel que en la actualidad tiene un déficit presupuestal cercano a los 24 mil millones de pesos.</td>
+<td>Salud</td>
+<td>Confiable</td>
+<td>Abierto</td>
+</tr>
+</tbody>
+</table>
+<p>Para el etiquetado y almacenamiento de los datos usualmente se utilizan hojas de cálculo de Excel. Sin embargo, han surgido plataformas más fáciles de utilizar en los últimos años.</p>
+<p><a href="https://beta.thedeep.io/"><strong>DEEP</strong></a> es un software gratuito de código abierto para la revisión colaborativa de datos secundarios y gestión de datos no estructurados. Los usuarios pueden cargar una variedad de fuentes (artículos de noticias, PDF, documentos de Word, etc.) y etiquetarlas usando marcos analíticos personalizados. La información catalogada se puede exportar a Excel o Word junto con la referenciación para su posterior análisis.</p>
+<p>DEEP ha sido utilizado para la realización de revisiones de datos secundarios para la planeación del RMRP 2020 y actualmente contiene proyectos para los siguientes países: Argentina, Aruba, Brasil, Colombia, Chile, Ecuador, Perú, Panamá y Uruguay. El marco de análisis utilizado para guiar el etiquetado de los datos corresponde al marco analítico regional en la sección 4.3.1.</p>
+</div>
+<div id="paso-3.-validación-de-la-información" class="section level2">
+<h2>Paso 3. Validación de la información</h2>
+<p>Después de que se haya sistematizado toda la información, se selecciona la información más útil y confiable utilizando los siguientes criterios:</p>
+<ul>
+<li>Relevancia: ¿Cubre el área geográfica, temática, grupo de población y período de tiempo de interés?</li>
+<li>Nivel de detalle: ¿proporciona el nivel de detalle requerido?</li>
+<li>Comparabilidad: ¿permite la comparación con otros conjuntos de datos importantes para su revisión?</li>
+<li>Confiabilidad: Al observar la fuente de la información y el método utilizado para recopilar la información, ¿es confiable la información? Hay que tener cuidado con la inclusión de datos que provienen de informes sin una descripción detallada de la metodología y el cuestionario.</li>
+</ul>
+<p><em>Tabla 8. Errores comunes en estudios cualitativos y cuantitativos</em></p>
+<table>
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Cuantitativo</strong></th>
+<th><strong>Cualitativo</strong></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Error en el diseño</strong></td>
+<td>¿El marco de muestreo incluye todas las poblaciones de interés? <strong>Ejemplo</strong> : La muestra aleatoria está basada en un listado de hogares de refugiados venezolanos desactualizada y no representativa de las condiciones que enfrentan las nuevas llegadas</td>
+<td>¿El procedimiento de selección de los participantes ha influenciado en los hallazgos? <strong>Ejemplo</strong> : ¿Todos los participantes de un grupo focal fueron seleccionados por líderes comunitarios masculinos? Probablemente la selección de los participantes se ha visto influenciada hacia aquellos que apoyan el liderazgo del líder comunitario.</td>
+</tr>
+</tbody>
+</table>
+<div class="line-block"><strong>Error en la medida</strong> | ¿Están todos los conceptos bien definidos? <strong>Ejemplo:</strong> El resultado de la evaluación seria errónea sí la encuesta está dirigida a hogares y los encuestados no entienden la diferencia entre hogar y una familia. | ¿Cómo fueron las opiniones disidentes motivadas y capturadas? <strong>Ejemplo:</strong> Existe un alto riesgo de que los participantes más influentes lideren la discusión. ¿Se capturaron otras opiniones o solo se expresaron opiniones dominantes? |<br />
+<strong>Error en el procesamiento y medida de los datos</strong> | ¿Las diferencias resaltadas son realmente significativas? Si no hay un estadístico cerca, use calculadoras de intervalos de confianza en línea para verificar los rangos. <strong>Ejemplo</strong> : la diferencia entre 49% y 51% es poco probable que sea significativa, ya que es un reflejo del diseño de la muestra, en lugar de una diferencia en la situación real. | ¿Se extrapolan las conclusiones a toda la población objetivo sin destacar las limitaciones de la muestra no representativa? <strong>Ejemplo</strong> : Los resultados de las discusiones de grupos focales con un pequeño número de mujeres seleccionadas para su participación en un proyecto específico, pueden ser indicativas, pero no representativas de la situación de otras mujeres. |</div>
+</div>
+<div id="paso-4.-consolidación-de-la-información" class="section level2">
+<h2>Paso 4. Consolidación de la información</h2>
+<p>Ahora que toda la información relevante está etiquetada, estructurada y almacenada, es hora de sintetizar los datos cuantitativos y cualitativos. Se deberá consolidar la información resumiendo los hallazgos por área geográfica, grupos de población de interés y / o diferentes temáticas. Se debe comenzar describiendo los conjuntos de datos más grandes y confiables, la situación general, y a continuación, se identificará la información más detallada.</p>
+<p>Posteriormente, proporcionar comparaciones utilizando las categorías de análisis predefinidas. ¿Cómo difieren los resultados, por ejemplo, entre distintas localizaciones, grupos de población o en el tiempo? Se pueden utilizar estándares comunes de emergencia (por ejemplo, estándares Esfera, Manual de Emergencia del ACNUR, Estándares WASH) para poner los hallazgos en perspectiva.</p>
+<p>En los casos en los que la información sea inconsistente o conflictiva, hay dos opciones, incluir la información más confiable y útil, o incluir toda la información y explicar las posibles razones a las que se debe la diferencia entre los resultados.</p>
+</div>
+<div id="paso-5.-análisis-de-la-información" class="section level2">
+<h2>Paso 5. Análisis de la información</h2>
+<p>Una vez que todos los datos han sido consolidados se deberán analizar (ver sección 5), sí es posible en grupos formados por expertos y responsables de tomas de decisión (ver sección 5.1 Análisis conjunto), mediante:</p>
+<ul>
+<li>Explicar las relaciones entre los distintos problemas, observando posibles causas, efectos y factores subyacentes.</li>
+<li>Interpretar los hallazgos priorizando áreas geográficas, grupos poblaciones y necesidades.</li>
+<li>Anticipar lo que podría suceder prediciendo la posible evolución de la crisis.</li>
+</ul>
+<p>Finalmente, el plan de análisis de datos puede ser actualizado con la información más relevante y útil, teniendo en cuenta que, en algunas ocasiones, múltiples fuentes de datos deberán ser combinadas.</p>
+</div>
+
+</article>
+</div>
+
+<div class="col-sm-3" role="complementary">
+<nav class="hidden-print hidden-xs" id="nav_sidebar">
+</nav>
+</div>
+
+</div>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+
+    // active menu
+    href = window.location.pathname;
+    href = href.substr(href.lastIndexOf('/') + 1);
+    if (href=='') href = 'index.html';
+    $('a[href="' + href + '"]').parent().addClass('active');
+    $('a[href="' + href + '"]').parent().parents('li').addClass('active');
+
+    // élargir la page d'accueil
+    if (href=='index.html') $('.col-sm-9').attr('class','col-sm-12');
+
+    // rechercher
+    $("#rechercher").submit(function(event) {
+      $('input[name="q"]').val($('input[name="q"]').val() + ' site:unhcr.github.io/Integrated-framework-household-survey');
+    });
+
+    // sidebar
+    $("#nav_sidebar").append($("#TOC").html());
+    $("#nav_sidebar ul").addClass("nav nav-stacked");
+    $("#TOC").addClass("visible-xs-block");
+    $('body').scrollspy({
+      target: '#nav_sidebar',
+      offset: 40
+    });
+
+    // Identifier les <pre> fermant
+    $('pre').next("*:not(pre)").prev().addClass('last'); // Dernier <pre> de chaque groupe contigu de <pre>
+    $('pre').parent().each(function (){
+      $(this).children('pre').last().addClass('last');
+    }); // Si <pre> est le dernier enfant de son parent
+
+    // Ajout liens rdocumentation et tooltip
+    $("code[data-pkg]").each(function( index ) {
+      pkg = $(this).attr('data-pkg');
+      if ($(this).attr('data-rdoc') !== undefined) {
+        rdocumentation = $(this).attr('data-rdoc');
+      } else {
+        rdocumentation = $(this).text();
+      }
+      fonction = $(this).text();
+      $(this).wrap('<a href="http://www.rdocumentation.org/packages/'+pkg+'/functions/'+rdocumentation+'">');
+      $(this).attr('data-toggle','tooltip');
+      $(this).attr('data-placement','top');
+      $(this).attr('title','package : ' + pkg);
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+
+    $("code.pkg").each(function( index ) {
+      $(this).wrap('<a href="http://www.rdocumentation.org/packages/'+$(this).text()+'">');
+    });
+
+    // Figures
+    $("figure").each(function( index ) {
+      if ($(this).children("figcaption").length > 0)
+        $(this).children("figcaption:first").prepend('<span class="figure-number">Figure '+(index+1)+'.</span> ');
+      else
+        $(this).append($("<figcaption>").append('<span class="figure-number">Figure '+(index+1)+'</span>'));
+    });
+
+    // Colorbox
+    jQuery('article div img').colorbox({
+      maxWidth: '90%',
+      maxHeight: '90%',
+      rel: 'figures',
+      current: "",
+      href: function(){
+        return $(this).attr('src');
+      },
+      title: function(){
+        return $(this).attr('alt');
+      }
+    });
+    jQuery('article div img').css('cursor', 'pointer');
+    jQuery('figure img').colorbox({
+      maxWidth: '90%',
+      maxHeight: '90%',
+      rel: 'figures',
+      current: "",
+      href: function(){
+        return $(this).attr('src');
+      },
+      title: function(){
+        return $(this).parent().children("figcaption").text();
+      }
+    });
+    jQuery('figure img').css('cursor', 'pointer');
+
+    // ZeroClipboard
+    $('pre.r').parent().each(function(){
+      $(this).children('pre.r').first().before('<div class="zero-clipboard hidden-print hidden-xs"><button class="btn-clipboard">Copy</button></div>');
+    }); // Il peut arriver que le pre ne soit pas précédé (cf. figures)
+    $('*:not(pre):not(.zero-clipboard) + pre.r').before('<div class="zero-clipboard hidden-print hidden-xs"><button class="btn-clipboard">Copy</button></div>');
+    $('pre.last').after(function() {
+      if ($(this).hasClass("r")) res = $(this).text(); else res = "";
+      $(this).prevUntil('*:not(pre)','pre.r').each(function() {
+        res = $(this).text() + '\n' + res;
+      });
+      return '<div class="clipboard">' + res + '</div>';
+    });
+    $('.zero-clipboard').each(function(index){
+      $(this).children('.btn-clipboard').attr('data-clipboard-target','clipboard_'+index);
+      $(this).nextAll("div.clipboard").first().attr('id','clipboard_'+index);
+    });
+    var client = new ZeroClipboard( $(".btn-clipboard") );
+    client.on( "ready", function( readyEvent ) {
+      // alert( "ZeroClipboard SWF is ready!" );
+      client.on( "aftercopy", function( event ) {
+        // `this` === `client`
+        // `event.target` === the element that was clicked
+        //event.target.style.display = "none";
+        $(event.target).parent().before('<div class="alert alert-success"><a href="#" class="close" data-dismiss="alert">&times;</a>The <strong>R</strong> code is now copied in your clipboard.</div>');
+      } );
+    } );
+
+});
+</script>
+
+<!-- disqus -->
+<div class="row">
+  <div id="disqus_thread" class="col-sm-9" role="complementary"></div>
+</div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'Integrated-framework-household-survey'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Activate JavaScript to see <a href="http://disqus.com/?ref_noscript">Disqus Comments.</a></noscript>
+    <!--<a href="http://disqus.com" class="dsq-brlink">Comments are hosted by <span class="logo-disqus">Disqus</span>.</a>-->
+
+<footer>
+  <div class="row">
+    <div class="col-lg-12">
+      <p>Powered by <a href="http://www.r-project.org/" rel="nofollow">R</a>, </a><a href="http://www.rstudio.com/" rel="nofollow">RStudio</a>, <a href="http://rmarkdown.rstudio.com/" rel="nofollow">R Markdown</a>, <a href="http://yihui.name/knitr/" rel="nofollow">knitr</a>, <a href="http://pandoc.org/" rel="nofollow">pandoc</a> and <a href="http://www.princexml.com/" rel="nofollow">Prince XML</a>. Hosted by <a href="https://github.com/" rel="nofollow">GitHub</a>.</p>
+    </div>
+  </div>
+</footer>
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+
+</body>
+</html>

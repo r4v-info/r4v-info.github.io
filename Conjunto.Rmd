@@ -1,0 +1,120 @@
+---
+title: "Análisis conjunto"
+---
+
+```{r options_communes, include=FALSE}
+source("options_communes.R")
+```
+
+
+<div class="important">
+Considerar el análisis conjunto y diferenciado como parte integral de cualquier proceso de evaluación.
+</div>
+
+
+
+Esta sección es una guía genérica sobre cómo realizar análisis conjuntos dentro del marco de una evaluación de necesidades, como parte de una planificación para un plan de respuesta o durante un análisis situacional. En general, para cualquier ejercicio que requiera de una reunión de expertos de diferentes sectores y experticias, durante la cual se revise y analice información relevante de la situación humanitaria, siguiendo una estructura y metodología concreta, de forma que se provea un mejor entendimiento de las poblaciones afectadas y defina claramente sus necesidades prioritarias.
+
+Entre las principales ventajas de la realización de análisis conjuntos se pueden encontrar:
+
+- Resultados más completos, robustos y específicos.
+- Mitigación de sesgo.
+- Convencimiento y apropiación ("Buy-in"): Entendimiento colectivo de qué información está disponible y de cómo se puede interpretar, motiva una respuesta coordinada y reduce el número de ejercicios unilaterales que recogen información similar. Además, ayuda a evitar la fatiga de los encuestados y el malgasto de recursos en ejercicios que ya se han realizado y cuyos resultados no se ha logrado compartir.
+- Compromiso institucional: La mayoría de las organizaciones suscritas al sistema global de coordinación humanitaria se han comprometido a realizar evaluaciones utilizando un enfoque coordinado en la recolección y análisis de datos.
+
+A continuación, se describen los principales pasos para la planificación y realización de un análisis conjunto.
+
+## Paso 1. Preparación 
+
+En primer lugar, se deberá _seleccionar a un facilitador_ **.** Se recomienda tener en cuenta las siguientes consideraciones durante la selección del mismo:
+
+- Es una persona conocida y de confianza;
+- Es neutral, no tiene ningún interés particular en el resultado del ejercicio;
+- Es un comunicador efectivo, con experiencia en facilitación de discusiones grupales y capaz de animar a los asistentes a participar, hacer preguntas y desafiar sus propuestas;
+- Idealmente, es un nacional que tiene un buen conocimiento del contexto, o en su lugar un internacional con un conocimiento exhaustivo del contexto.
+
+Por ejemplo, posibles perfiles que se pueden considerar como facilitadores son, coordinadores de plataformas nacionales o coordinadores de sectores o grupos de trabajo, ya que tienen un rol no operacional y experiencia en coordinación y facilitación de dinámicas de grupo.
+
+Una vez seleccionado el facilitador, se debe acordar el objetivo de la sesión. Objetivos posibles suelen ser:
+
+- Ponerse de acuerdo en los hallazgos clave de una evaluación de necesidades conjunta de necesidades.
+- Establecer necesidades de la población y prioridades para un plan de respuesta.
+- Resolver inconsistencias en los datos a través de discusiones e intercambiar/compartir información.
+- Compensar una falta de evidencia con juicios expertos.
+- Promover el análisis diferenciado según los grupos de género, edad y diversidad.
+- Identificar patrones en los datos por ejemplo detectando tendencias.
+- Ponerse de acuerdo en prioridades y en los pasos a seguir.
+- Desarrollar posibles escenarios de cómo podría evolucionar la crisis.
+
+A la hora de _seleccionar a los participantes_, se recomienda tener en cuenta las siguientes consideraciones:
+
+- Limitar el número de participantes de 7 a 15 personas.
+- Los participantes deben ser responsables de la toma de decisiones estratégicas, expertos técnicos o una combinación de ambos. Habrá participación tanto de hombres como de mujeres.
+- Los grupos más productivos son aquellos formados por participantes con habilidades complementarias que tienen experticia en todas las temáticas que son evaluadas y tienen un conocimiento exhaustivo del contexto local, de forma que puedan proporcionar opiniones valiosas sobre los temas de análisis, estar dispuestos y ser capaces de expresar sus opiniones a los demás participantes.
+
+En cuanto a la _invitación_ **,** se recomienda incluir y/o tener en cuenta:
+
+- Objetivo de la sesión, incluyendo el tipo de decisiones que se deben tomar.
+- Si se está realizando un análisis de los hallazgos encontrados por una evaluación: compartir información detallada sobre los objetivos generales de recolección de datos, metodología utilizada y desafíos encontrados durante la recolección de datos.
+- Perfil de los facilitadores y participantes (hombres y mujeres) y sus detalles de contacto. Además, indicar si un participante representa a una organización, un sector u otro foro de coordinación, o solo asiste en capacidad personal.
+- Una explicación breve de que es un ejercicio de análisis conjunto y cómo y que herramientas se van a utilizar para realizar el análisis.
+- Parámetros de la discusión: grupos poblacionales y áreas geográficas.
+- Incentivos para asegurar la participación, como por ejemplo acceso a los datos del ejercicio de evaluación de necesidades, poder influenciar los hallazgos del ejercicio, añadir el logo de la organización en los productos de información resultantes, etc.
+- Si la invitación no es personal, incluir una descripción clara del perfil de los participantes que se necesitan.
+
+Antes de comenzar la sesión de análisis conjunto, para los casos en los que se haga un análisis de los datos recolectados por una evaluación de necesidades, es necesario hacer una limpieza de los datos, identificar patrones y valores atípicos ("outliers") y presentarlos de una forma sencilla y fácilmente entendible por todos los participantes. Esta información y cualquier otra que sea relevante al ejercicio, debe ser compartida con antelación para que los participantes tengan tiempo suficiente para entenderla y asimilarla, y, por otra parte, para ahorrar tiempo durante la sesión.
+
+## Paso 2. Desarrollo de la sesión 
+
+Un análisis conjunto de información consiste principalmente en _compartir información y realizar un análisis y una toma de decisiones conjunta_. Por otro lado, solo se podrá conseguir un análisis robusto si existe un _entendimiento común_ por parte de todas y todos los participantes, sobre los conceptos clave, vacíos de información, confiabilidad de las fuentes de información y sus limitaciones, objetivo de la sesión y la metodología que se va a utilizar.
+
+Puesto que este proceso puede consumir mucho tiempo y esfuerzo, es importante hacer todo lo que sea posible antes de la reunión, y preparar una agenda que asigne tiempos a todas las actividades para evitar el estancamiento en alguna de ellas.
+
+Por otra parte, para motivar la participación y propiciar que se comparta información durante la sesión, se puede convocar la regla de **"** [Chatam House](https://www.chathamhouse.org/chatham-house-rule-faq)", por la cual los participantes tienen el derecho a utilizar la información que reciben, pero no se puede revelar ni la identidad ni la afiliación del orador, ni de ningún otro participante.
+
+Además de lo anterior, hay que tener en cuenta los posibles _sesgos_ que se suelen propiciar durante este tipo de ejercicios, algunos ejemplos son:
+
+- Institucionales, la información es interpretada en beneficio de la organización a la que pertenece el participante.
+- Pensamiento en grupo, los y las participantes prefieren no dar opiniones que difieren de las de mayoría del grupo.
+- Efecto halo, rechazar una opinión simplemente porque a uno o más participantes les disgustan otros participantes o la organización a la que pertenecen.
+
+Una vez que todas y todos los participantes están en la misma página, se puede comenzar a analizar e interpretar la información. Existen varias técnicas para facilitar discusiones grupales, la elección de la técnica es secundaria, el objetivo principal es crear un ambiente estructurado en el que los participantes puede hacer un análisis colectivo. A continuación, se dan algunos ejemplos de técnicas de facilitación.
+
+- **Técnica de la pecera o Fishbowl** es un formato para facilitar la discusión grupal que se puede llevar a cabo de la siguiente forma:
+
+1. Hay que formar un círculo con sillas (tres como mínimo, siete como máximo), en el centro de la sala. Allí se sentarán las y los participantes.
+2. Las y los espectadores se ubicarán en un círculo más grande, alrededor del círculo interior.
+_Ilustración 2. Análisis conjunto utilizando la técnica de la pecera_
+3. El debate se realiza en dos etapas: En la primera fase, la discusión de ideas se desarrolla en el círculo interno, mientras el círculo exterior se mantiene en silencio, escucha y observa. En la segunda fase, el círculo exterior comenta el debate realizado, mientras el círculo interior escucha y recibe la opinión de las y los observadores.
+
+- **Técnica del grupo nominal,** consiste en la generación individual de ideas. Primero, se solicita a todas y todos los participantes que escriban su punto de vista en un papel y lo entreguen al facilitador. A continuación, uno a uno, se discuten en plenaria, o en grupos más pequeños según el número de participantes. La ventaja de esta técnica es que las ideas son compartidas antes de que tenga lugar el debate y, por tanto, se evita que los participantes se vean influenciados por las opiniones del resto.
+
+- **Técnica del árbol de problemas,** es un método visual que ayuda a identificar los problemas principales y sus consecuencias, enfocándose en las relaciones de causa-consecuencia. El árbol representa una versión simplificada de la realidad; el problema principal se representa como el tronco del árbol, las causas del problema como las raíces, y las consecuencias las ramas.
+
+- **Abogado del diablo,** consiste en la asignación de uno o más participantes, o del facilitador, para que se encargue de desafiar regularmente las ideas predominantes que surgen durante el debate, proveyendo ejemplos contradictorios. Esta estrategia puede demostrar debilidades en la lógica de lo propuesto o por el contrario reforzarlo.
+
+- **Phillips 66,** para obtener en poco tiempo las ideas de quienes participan en un grupo grande, implicando a todas las personas que lo componen, se divide el grupo en subgrupos de 6 personas. Se plantea una pregunta o tema que se debe analizar, y se da 6 minutos al subgrupo para que lleguen a una conclusión. Posteriormente se exponen al plenario los resultados de cada grupo.
+
+_Para más información sobre estas y otras técnicas se pueden consultar los siguientes enlaces:_
+
+- FES América Central – [Taller de técnicas participativas](http://www.fesamericacentral.org/files/fes-america-central/actividades/panama/Actividades_pan/150321_taller_facilitadores/Tecnicas%20Participativas.docx)
+- Proyecto JALDA – [Manual de técnicas participativas](http://www.iirsa.org/admin_iirsa_web/Uploads/Documents/ease_taller08_m6_anexo2.pdf)
+
+## Paso 3. Comparar, priorizar y tomar decisiones 
+
+Durante un análisis conjunto, gran parte de la información resultante es de carácter cualitativo, por ejemplo: "Orientación legal para regularización del estatus de refugiados y migrantes en el país de acogida es la prioridad principal", "mujeres en riesgo de abuso cuando están recogiendo madera". Para poder comparar y priorizar este tipo de información, es muy común utilizar sistemas de clasificación donde los participantes asignan números o descripciones a un problema concreto, área geográfica o grupo poblacional.
+
+A la hora de tomar una decisión, se deben considerar las contribuciones individuales de todos los participantes. Existen principalmente dos métodos para llegar a un consenso, por "comportamiento" o "matemáticamente". En él primero, los participantes mantienen un debate hasta que toman una decisión. Los beneficios de esta técnica son el convencimiento y apropiación de la decisión por parte de todos los participantes, pero pueden ser al mismo tiempo muy desgastante, especialmente, si existe un gran desacuerdo.
+
+En la opción de agregación matemática, se selecciona la opinión mayoritaria o se asignan pesos. Este tipo de técnica es más fácil de implementar y es ampliamente utilizada en el sector humanitario durante la planeación del HNO, RMRP y otros planes de respuesta. Ejemplo escala de severidad OCHA.
+
+Alcanzar un consenso sobre los hallazgos clave, prioridades y/o recomendaciones es el objetivo de cualquier ejercicio de análisis conjunto, pero puede ocurrir que no se alcance un acuerdo, en ese caso, en la Tabla 14 se proponen una serie de métodos alternativos para facilitar la toma de decisiones.
+
+_Tabla 12. Métodos para toma de decisiones en grupo_
+
+| **TOMA DE DECISION** | **VENTAJAS** | **DESVENTAJAS** | **¿CUANDO UTILIZARLA?** |
+| --- | --- | --- | --- |
+| **Consenso absoluto** Todos los participantes se ponen de acuerdo en tomar la misma decisión. | Convencimiento y apropiación por parte de todos los participantes | Requiere gran cantidad de tiempo y recursos | Hay suficiente tiempo disponible para alcanzar un acuerdo |
+| **Consenso modificado** Todos los participantes llegan a un acuerdo, aunque no corresponda con su decisión preferente a nivel individual. | No requiere de un consenso absoluto de todos los participantes. | Llegar a un acuerdo puede afectar a la calidad de la decisión. | Tomar una decisión es más importante que la calidad de la decisión.Los intereses / valores de las partes interesadas impiden un consenso. |
+| **Proceso consultativo** La persona designada para la toma de decisiones toma una decisión una vez todos los participantes hayan proporcionado sus puntos de vista. | Permite una toma de decisión rápidamientras tiene en cuenta las perspectivas de todos los participantes.Se reduce el sesgo producido por la opinión de otros participantes. | Pierde la calidad que se obtiene gracias a la integración de diferentes puntos de vista. | Corto espacio de tiempoEl tomador de decisiones tiene la experiencia y la experticia para tomar la decisión. |
+| **Voto** La decisión seleccionada es la que recibe un número mayor de votos. | Velocidad, Simplicidad Claridad | No captura opiniones discrepantes | Cuando se necesita tomar decisiones rápidamenteCuando existe un gran desacuerdo |

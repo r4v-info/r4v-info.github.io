@@ -1,0 +1,105 @@
+---
+title: ""
+output:
+  html_document:
+    toc: false
+---
+
+```{r options, results='hide', echo=FALSE, message=FALSE, warning=FALSE}
+if (Sys.info()["sysname"] == "Windows") {
+  Sys.setlocale("LC_TIME", "english")
+} else  {
+  Sys.setlocale("LC_TIME", "en_US");
+}
+require(lubridate)
+```
+
+<div class="jumbotron">
+
+<h1>![](images/r4vlogo.png) Evaluaciones de Necesidades Conjuntas<br /></h1>
+<h2>Manual para la implementación</h2>
+<p>Last update : `r I(format(today(), "%e %B %Y"))`</p>
+</div>
+
+
+
+Los continuos acontecimientos políticos, socioeconómicos y de derechos humanos en la República Bolivariana de Venezuela han provocado la salida de más de cuatro millones y medio de personas venezolanas a países vecinos y más lejanos. El éxodo de personas provenientes de Venezuela ya es el más grande en la historia moderna de América Latina y el Caribe e involucra tanto a personas refugiadas como migrantes de Venezuela.
+
+En septiembre de 2018, se creó la Plataforma Regional de Coordinación Inter agencial, liderada por la OIM y el ACNUR, con el objetivo de poder garantizar una respuesta operativa, coherente y coordinada a la crisis venezolana. Siendo fundamental para alcanzar este objetivo, que los programas de respuesta estén alineados con las necesidades inmediatas y prioritarias de las poblaciones afectadas, los ejercicios de evaluación de necesidades deberían estar basados en un ecosistema de ejercicios regulares de análisis conjunto, y evaluaciones de necesidades multisectoriales y sectoriales exhaustivas, armonizadas y acordes con estándares internacionales en materia de género, edad y diversidad.
+
+Realizar análisis conjuntos con más regularidad y cubrir los vacíos de información a través de evaluaciones coordinadas, es una expectativa clave por parte de donantes, agencias de la ONU y gobiernos. "The Grand Bargain", en particular el acuerdo número 5, hace hincapié en la necesidad de utilizar enfoques coordinados para evaluar las necesidades y fortalecer la colaboración entre las organizaciones humanitarias y de desarrollo.Solo en 2019, se realizaron más de 100 evaluaciones de necesidades de personas refugiadas y migrantes de Venezuela en la región, de las cuales se tiene información, y diferentes actores están planeando ejercicios de recolección de datos durante el año 2020. La coordinación de las evaluaciones hasta la fecha es limitada y, como consecuencia, los datos resultantes de las evaluaciones no son comparables, no se comparten de una forma sistemática y, siguen existiendo vacíos de información importantes. Por otro lado, gran parte de las evaluaciones realizadas no cumplen con unos criterios mínimos de calidad.
+
+Con la continuación de la crisis y el incremento en el número de actores respondiendo a la misma, es esencial que nos movamos de un sistema ad hoc de realización de evaluaciones de necesidades, a un enfoque coordinado y coherente en el que la respuesta este basada en una evaluación de necesidades integral, intersectorial, sensible al género y metodológicamente sólida, basada en procesos colaborativos; donde las evaluaciones de necesidades se armonicen para garantizar su compatibilidad, calidad y comparabilidad; y los resultados se compartan de manera oportuna y atendiendo a uno criterios mínimos de calidad.
+
+Considerando lo anteriormente expuesto, se ha desarrollado el presente manual para apoyar, tanto a las organizaciones que forman parte de la [Plataforma de Coordinación para Refugiados y Migrantes de Venezuela](https://r4v.info/es/situations/platform), como a cualquier otra que considere el contenido de este manual relevante, en sus procesos de planificación e implementación de evaluaciones de necesidades conjuntas, para informar correctamente a sus programas de respuesta, mejorar la calidad y la pertinencia de la respuesta, evitar duplicación de esfuerzos y ahorrar recursos.
+
+La proliferación de evaluaciones de necesidades no coordinadas conduce a la duplicación, el desperdicio de recursos y la saturación de las poblaciones afectadas al ser evaluadas en repetidas ocasiones por diferentes organizaciones.
+
+Existen varios documentos que describen el marco global de cooperación , el compromiso de organizaciones y donantes sobre [evaluaciones de necesidades conjuntas en "The Grand Bargain"](https://interagencystandingcommittee.org/improve-joint-and-impartial-needs-assessments) o la "[La guía operacional para evaluaciones coordinadas en crisis humanitarias](https://www.humanitarianresponse.info/sites/www.humanitarianresponse.info/files/documents/files/ops_guidance_finalversion2012_1.pdf#page=8)" de IASC, donde se resalta la "necesidad de establecer un mecanismo interno para la planificación, implementación, análisis y coordinación de evaluaciones sectoriales".
+
+El objetivo de este documento consiste en proveer guías y materiales en español para la planificación e implementación de evaluaciones de necesidades conjuntas y la realización de análisis conjuntos con más regularidad. Además, compartir buenas prácticas y lecciones aprendidas de ejercicios realizados en la región u otros contextos que sean relevantes.
+
+
+
+<div class="note">
+
+Antes de embarcarnos en la planificación de una nueva evaluación, existen una serie principios humanitarios que deber ser considerados y aplicados a lo largo de todo ejercicio de evaluación de necesidades:
+
+- **No hacer daño ("do not harm"):** ninguna evaluación debe tener un impacto negativo en la población visitada y/o entrevistada, siempre se debe tener en cuenta la seguridad de quienes solicitan y brindan información. Las fuentes de información deben protegerse cumpliendo las mejores prácticas en materia de privacidad y confidencialidad y buscando el consentimiento informado. Medidas de protección y prevención deben ser establecidas en las evaluaciones, especialmente en materia de prevención de violencia y discriminación de género.
+- **Datos secundarios:** se deben aprovechar al máximo los datos secundarios disponibles. La recopilación de datos primarios debe centrarse en determinar qué ha cambiado, validar información y cubrir las brechas de información identificadas en la revisión de datos secundarios.
+- **Capturar diversidad:** se deben desagregar los datos por género, edad, etnia, discapacidad, etc. y realizar análisis diferenciados de forma que se puedan comprender las diferentes necesidades, así como los efectos que tiene la crisis en todos los grupos afectados.
+- **Participativo:** las actividades de recopilación de datos deben ser participativas siempre que sea posible, incluyendo a las poblaciones afectadas a lo largo de todo el proceso de la evaluación. La participación activa y segura de mujeres, niñas y niños debe ser promovida en todas las etapas de las evaluaciones de necesidades.
+- **Coordinación:** las actividades de recopilación de datos primarios deben coordinarse y realizarse conjuntamente siempre que sea posible para evitar la duplicación de evaluaciones y la saturación de las poblaciones encuestadas. Esto se puede conseguir a través de evaluaciones conjuntas donde las agencias colaboran para **llevar a cabo el mismo ejercicio de recopilación de datos, o evaluaciones armonizadas con agencias que acuerdan un conjunto mínimo de datos para recopilar, y una metodología estándar para garantizar que la información sea comparable.**
+- **Intercambio y transparencia:** comparta información sobre las evaluaciones planificadas y los resultados de la evaluación lo antes posible, de acuerdo con la estrategia regional de diseminación e intercambio de datos.
+</div>
+
+
+## Table of Contents{#tdm}
+
+
+```{r tdm semi-programmatique, results='hide', message=FALSE, echo=FALSE,  warning=FALSE, include=FALSE, cache=FALSE }
+base_url <- ""
+urls <- paste0(base_url, "index.html")
+
+tdm <- function(section) {
+  require(xml2)
+  res <- "<div class=\"row\">\n"
+  
+  menu <- read_html("include/before_body.html", encoding = "UTF-8")
+  section <- xml_find_first(menu, paste0(".//ul[@id='menu_", section, "']"))
+  sous_sections <- xml_find_all(section, ".//ul")
+  
+  for (ss in sous_sections) {
+    res <- paste0(res, "<div class=\"col-md-4\">\n")
+    titre <- as.character(xml_contents(xml_find_first(ss, ".//li[@class='dropdown-header']")))
+    Encoding(titre) <- "UTF-8"
+    res <- paste0(res, "<p><strong>", titre, "</strong></p>\n")
+    res <- paste0(res, "<div class=\"list-group\">\n")
+    
+    items <- xml_find_all(ss, ".//a")
+    for (item in items) {
+      lien <- xml_attr(item, "href")
+      titre <- as.character(xml_contents(item))
+      Encoding(titre) <- "UTF-8"
+      res <- paste0(res, "<a href=\"", lien,"\" class=\"list-group-item\">", titre, "</a>\n")
+      urls <<- c(urls, paste0(base_url, lien))
+    }
+
+    res <- paste0(res, "</div>\n</div>\n\n")
+  }
+  
+  res <- paste0(res, "</div>")
+  return(res)
+}
+```
+
+### Assessment methodology & form design
+
+```{r, results='asis', echo=FALSE, message=FALSE}
+cat(tdm("design"))
+```
+
+
+
+> Esto documento y las herramientas que lo acompañan no pretenden sustituir a ninguna herramienta y/o metodología existente. Este documento está en continuo desarrollo y mejora. Para cualquier corrección, recomendación, comentario o referencia a material relevante en español, contacten con [Carmen Asenjo](mailto:asenjo@unhcr.org) de ACNUR y [Johan Gonzalez](mailto:jgonzalez@iom.int) de OIM.
+  

@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+
+<html lang="es" xml:lang="es">
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Análisis conjunto</title>
+
+<script src="libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<script src="libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="libs/navigation-1.1/tabsets.js"></script>
+<meta name="robots" content="index, follow">
+<title>IFHS: Integrated Framework for Household Survey</title>
+<link rel="stylesheet" href="./include/conjut.css" />
+<script type="text/javascript" src="./libs/zeroclipboard-2.2.0/ZeroClipboard.js"></script>
+<link rel="stylesheet" href="./libs/colorbox-1.6.1/colorbox.css" />
+<script type="text/javascript" src="./libs/colorbox-1.6.1/jquery.colorbox-min.js"></script>
+<!--- favicon --->
+<link rel="apple-touch-icon" sizes="57x57" href="./images/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="./images/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="./images/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="./images/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="./images/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="./images/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="./images/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="./images/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="./images/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="./images/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+<link rel="manifest" href="./images/favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="./images/favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+<nav>
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Evaluaciones de necesidades conjuntas</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="design" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Planear <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu" id="menu_design">
+                <ul class="multi-column-dropdown">
+                  <li><a href="Objetivo.html">Definir objetivo y alcance</a></li>
+                  <li><a href="Coordinacion.html">Mecanismos de coordinación</a></li>
+                  <li><a href="Subcontratacion.html">Subcontratación de actividades </a></li>
+                </ul>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="collect" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Recolectar <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu" id="menu_collect">
+            <div class="row">
+              <div class="col-sm-8">
+                <ul class="multi-column-dropdown">
+                  <li><a href="Necesidades.html">Necesidades de información</a></li>
+                  <li><a href="Datos_secundarios.html">Datos secundarios</a></li>
+                  <li><a href="Recoleccion_de_datos.html">Recolección de datos</a></li>
+                </ul>
+              </div>
+            </div>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="analyse" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Analisar <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu" id="menu_analyse">
+            <div class="row">
+              <div class="col-sm-8">
+                <ul class="multi-column-dropdown">
+                  <li ><a href="Analisis.html">Extraer conclusiones: Análisis de necesidades</a></li>
+                  <li ><a href="Conjunto.html">Análisis conjunto</a></li>
+                </ul>
+              </div>
+            </div>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="analyse" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Distribuir <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu" id="menu_analyse">
+            <div class="row">
+              <div class="col-sm-8">
+                <ul class="multi-column-dropdown">
+                  <li ><a href="Calidad.html">Revisión de la calidad</a></li>
+                  <li ><a href="Diseminacion.html">Diseminación</a></li>
+                  <li ><a href="Rendicion_de_cuentas.html">Rendición de cuentas a poblaciones afectadas</a></li>
+                </ul>
+              </div>
+            </div>
+          </ul>
+        </li>
+        <li><a href="Evaluaciones_de_Necesidades_Conjuntas.pdf">PDF</a></li>
+      </ul>
+    <form id="rechercher" class="navbar-form navbar-right" role="search" style="padding-top: 5px;" method="get" action="https://tontonroger.org/">
+      <div class="form-group">
+        <input name="q" type="text" class="form-control input-sm" placeholder="Search">
+      </div>
+      <button type="submit" class="btn btn-default btn-sm" name="Search">
+        <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+      </button>
+    </form>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+</nav>
+
+<div class="row">
+
+<div class="col-sm-9" role="main">
+<article>
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Análisis conjunto</h1>
+
+</div>
+
+<div id="TOC">
+<ul>
+<li><a href="#paso-1.-preparación">Paso 1. Preparación</a></li>
+<li><a href="#paso-2.-desarrollo-de-la-sesión">Paso 2. Desarrollo de la sesión</a></li>
+<li><a href="#paso-3.-comparar-priorizar-y-tomar-decisiones">Paso 3. Comparar, priorizar y tomar decisiones</a></li>
+</ul>
+</div>
+
+<div class="important">
+<ul>
+<li><strong>Considerar el análisis conjunto y diferenciado como parte integral de cualquier proceso de evaluación.</strong></li>
+</ul>
+</div>
+<p>Esta sección es una guía genérica sobre cómo realizar análisis conjuntos dentro del marco de una evaluación de necesidades, como parte de una planificación para un plan de respuesta o durante un análisis situacional. En general, para cualquier ejercicio que requiera de una reunión de expertos de diferentes sectores y experticias, durante la cual se revise y analice información relevante de la situación humanitaria, siguiendo una estructura y metodología concreta, de forma que se provea un mejor entendimiento de las poblaciones afectadas y defina claramente sus necesidades prioritarias.</p>
+<p>Entre las principales ventajas de la realización de análisis conjuntos se pueden encontrar:</p>
+<ul>
+<li>Resultados más completos, robustos y específicos.</li>
+<li>Mitigación de sesgo.</li>
+<li>Convencimiento y apropiación (“Buy-in”): Entendimiento colectivo de qué información está disponible y de cómo se puede interpretar, motiva una respuesta coordinada y reduce el número de ejercicios unilaterales que recogen información similar. Además, ayuda a evitar la fatiga de los encuestados y el malgasto de recursos en ejercicios que ya se han realizado y cuyos resultados no se ha logrado compartir.</li>
+<li>Compromiso institucional: La mayoría de las organizaciones suscritas al sistema global de coordinación humanitaria se han comprometido a realizar evaluaciones utilizando un enfoque coordinado en la recolección y análisis de datos.</li>
+</ul>
+<p>A continuación, se describen los principales pasos para la planificación y realización de un análisis conjunto.</p>
+<div id="paso-1.-preparación" class="section level2">
+<h2>Paso 1. Preparación</h2>
+<p>En primer lugar, se deberá <em>seleccionar a un facilitador</em> <strong>.</strong> Se recomienda tener en cuenta las siguientes consideraciones durante la selección del mismo:</p>
+<ul>
+<li>Es una persona conocida y de confianza;</li>
+<li>Es neutral, no tiene ningún interés particular en el resultado del ejercicio;</li>
+<li>Es un comunicador efectivo, con experiencia en facilitación de discusiones grupales y capaz de animar a los asistentes a participar, hacer preguntas y desafiar sus propuestas;</li>
+<li>Idealmente, es un nacional que tiene un buen conocimiento del contexto, o en su lugar un internacional con un conocimiento exhaustivo del contexto.</li>
+</ul>
+<p>Por ejemplo, posibles perfiles que se pueden considerar como facilitadores son, coordinadores de plataformas nacionales o coordinadores de sectores o grupos de trabajo, ya que tienen un rol no operacional y experiencia en coordinación y facilitación de dinámicas de grupo.</p>
+<p>Una vez seleccionado el facilitador, se debe acordar el objetivo de la sesión. Objetivos posibles suelen ser:</p>
+<ul>
+<li>Ponerse de acuerdo en los hallazgos clave de una evaluación de necesidades conjunta de necesidades.</li>
+<li>Establecer necesidades de la población y prioridades para un plan de respuesta.</li>
+<li>Resolver inconsistencias en los datos a través de discusiones e intercambiar/compartir información.</li>
+<li>Compensar una falta de evidencia con juicios expertos.</li>
+<li>Promover el análisis diferenciado según los grupos de género, edad y diversidad.</li>
+<li>Identificar patrones en los datos por ejemplo detectando tendencias.</li>
+<li>Ponerse de acuerdo en prioridades y en los pasos a seguir.</li>
+<li>Desarrollar posibles escenarios de cómo podría evolucionar la crisis.</li>
+</ul>
+<p>A la hora de <em>seleccionar a los participantes</em>, se recomienda tener en cuenta las siguientes consideraciones:</p>
+<ul>
+<li>Limitar el número de participantes de 7 a 15 personas.</li>
+<li>Los participantes deben ser responsables de la toma de decisiones estratégicas, expertos técnicos o una combinación de ambos. Habrá participación tanto de hombres como de mujeres.</li>
+<li>Los grupos más productivos son aquellos formados por participantes con habilidades complementarias que tienen experticia en todas las temáticas que son evaluadas y tienen un conocimiento exhaustivo del contexto local, de forma que puedan proporcionar opiniones valiosas sobre los temas de análisis, estar dispuestos y ser capaces de expresar sus opiniones a los demás participantes.</li>
+</ul>
+<p>En cuanto a la <em>invitación</em> <strong>,</strong> se recomienda incluir y/o tener en cuenta:</p>
+<ul>
+<li>Objetivo de la sesión, incluyendo el tipo de decisiones que se deben tomar.</li>
+<li>Si se está realizando un análisis de los hallazgos encontrados por una evaluación: compartir información detallada sobre los objetivos generales de recolección de datos, metodología utilizada y desafíos encontrados durante la recolección de datos.</li>
+<li>Perfil de los facilitadores y participantes (hombres y mujeres) y sus detalles de contacto. Además, indicar si un participante representa a una organización, un sector u otro foro de coordinación, o solo asiste en capacidad personal.</li>
+<li>Una explicación breve de que es un ejercicio de análisis conjunto y cómo y que herramientas se van a utilizar para realizar el análisis.</li>
+<li>Parámetros de la discusión: grupos poblacionales y áreas geográficas.</li>
+<li>Incentivos para asegurar la participación, como por ejemplo acceso a los datos del ejercicio de evaluación de necesidades, poder influenciar los hallazgos del ejercicio, añadir el logo de la organización en los productos de información resultantes, etc.</li>
+<li>Si la invitación no es personal, incluir una descripción clara del perfil de los participantes que se necesitan.</li>
+</ul>
+<p>Antes de comenzar la sesión de análisis conjunto, para los casos en los que se haga un análisis de los datos recolectados por una evaluación de necesidades, es necesario hacer una limpieza de los datos, identificar patrones y valores atípicos (“outliers”) y presentarlos de una forma sencilla y fácilmente entendible por todos los participantes. Esta información y cualquier otra que sea relevante al ejercicio, debe ser compartida con antelación para que los participantes tengan tiempo suficiente para entenderla y asimilarla, y, por otra parte, para ahorrar tiempo durante la sesión.</p>
+</div>
+<div id="paso-2.-desarrollo-de-la-sesión" class="section level2">
+<h2>Paso 2. Desarrollo de la sesión</h2>
+<p>Un análisis conjunto de información consiste principalmente en <em>compartir información y realizar un análisis y una toma de decisiones conjunta</em>. Por otro lado, solo se podrá conseguir un análisis robusto si existe un <em>entendimiento común</em> por parte de todas y todos los participantes, sobre los conceptos clave, vacíos de información, confiabilidad de las fuentes de información y sus limitaciones, objetivo de la sesión y la metodología que se va a utilizar.</p>
+<p>Puesto que este proceso puede consumir mucho tiempo y esfuerzo, es importante hacer todo lo que sea posible antes de la reunión, y preparar una agenda que asigne tiempos a todas las actividades para evitar el estancamiento en alguna de ellas.</p>
+<p>Por otra parte, para motivar la participación y propiciar que se comparta información durante la sesión, se puede convocar la regla de **“** <a href="https://www.chathamhouse.org/chatham-house-rule-faq">Chatam House</a>”, por la cual los participantes tienen el derecho a utilizar la información que reciben, pero no se puede revelar ni la identidad ni la afiliación del orador, ni de ningún otro participante.</p>
+<p>Además de lo anterior, hay que tener en cuenta los posibles <em>sesgos</em> que se suelen propiciar durante este tipo de ejercicios, algunos ejemplos son:</p>
+<ul>
+<li>Institucionales, la información es interpretada en beneficio de la organización a la que pertenece el participante.</li>
+<li>Pensamiento en grupo, los y las participantes prefieren no dar opiniones que difieren de las de mayoría del grupo.</li>
+<li>Efecto halo, rechazar una opinión simplemente porque a uno o más participantes les disgustan otros participantes o la organización a la que pertenecen.</li>
+</ul>
+<p>Una vez que todas y todos los participantes están en la misma página, se puede comenzar a analizar e interpretar la información. Existen varias técnicas para facilitar discusiones grupales, la elección de la técnica es secundaria, el objetivo principal es crear un ambiente estructurado en el que los participantes puede hacer un análisis colectivo. A continuación, se dan algunos ejemplos de técnicas de facilitación.</p>
+<ul>
+<li><strong>Técnica de la pecera o Fishbowl</strong> es un formato para facilitar la discusión grupal que se puede llevar a cabo de la siguiente forma:</li>
+</ul>
+<ol style="list-style-type: decimal">
+<li>Hay que formar un círculo con sillas (tres como mínimo, siete como máximo), en el centro de la sala. Allí se sentarán las y los participantes.</li>
+<li>Las y los espectadores se ubicarán en un círculo más grande, alrededor del círculo interior. <em>Ilustración 2. Análisis conjunto utilizando la técnica de la pecera</em></li>
+<li>El debate se realiza en dos etapas: En la primera fase, la discusión de ideas se desarrolla en el círculo interno, mientras el círculo exterior se mantiene en silencio, escucha y observa. En la segunda fase, el círculo exterior comenta el debate realizado, mientras el círculo interior escucha y recibe la opinión de las y los observadores.</li>
+</ol>
+<ul>
+<li><p><strong>Técnica del grupo nominal,</strong> consiste en la generación individual de ideas. Primero, se solicita a todas y todos los participantes que escriban su punto de vista en un papel y lo entreguen al facilitador. A continuación, uno a uno, se discuten en plenaria, o en grupos más pequeños según el número de participantes. La ventaja de esta técnica es que las ideas son compartidas antes de que tenga lugar el debate y, por tanto, se evita que los participantes se vean influenciados por las opiniones del resto.</p></li>
+<li><p><strong>Técnica del árbol de problemas,</strong> es un método visual que ayuda a identificar los problemas principales y sus consecuencias, enfocándose en las relaciones de causa-consecuencia. El árbol representa una versión simplificada de la realidad; el problema principal se representa como el tronco del árbol, las causas del problema como las raíces, y las consecuencias las ramas.</p></li>
+<li><p><strong>Abogado del diablo,</strong> consiste en la asignación de uno o más participantes, o del facilitador, para que se encargue de desafiar regularmente las ideas predominantes que surgen durante el debate, proveyendo ejemplos contradictorios. Esta estrategia puede demostrar debilidades en la lógica de lo propuesto o por el contrario reforzarlo.</p></li>
+<li><p><strong>Phillips 66,</strong> para obtener en poco tiempo las ideas de quienes participan en un grupo grande, implicando a todas las personas que lo componen, se divide el grupo en subgrupos de 6 personas. Se plantea una pregunta o tema que se debe analizar, y se da 6 minutos al subgrupo para que lleguen a una conclusión. Posteriormente se exponen al plenario los resultados de cada grupo.</p></li>
+</ul>
+<p><em>Para más información sobre estas y otras técnicas se pueden consultar los siguientes enlaces:</em></p>
+<ul>
+<li>FES América Central – <a href="http://www.fesamericacentral.org/files/fes-america-central/actividades/panama/Actividades_pan/150321_taller_facilitadores/Tecnicas%20Participativas.docx">Taller de técnicas participativas</a></li>
+<li>Proyecto JALDA – <a href="http://www.iirsa.org/admin_iirsa_web/Uploads/Documents/ease_taller08_m6_anexo2.pdf">Manual de técnicas participativas</a></li>
+</ul>
+</div>
+<div id="paso-3.-comparar-priorizar-y-tomar-decisiones" class="section level2">
+<h2>Paso 3. Comparar, priorizar y tomar decisiones</h2>
+<p>Durante un análisis conjunto, gran parte de la información resultante es de carácter cualitativo, por ejemplo: “Orientación legal para regularización del estatus de refugiados y migrantes en el país de acogida es la prioridad principal”, “mujeres en riesgo de abuso cuando están recogiendo madera”. Para poder comparar y priorizar este tipo de información, es muy común utilizar sistemas de clasificación donde los participantes asignan números o descripciones a un problema concreto, área geográfica o grupo poblacional.</p>
+<p>A la hora de tomar una decisión, se deben considerar las contribuciones individuales de todos los participantes. Existen principalmente dos métodos para llegar a un consenso, por “comportamiento” o “matemáticamente”. En él primero, los participantes mantienen un debate hasta que toman una decisión. Los beneficios de esta técnica son el convencimiento y apropiación de la decisión por parte de todos los participantes, pero pueden ser al mismo tiempo muy desgastante, especialmente, si existe un gran desacuerdo.</p>
+<p>En la opción de agregación matemática, se selecciona la opinión mayoritaria o se asignan pesos. Este tipo de técnica es más fácil de implementar y es ampliamente utilizada en el sector humanitario durante la planeación del HNO, RMRP y otros planes de respuesta. Ejemplo escala de severidad OCHA.</p>
+<p>Alcanzar un consenso sobre los hallazgos clave, prioridades y/o recomendaciones es el objetivo de cualquier ejercicio de análisis conjunto, pero puede ocurrir que no se alcance un acuerdo, en ese caso, en la Tabla 14 se proponen una serie de métodos alternativos para facilitar la toma de decisiones.</p>
+<p><em>Tabla 12. Métodos para toma de decisiones en grupo</em></p>
+<table>
+<colgroup>
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>TOMA DE DECISION</strong></th>
+<th><strong>VENTAJAS</strong></th>
+<th><strong>DESVENTAJAS</strong></th>
+<th><strong>¿CUANDO UTILIZARLA?</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Consenso absoluto</strong> Todos los participantes se ponen de acuerdo en tomar la misma decisión.</td>
+<td>Convencimiento y apropiación por parte de todos los participantes</td>
+<td>Requiere gran cantidad de tiempo y recursos</td>
+<td>Hay suficiente tiempo disponible para alcanzar un acuerdo</td>
+</tr>
+<tr class="even">
+<td><strong>Consenso modificado</strong> Todos los participantes llegan a un acuerdo, aunque no corresponda con su decisión preferente a nivel individual.</td>
+<td>No requiere de un consenso absoluto de todos los participantes.</td>
+<td>Llegar a un acuerdo puede afectar a la calidad de la decisión.</td>
+<td>Tomar una decisión es más importante que la calidad de la decisión.Los intereses / valores de las partes interesadas impiden un consenso.</td>
+</tr>
+<tr class="odd">
+<td><strong>Proceso consultativo</strong> La persona designada para la toma de decisiones toma una decisión una vez todos los participantes hayan proporcionado sus puntos de vista.</td>
+<td>Permite una toma de decisión rápidamientras tiene en cuenta las perspectivas de todos los participantes.Se reduce el sesgo producido por la opinión de otros participantes.</td>
+<td>Pierde la calidad que se obtiene gracias a la integración de diferentes puntos de vista.</td>
+<td>Corto espacio de tiempoEl tomador de decisiones tiene la experiencia y la experticia para tomar la decisión.</td>
+</tr>
+<tr class="even">
+<td><strong>Voto</strong> La decisión seleccionada es la que recibe un número mayor de votos.</td>
+<td>Velocidad, Simplicidad Claridad</td>
+<td>No captura opiniones discrepantes</td>
+<td>Cuando se necesita tomar decisiones rápidamenteCuando existe un gran desacuerdo</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+</article>
+</div>
+
+<div class="col-sm-3" role="complementary">
+<nav class="hidden-print hidden-xs" id="nav_sidebar">
+</nav>
+</div>
+
+</div>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+
+    // active menu
+    href = window.location.pathname;
+    href = href.substr(href.lastIndexOf('/') + 1);
+    if (href=='') href = 'index.html';
+    $('a[href="' + href + '"]').parent().addClass('active');
+    $('a[href="' + href + '"]').parent().parents('li').addClass('active');
+
+    // élargir la page d'accueil
+    if (href=='index.html') $('.col-sm-9').attr('class','col-sm-12');
+
+    // rechercher
+    $("#rechercher").submit(function(event) {
+      $('input[name="q"]').val($('input[name="q"]').val() + ' site:unhcr.github.io/Integrated-framework-household-survey');
+    });
+
+    // sidebar
+    $("#nav_sidebar").append($("#TOC").html());
+    $("#nav_sidebar ul").addClass("nav nav-stacked");
+    $("#TOC").addClass("visible-xs-block");
+    $('body').scrollspy({
+      target: '#nav_sidebar',
+      offset: 40
+    });
+
+    // Identifier les <pre> fermant
+    $('pre').next("*:not(pre)").prev().addClass('last'); // Dernier <pre> de chaque groupe contigu de <pre>
+    $('pre').parent().each(function (){
+      $(this).children('pre').last().addClass('last');
+    }); // Si <pre> est le dernier enfant de son parent
+
+    // Ajout liens rdocumentation et tooltip
+    $("code[data-pkg]").each(function( index ) {
+      pkg = $(this).attr('data-pkg');
+      if ($(this).attr('data-rdoc') !== undefined) {
+        rdocumentation = $(this).attr('data-rdoc');
+      } else {
+        rdocumentation = $(this).text();
+      }
+      fonction = $(this).text();
+      $(this).wrap('<a href="http://www.rdocumentation.org/packages/'+pkg+'/functions/'+rdocumentation+'">');
+      $(this).attr('data-toggle','tooltip');
+      $(this).attr('data-placement','top');
+      $(this).attr('title','package : ' + pkg);
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+
+    $("code.pkg").each(function( index ) {
+      $(this).wrap('<a href="http://www.rdocumentation.org/packages/'+$(this).text()+'">');
+    });
+
+    // Figures
+    $("figure").each(function( index ) {
+      if ($(this).children("figcaption").length > 0)
+        $(this).children("figcaption:first").prepend('<span class="figure-number">Figure '+(index+1)+'.</span> ');
+      else
+        $(this).append($("<figcaption>").append('<span class="figure-number">Figure '+(index+1)+'</span>'));
+    });
+
+    // Colorbox
+    jQuery('article div img').colorbox({
+      maxWidth: '90%',
+      maxHeight: '90%',
+      rel: 'figures',
+      current: "",
+      href: function(){
+        return $(this).attr('src');
+      },
+      title: function(){
+        return $(this).attr('alt');
+      }
+    });
+    jQuery('article div img').css('cursor', 'pointer');
+    jQuery('figure img').colorbox({
+      maxWidth: '90%',
+      maxHeight: '90%',
+      rel: 'figures',
+      current: "",
+      href: function(){
+        return $(this).attr('src');
+      },
+      title: function(){
+        return $(this).parent().children("figcaption").text();
+      }
+    });
+    jQuery('figure img').css('cursor', 'pointer');
+
+    // ZeroClipboard
+    $('pre.r').parent().each(function(){
+      $(this).children('pre.r').first().before('<div class="zero-clipboard hidden-print hidden-xs"><button class="btn-clipboard">Copy</button></div>');
+    }); // Il peut arriver que le pre ne soit pas précédé (cf. figures)
+    $('*:not(pre):not(.zero-clipboard) + pre.r').before('<div class="zero-clipboard hidden-print hidden-xs"><button class="btn-clipboard">Copy</button></div>');
+    $('pre.last').after(function() {
+      if ($(this).hasClass("r")) res = $(this).text(); else res = "";
+      $(this).prevUntil('*:not(pre)','pre.r').each(function() {
+        res = $(this).text() + '\n' + res;
+      });
+      return '<div class="clipboard">' + res + '</div>';
+    });
+    $('.zero-clipboard').each(function(index){
+      $(this).children('.btn-clipboard').attr('data-clipboard-target','clipboard_'+index);
+      $(this).nextAll("div.clipboard").first().attr('id','clipboard_'+index);
+    });
+    var client = new ZeroClipboard( $(".btn-clipboard") );
+    client.on( "ready", function( readyEvent ) {
+      // alert( "ZeroClipboard SWF is ready!" );
+      client.on( "aftercopy", function( event ) {
+        // `this` === `client`
+        // `event.target` === the element that was clicked
+        //event.target.style.display = "none";
+        $(event.target).parent().before('<div class="alert alert-success"><a href="#" class="close" data-dismiss="alert">&times;</a>The <strong>R</strong> code is now copied in your clipboard.</div>');
+      } );
+    } );
+
+});
+</script>
+
+<!-- disqus -->
+<div class="row">
+  <div id="disqus_thread" class="col-sm-9" role="complementary"></div>
+</div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'Integrated-framework-household-survey'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Activate JavaScript to see <a href="http://disqus.com/?ref_noscript">Disqus Comments.</a></noscript>
+    <!--<a href="http://disqus.com" class="dsq-brlink">Comments are hosted by <span class="logo-disqus">Disqus</span>.</a>-->
+
+<footer>
+  <div class="row">
+    <div class="col-lg-12">
+      <p>Powered by <a href="http://www.r-project.org/" rel="nofollow">R</a>, </a><a href="http://www.rstudio.com/" rel="nofollow">RStudio</a>, <a href="http://rmarkdown.rstudio.com/" rel="nofollow">R Markdown</a>, <a href="http://yihui.name/knitr/" rel="nofollow">knitr</a>, <a href="http://pandoc.org/" rel="nofollow">pandoc</a> and <a href="http://www.princexml.com/" rel="nofollow">Prince XML</a>. Hosted by <a href="https://github.com/" rel="nofollow">GitHub</a>.</p>
+    </div>
+  </div>
+</footer>
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+
+</body>
+</html>

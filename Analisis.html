@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+
+<html lang="es" xml:lang="es">
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Extraer conclusiones: Análisis de necesidades</title>
+
+<script src="libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<script src="libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="libs/navigation-1.1/tabsets.js"></script>
+<meta name="robots" content="index, follow">
+<title>IFHS: Integrated Framework for Household Survey</title>
+<link rel="stylesheet" href="./include/conjut.css" />
+<script type="text/javascript" src="./libs/zeroclipboard-2.2.0/ZeroClipboard.js"></script>
+<link rel="stylesheet" href="./libs/colorbox-1.6.1/colorbox.css" />
+<script type="text/javascript" src="./libs/colorbox-1.6.1/jquery.colorbox-min.js"></script>
+<!--- favicon --->
+<link rel="apple-touch-icon" sizes="57x57" href="./images/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="./images/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="./images/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="./images/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="./images/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="./images/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="./images/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="./images/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="./images/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="./images/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+<link rel="manifest" href="./images/favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="./images/favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+<nav>
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Evaluaciones de necesidades conjuntas</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="design" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Planear <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu" id="menu_design">
+                <ul class="multi-column-dropdown">
+                  <li><a href="Objetivo.html">Definir objetivo y alcance</a></li>
+                  <li><a href="Coordinacion.html">Mecanismos de coordinación</a></li>
+                  <li><a href="Subcontratacion.html">Subcontratación de actividades </a></li>
+                </ul>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="collect" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Recolectar <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu" id="menu_collect">
+            <div class="row">
+              <div class="col-sm-8">
+                <ul class="multi-column-dropdown">
+                  <li><a href="Necesidades.html">Necesidades de información</a></li>
+                  <li><a href="Datos_secundarios.html">Datos secundarios</a></li>
+                  <li><a href="Recoleccion_de_datos.html">Recolección de datos</a></li>
+                </ul>
+              </div>
+            </div>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="analyse" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Analisar <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu" id="menu_analyse">
+            <div class="row">
+              <div class="col-sm-8">
+                <ul class="multi-column-dropdown">
+                  <li ><a href="Analisis.html">Extraer conclusiones: Análisis de necesidades</a></li>
+                  <li ><a href="Conjunto.html">Análisis conjunto</a></li>
+                </ul>
+              </div>
+            </div>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="analyse" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Distribuir <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu" id="menu_analyse">
+            <div class="row">
+              <div class="col-sm-8">
+                <ul class="multi-column-dropdown">
+                  <li ><a href="Calidad.html">Revisión de la calidad</a></li>
+                  <li ><a href="Diseminacion.html">Diseminación</a></li>
+                  <li ><a href="Rendicion_de_cuentas.html">Rendición de cuentas a poblaciones afectadas</a></li>
+                </ul>
+              </div>
+            </div>
+          </ul>
+        </li>
+        <li><a href="Evaluaciones_de_Necesidades_Conjuntas.pdf">PDF</a></li>
+      </ul>
+    <form id="rechercher" class="navbar-form navbar-right" role="search" style="padding-top: 5px;" method="get" action="https://tontonroger.org/">
+      <div class="form-group">
+        <input name="q" type="text" class="form-control input-sm" placeholder="Search">
+      </div>
+      <button type="submit" class="btn btn-default btn-sm" name="Search">
+        <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+      </button>
+    </form>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+</nav>
+
+<div class="row">
+
+<div class="col-sm-9" role="main">
+<article>
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Extraer conclusiones: Análisis de necesidades</h1>
+
+</div>
+
+<div id="TOC">
+<ul>
+<li><a href="#paso-1.-describir">Paso 1. Describir</a></li>
+<li><a href="#paso-2.-explicar">Paso 2. Explicar</a></li>
+<li><a href="#paso-3.-interpretar">Paso 3. Interpretar</a></li>
+<li><a href="#paso-4.-anticipar">Paso 4. Anticipar</a></li>
+</ul>
+</div>
+
+<div class="important">
+<ul>
+<li>La recopilación de datos y los cuestionarios deben diseñarse en base a un plan de análisis (no al revés).</li>
+<li>Compartir información para contribuir a un análisis conjunto y a una comprensión común de la situación y las necesidades existentes.</li>
+</ul>
+</div>
+<p>Una vez finalizada la recolección y limpieza de los datos, comenzaremos con su análisis, el cual estará guiado por el marco analítico y el plan de análisis de datos.</p>
+<p>El análisis de necesidades utiliza enfoques cualitativos y cuantitativos y la combinación de estos dependerá del propósito del ejercicio, la metodología de muestreo aplicada y sus limitaciones. Los objetivos principales de un análisis de necesidades son:</p>
+<ul>
+<li>Describir y entender la severidad de las condiciones de los grupos afectados incluyendo subgrupos de acuerdo con edad, género, otros factores de diversidad o localizaciones;</li>
+<li>Explicar asociaciones y factores subyacentes;</li>
+<li>Identificar y priorizar necesidades, vulnerabilidades y riesgos;</li>
+<li>Predecir la evolución del impacto de la crisis;</li>
+<li>Apoyar la definición y selección de las modalidades más adecuadas de respuesta.</li>
+</ul>
+<p>Los principales pasos durante un análisis de necesidades se describen a continuación y son incrementales, cada uno está basado en el anterior:</p>
+<div id="paso-1.-describir" class="section level2">
+<h2>Paso 1. Describir</h2>
+<p>La descripción de datos consiste en determinar qué información nos pueden revelar los datos tanto cuantitativos, como cualitativos. Este proceso conlleva la agrupación de datos similares, y la agregación de múltiples valores en uno solo. Por ejemplo, el número de admisiones a un centro nutricional puede ser recolectado diariamente y agregado semanalmente.</p>
+<p>Para el análisis de datos cuantitativos se utiliza estadística descriptiva básica, como la mediana, moda o media, la cual organiza, sintetiza y describe información de una manera fácil y rápida. Comúnmente emplea gráficos, cuadros y tablas para representar los valores y facilitar la comprensión de los datos.</p>
+<p>Por otro lado, para el análisis de datos cualitativos se suelen utilizar categorías de análisis superior para agregar la información, por ejemplo, la gran mayoría de los informantes clave mencionaron crecientes enemistades e incidentes entre las personas refugiadas y migrantes, y las comunidades de acogida.</p>
+<p>Una vez se han agregado los datos, estos se compararán para permitir la identificación de similitudes y diferencias entre una o más variables. Al realizar comparaciones, se podrán identificar tendencias, patrones, anomalidades o valores atípicos en los datos, proveyendo las bases para la identificación de información clave. Las comparaciones más utilizadas en los análisis de necesidades son:</p>
+<ul>
+<li>Comparaciones basadas en convenciones y estándares como Esfera, por ejemplo, comparar el estado nutricional medio de niñas y niños venezolanos menores de 5 años en Colombia, con estándares internaciones como Esfera. Si no están disponibles, se suelen utilizar valores de referencia como la media, por ejemplo, la media de acceso a medicinas antes y después de la crisis.</li>
+<li>Geográficas, comparaciones entre distintas provincias, o áreas donde el número de personas refugiadas y migrantes es mayor o menor. También pueden ser extendidas a otro tipo de elementos como el tipo de entorno, rural versus urbano, etc.</li>
+<li>Grupos socioeconómicos y otras comparaciones de diversidad para identificar los distintos niveles de necesidad entre grupos de población afectados.</li>
+<li>Sexo y edad, este tipo de comparaciones son esenciales en todas las evaluaciones de necesidades para entender las diferentes necesidades, prioridades y capacidades de hombres, mujeres, niños y niñas en grupos de edad y género clave.</li>
+<li>Comparaciones de tiempo se utilizan habitualmente como medidas intermedias para mostrar el impacto de la crisis o como medida de evolución de la respuesta.</li>
+</ul>
+<p>Los principales resultados del análisis descriptivo incluyen:</p>
+<ul>
+<li>Los datos secundarios y primarios son agrupados y resumidos basándose en el plan de análisis de datos y categorías preidentificados de análisis, por ejemplo, entornos rurales versus urbanos, etc.</li>
+<li>Comparaciones de resultados basados en características relevantes como áreas geográficas, grupos de población afectados o tiempo, resaltando las similitudes y diferencias.</li>
+<li>Descripción de patrones clave, tendencias, anomalidades y valores atípicos.</li>
+</ul>
+<p><em>Ejemplo escenario: Después de completar con éxito la evaluación conjunta de necesidades multisectoriales que abarca los barrios “X, Y y Z” en los departamentos fronterizos de Colombia seleccionados, el equipo de evaluación está listo para analizar los resultados. En primer lugar, se hará una descripción de los datos recolectados:</em></p>
+<ul>
+<li><strong>Proceso</strong>: Después de la limpieza inicial de los datos de la encuesta de hogares, el analista de datos utiliza el software estadístico R para calcular las frecuencias y promedios básicos, por barrio y grupo de población encuestados. Al mismo tiempo, el analista de datos procesa los datos secundarios relevantes y los etiqueta por tiempo, barrio y grupo._</li>
+<li><strong>Resultado</strong>: el 20% de la población encuestada informa que ha contraído deudas desde su llegada al país, principalmente de prestamistas informales. El 15% de estos hogares no tienen acceso a una fuente regular de ingresos. El 32% de la población de acogida en el barrio X han contraído deudas, en comparación con el 16% en el barrio Y. Es probable que los hogares de mayor tamaño hayan contraído más deudas. Los artículos de prensa informan que las tasas de interés promedio en el área de enfoque alcanzaron el 35%._</li>
+</ul>
+<p><em>Para más información sobre como describir datos y representarlos gráficamente:</em></p>
+<ul>
+<li><strong>ACAPS,</strong> <a href="https://www.acaps.org/sites/acaps/files/resources/files/compared_to_what-analytical_thinking_and_needs_assessment_august_2013.pdf"><strong>Technical Brief: Compared to What. Analytical thinking and Needs assessment, 2013</strong></a></li>
+<li><strong>Financial Times,</strong> <a href="https://github.com/ft-interactive/chart-doctor/tree/master/visual-vocabulary"><strong>Visual Vocabulary</strong></a></li>
+</ul>
+</div>
+<div id="paso-2.-explicar" class="section level2">
+<h2>Paso 2. Explicar</h2>
+<p>Encontrar los problemas y los factores subyacentes que causan un determinado efecto, o entender por qué los problemas causan un efecto y no otro, puede ayudar a explicar por qué los datos dan lugar a ciertas conclusiones y no otras. El análisis exploratorio busca <em>asociaciones, correlaciones y en general conexiones entre observaciones y medidas</em>. Permite identificar los factores subyacentes basándose en una investigación exhaustiva de las relaciones, procesos y mecanismos causales.</p>
+<p>Una <strong>asociación</strong> es cualquier relación, correspondencia, conexión o enlace entre dos o más variables de interés, cuya dependencia puede ser medida y verificada. Se puede decir que existe una asociación entre dos variables, cuando se mueven conjuntamente, pero ninguna de ellas influencia o causa la otra.</p>
+<p>El termino asociación está relacionado con el termino correlación, y los dos implican que una o dos variables varían de acuerdo con un determinado patrón. De cualquier modo, la <strong>correlación</strong> está interesada principalmente en medir el grado por el cual la asociación de las variables se adhiere a un determinado patrón. La correlación es positiva cuando los valores incrementan conjuntamente y negativa cuando un valor incrementa y el otro decrementa. Es importante recordar que por que dos variables tengan una relación estadística, no quiere decir que una es responsable por causar, o por lo que causa la otra.</p>
+<p>La <strong>causalidad</strong> es la relación entre la causa y el efecto, donde un factor causa el otro. Implica identificar la línea base, los eventos, procesos y otros factores intermedios, y los resultados finales, positivos o negativos.</p>
+<p>Los principales resultados de la etapa de análisis exploratorio son:</p>
+<ul>
+<li>Asociaciones y correlaciones entre variables son detectadas y descritas.</li>
+<li>Factores contribuyentes y procesos subyacentes son descritos.</li>
+<li>Factores que mas contribuyen a los resultados son descritos.</li>
+<li>Explicaciones, hipótesis alternativas o rivales son desarrolladas.</li>
+</ul>
+<p><em>Ejemplo escenario: Una vez realizada la descripción de los datos, el equipo se dispone a explicar los resultados:</em></p>
+<ul>
+<li><strong>Proceso</strong>: Los resultados se discuten entre todos los miembros del equipo de evaluación y a continuación se consulta con un experto en medios de vida sobre los posibles factores subyacentes por los que se contraen deudas, mientras que un experto en protección revisa los posibles riesgos asociados con la eliminación de estas deudas._</li>
+<li><strong>Resultado</strong>: Razones por las que se contraen deudas, por qué el barrio X tiene una mayor prevalencia, por qué los hogares de mayor tamaño tienen más probabilidades de haber contraído deudas. Riesgos de protección asociados con la deuda, especialmente para aquellos sin ingresos regulares._</li>
+</ul>
+</div>
+<div id="paso-3.-interpretar" class="section level2">
+<h2>Paso 3. Interpretar</h2>
+<p>La interpretación de datos conlleva ir más allá de los datos y busca darles significado a través de contextualización, uso de la experiencia y selección de los hallazgos más importante que posibilitaran la toma de decisiones.</p>
+<p>La interpretación exige un objetivo claro y un juicio analítico cuidadoso. A menudo los mismos datos pueden ser interpretados de diferentes maneras por diferentes analistas con diferentes niveles de experiencia, sesgos, suposiciones y áreas de enfoque. Para resolver este problema, es útil involucrar a otros socios y partes interesadas en el proceso de análisis, a través de ejercicios de análisis conjunto (ver sección 5.1.).</p>
+<p>Fortalezas y limitaciones de las evidencias que respaldan las conclusiones y el razonamiento detrás de los juicios analíticos, deben evaluarse para detectar posibles fallas en argumentación y establecer la confiabilidad y credibilidad de las conclusiones. Las conclusiones derivadas de supuestos, en lugar de los datos disponibles deben señalarse claramente y comunicarse para evitar cualquier riesgo de interpretación errónea o acusaciones de parcialidad.</p>
+<p>En los casos en que se ha utilizado una muestra aleatoria, la interpretación también implica determinar las condiciones y la medida en que los resultados pueden aplicarse a otros lugares, sectores humanitarios o grupos de población a través de una cuidadosa generalización y extrapolación.</p>
+<p>Incorporar un análisis de género, edad y diversidad permite evitar generalizaciones o sesgos, e identificar las necesidades de manera diferenciada, de tal forma que se visibilice el impacto diferenciado y se mejore la pertinencia de los datos y la respuesta.</p>
+<p>Finalmente, se deben proporcionar recomendaciones operativas sobre los problemas identificados como más severos y de mayor prioridad.</p>
+<p>El siguiente es un conjunto de preguntas que se utilizan con frecuencia al interpretar datos de una evaluación de necesidades:</p>
+<ul>
+<li>¿Qué se aprendió? ¿Cuáles son los resultados? ¿Qué se sabe sobre crisis pasadas y similares en la región, y ¿qué nos dice esto sobre los hallazgos actuales? ¿Son factibles?</li>
+<li>¿Qué hay de nuevo, qué se esperaba y qué ha cambiado desde que comenzó la emergencia? ¿Qué ha permanecido igual cuando todo lo demás ha cambiado?, y ¿por qué la crisis lo cambió? ¿Qué resulta sorprendente? ¿Qué no es sorprendente y no necesita ser presentado o explicado en detalle? Si la situación para ciertos grupos o áreas no empeoraron, ¿por qué no?</li>
+<li>¿Qué es importante o diferente sobre un grupo, tiempo o lugar en comparación con otro? ¿Son consistentes los patrones entre los diferentes grupos y fuentes de información? ¿Tienen sentido? ¿Cómo difiere un área geográfica de otra y por qué? ¿Qué difiere entre hombres y mujeres? ¿Qué tendencias se pueden observar?</li>
+<li>¿Qué condiciones son las más severas? ¿Cuántas personas enfrentan esas condiciones?</li>
+<li>¿Cuáles son los problemas o inquietudes más críticas que deben abordarse a corto, medio y a largo plazo?</li>
+<li>¿Cuál es la fuente de la evidencia? ¿Qué tan creíbles son los hallazgos? ¿Cuáles son las limitaciones del análisis? ¿Podría el azar o el sesgo explicar los resultados? ¿Como se comparan los resultados con otros estudios? ¿Revelan los patrones señales significativas o simplemente representan el “ruido” en los datos? ¿Qué tan grande es la diferencia o cambio en condiciones y comportamiento? ¿Qué diferencias son más grandes que la imprecisión de lo medido?</li>
+<li>¿Qué conclusiones se pueden sacar? ¿Cuáles son los mensajes más importantes? ¿Qué teorías o mecanismos podrían explicar estos hallazgos? ¿Qué hipótesis alternativas se puede sugerir?</li>
+<li>¿Qué falta? ¿Cuál es el siguiente nivel de detalle requerido? ¿Dónde están las brechas de información que persisten? ¿Son esas brechas sobre problemas que no se comprenden bien y donde se necesita investigar? ¿Cuáles son los próximos pasos de investigación?</li>
+</ul>
+<p><em>Ejemplo escenario: Una vez explicadas las conclusiones iniciales, se interpretan los resultados y se realiza una priorización según la gravedad de la situación para los distintos grupos y barrios:</em></p>
+<ul>
+<li><strong>Proceso</strong>: Se realiza una sesión de análisis conjunto de 1 hora con 10 expertos de diferentes sectores y expertos geográficos. La sesión es facilitada por el equipo de evaluación._</li>
+<li><strong>Resultado</strong>: Gravedad de la situación por barrios y grupos de población y selección de los grupos a priorizar._</li>
+</ul>
+<p><em>Para más información sobre cómo interpretar datos:</em></p>
+<ul>
+<li><strong>ACAPS,</strong> <a href="https://reliefweb.int/sites/reliefweb.int/files/resources/h-130827-tb-how-sure-are-you-final.pdf"><strong>Technical brief: How Sure Are You? Judging Quality and Usability of Data Collected During Rapid Needs Assessments, 2013</strong></a></li>
+<li><strong>IASC,</strong> <a href="https://reliefweb.int/sites/reliefweb.int/files/resources/hno_guidance_2015_final.pdf"><strong>Humanitarian Needs Overview Guidance, 2015</strong></a></li>
+</ul>
+</div>
+<div id="paso-4.-anticipar" class="section level2">
+<h2>Paso 4. Anticipar</h2>
+<p>El siguiente nivel en el análisis consiste en la anticipación de desarrollos futuros y prever posibles resultados y evolución de la situación actual, ya que los programas de respuesta se hacen un periodo de tiempo después de haber finalizado el análisis de datos, siendo por lo tanto posible que ciertas condiciones hayan cambiado.</p>
+<p>Los pasos que se suelen tomar para anticipar posibles eventos futuros son:</p>
+<ul>
+<li>Utilizar datos históricos y tendencias para predecir cómo podría evolucionar la situación en el corto y mediano plazo, o si ya se ha producido un cambio desde que se recolectaron los datos. Se deberá considerar el impacto en las necesidades humanitarias y la habilidad para responder a las mismas si no hay cambios significativos en las tendencias.</li>
+<li>Identificar escenarios alternativos en los que podría evolucionar la situación.</li>
+<li>Validar escenarios en grupos durante talleres o reuniones, para evaluar su probabilidad y potencial impacto humanitario, basándose en juicios expertos y comparaciones a eventos similares ocurridos en el pasado.</li>
+<li>Monitorear la situación y comparar los resultados actuales con los resultados que se anticipan. Este paso es importante para mejorar los procedimientos de pronóstico, herramientas y suposiciones para su uso futuro.</li>
+</ul>
+<p><em>Ejemplo escenario: Finalmente, el equipo de evaluación hace un ejercicio para anticipar los posibles escenarios en los que puede evolucionar la situación actual y su impacto sobre los grupos de población:</em></p>
+<ul>
+<li><strong>Proceso</strong>: El equipo de evaluación organiza una sesión de análisis conjunto de 1,5 horas con 10 expertos y expertas de diferentes sectores, incluyendo geografía. La sesión es facilitada por el equipo de evaluación._</li>
+<li><strong>Resultado</strong>: Se desarrollan tres escenarios sobre cómo podría evolucionar la situación en cuanto a medios de vida en los barrios X e Y en los próximos 6 meses, teniendo en cuenta el mercado laboral, la dinámica de desplazamiento y los mecanismos de supervivencia. Los escenarios incluyen el impacto de la situación en el acceso de la población a las necesidades básicas y problemas de protección._</li>
+</ul>
+<p><em>Para más información sobre como describir datos y representarlos gráficamente:</em></p>
+<ul>
+<li><strong>ACAPS,</strong> <a href="https://www.acaps.org/sites/acaps/files/resources/files/acaps_technical_brief_scenario_building_august_2016.pdf"><strong>Technical brief: Scenario Building: How to Build Scenarios in Preparation for or During Humanitarian Crises, 2016</strong></a></li>
+</ul>
+</div>
+
+</article>
+</div>
+
+<div class="col-sm-3" role="complementary">
+<nav class="hidden-print hidden-xs" id="nav_sidebar">
+</nav>
+</div>
+
+</div>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+
+    // active menu
+    href = window.location.pathname;
+    href = href.substr(href.lastIndexOf('/') + 1);
+    if (href=='') href = 'index.html';
+    $('a[href="' + href + '"]').parent().addClass('active');
+    $('a[href="' + href + '"]').parent().parents('li').addClass('active');
+
+    // élargir la page d'accueil
+    if (href=='index.html') $('.col-sm-9').attr('class','col-sm-12');
+
+    // rechercher
+    $("#rechercher").submit(function(event) {
+      $('input[name="q"]').val($('input[name="q"]').val() + ' site:unhcr.github.io/Integrated-framework-household-survey');
+    });
+
+    // sidebar
+    $("#nav_sidebar").append($("#TOC").html());
+    $("#nav_sidebar ul").addClass("nav nav-stacked");
+    $("#TOC").addClass("visible-xs-block");
+    $('body').scrollspy({
+      target: '#nav_sidebar',
+      offset: 40
+    });
+
+    // Identifier les <pre> fermant
+    $('pre').next("*:not(pre)").prev().addClass('last'); // Dernier <pre> de chaque groupe contigu de <pre>
+    $('pre').parent().each(function (){
+      $(this).children('pre').last().addClass('last');
+    }); // Si <pre> est le dernier enfant de son parent
+
+    // Ajout liens rdocumentation et tooltip
+    $("code[data-pkg]").each(function( index ) {
+      pkg = $(this).attr('data-pkg');
+      if ($(this).attr('data-rdoc') !== undefined) {
+        rdocumentation = $(this).attr('data-rdoc');
+      } else {
+        rdocumentation = $(this).text();
+      }
+      fonction = $(this).text();
+      $(this).wrap('<a href="http://www.rdocumentation.org/packages/'+pkg+'/functions/'+rdocumentation+'">');
+      $(this).attr('data-toggle','tooltip');
+      $(this).attr('data-placement','top');
+      $(this).attr('title','package : ' + pkg);
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+
+    $("code.pkg").each(function( index ) {
+      $(this).wrap('<a href="http://www.rdocumentation.org/packages/'+$(this).text()+'">');
+    });
+
+    // Figures
+    $("figure").each(function( index ) {
+      if ($(this).children("figcaption").length > 0)
+        $(this).children("figcaption:first").prepend('<span class="figure-number">Figure '+(index+1)+'.</span> ');
+      else
+        $(this).append($("<figcaption>").append('<span class="figure-number">Figure '+(index+1)+'</span>'));
+    });
+
+    // Colorbox
+    jQuery('article div img').colorbox({
+      maxWidth: '90%',
+      maxHeight: '90%',
+      rel: 'figures',
+      current: "",
+      href: function(){
+        return $(this).attr('src');
+      },
+      title: function(){
+        return $(this).attr('alt');
+      }
+    });
+    jQuery('article div img').css('cursor', 'pointer');
+    jQuery('figure img').colorbox({
+      maxWidth: '90%',
+      maxHeight: '90%',
+      rel: 'figures',
+      current: "",
+      href: function(){
+        return $(this).attr('src');
+      },
+      title: function(){
+        return $(this).parent().children("figcaption").text();
+      }
+    });
+    jQuery('figure img').css('cursor', 'pointer');
+
+    // ZeroClipboard
+    $('pre.r').parent().each(function(){
+      $(this).children('pre.r').first().before('<div class="zero-clipboard hidden-print hidden-xs"><button class="btn-clipboard">Copy</button></div>');
+    }); // Il peut arriver que le pre ne soit pas précédé (cf. figures)
+    $('*:not(pre):not(.zero-clipboard) + pre.r').before('<div class="zero-clipboard hidden-print hidden-xs"><button class="btn-clipboard">Copy</button></div>');
+    $('pre.last').after(function() {
+      if ($(this).hasClass("r")) res = $(this).text(); else res = "";
+      $(this).prevUntil('*:not(pre)','pre.r').each(function() {
+        res = $(this).text() + '\n' + res;
+      });
+      return '<div class="clipboard">' + res + '</div>';
+    });
+    $('.zero-clipboard').each(function(index){
+      $(this).children('.btn-clipboard').attr('data-clipboard-target','clipboard_'+index);
+      $(this).nextAll("div.clipboard").first().attr('id','clipboard_'+index);
+    });
+    var client = new ZeroClipboard( $(".btn-clipboard") );
+    client.on( "ready", function( readyEvent ) {
+      // alert( "ZeroClipboard SWF is ready!" );
+      client.on( "aftercopy", function( event ) {
+        // `this` === `client`
+        // `event.target` === the element that was clicked
+        //event.target.style.display = "none";
+        $(event.target).parent().before('<div class="alert alert-success"><a href="#" class="close" data-dismiss="alert">&times;</a>The <strong>R</strong> code is now copied in your clipboard.</div>');
+      } );
+    } );
+
+});
+</script>
+
+<!-- disqus -->
+<div class="row">
+  <div id="disqus_thread" class="col-sm-9" role="complementary"></div>
+</div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'Integrated-framework-household-survey'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Activate JavaScript to see <a href="http://disqus.com/?ref_noscript">Disqus Comments.</a></noscript>
+    <!--<a href="http://disqus.com" class="dsq-brlink">Comments are hosted by <span class="logo-disqus">Disqus</span>.</a>-->
+
+<footer>
+  <div class="row">
+    <div class="col-lg-12">
+      <p>Powered by <a href="http://www.r-project.org/" rel="nofollow">R</a>, </a><a href="http://www.rstudio.com/" rel="nofollow">RStudio</a>, <a href="http://rmarkdown.rstudio.com/" rel="nofollow">R Markdown</a>, <a href="http://yihui.name/knitr/" rel="nofollow">knitr</a>, <a href="http://pandoc.org/" rel="nofollow">pandoc</a> and <a href="http://www.princexml.com/" rel="nofollow">Prince XML</a>. Hosted by <a href="https://github.com/" rel="nofollow">GitHub</a>.</p>
+    </div>
+  </div>
+</footer>
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+
+</body>
+</html>

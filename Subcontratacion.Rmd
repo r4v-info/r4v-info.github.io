@@ -1,0 +1,90 @@
+---
+title: "Subcontratación de actividades de análisis y evaluación"
+---
+
+```{r options_communes, include=FALSE}
+source("options_communes.R")
+```
+
+
+
+El propósito de esta sección es ofrecer una serie de consideraciones a la hora de decidir si subcontratar una actividad de evaluación y análisis, y, por otro lado, recomendaciones para la elaboración del acuerdo en caso de que se decidida subcontratar las evaluaciones de necesidades u otras actividades de análisis.
+
+
+Cuando una organización se plantee si es necesario y posible subcontratar una evaluación debería tener en cuenta las siguientes consideraciones antes de tomar una decisión:
+
+- ¿Existen otras formas de obtener los mismos o mejores resultados, por ejemplo, a través de evaluaciones conjuntas con socios de la plataforma nacional?
+- ¿Dispone la organización de suficientes recursos? Esto no solo se refiere a recursos financieros, pero también a personal cualificado que pueda hacer un seguimiento adecuado y cercano del proceso, aunque sea subcontratado.
+- ¿El coste que conlleva subcontratar la actividad estaría mejor gastado apoyando un incremento de la capacidad de la organización?
+- ¿Existen realmente socios externos que pueden proporcionar los resultados necesitados y dentro de los tiempos establecidos?
+
+## Evaluar el acuerdo
+
+Si se toma la decisión de externalizar las actividades de evaluación y análisis de necesidades a un actor especializado, se deben tener en consideración las siguientes cuestiones al evaluar una propuesta:
+
+## Creación de capacidad y sostenibilidad dentro de la operación
+
+¿Se capacitará a personal local y/o internacional de la organización como parte del proyecto? Cuando finalice el proyecto, ¿se habrá aumentado la capacidad general de gestión de datos internos dentro de la organización?
+
+## Acuerdos y protocolos para compartir datos
+
+¿Quién será el propietario de los datos recopilados dentro del proyecto? ¿Quién estará autorizado a acceder a los datos? Si otras organizaciones o personas tendrán acceso a los datos, ¿a quién se consultará dentro de la organización antes de compartirlos? ¿Cómo se difundirán los datos?
+
+## Redundancias entre el trabajo propuesto y las capacidades y trabajos existentes dentro de la organización**
+
+¿Parte del trabajo incluido dentro del proyecto ya está ocurriendo dentro de la operación?
+
+## División de responsabilidades
+
+¿Cómo se dividirán las responsabilidades entre la organización y la organización externa propuesta? ¿Qué actividades y responsabilidades serán llevadas a cabo por cada una?
+
+## Integración de sistemas de información
+
+¿El proyecto introducirá sistemas de información adicionales? En caso afirmativo, ¿cómo se relacionarán estos sistemas de información adicionales con los ya existentes dentro de la operación?
+
+## Análisis costo-beneficio
+
+¿Los precios que el subcontratista proporciona para el personal, las actividades y el equipo son similares o inferiores a lo que la organización estima o el subcontratista les ha pedido a otras organizaciones?
+
+## Viabilidad
+
+¿Es factible el proceso propuesto, considerando los recursos y el tiempo presupuestados? ¿Son realistas los plazos para las actividades?
+
+## Experiencia y personal
+
+¿El socio externo tiene experiencia comprobada dentro del país / región, con este tipo de ejercicio de recopilación de datos y con el tamaño del proyecto planificado? ¿Es probable que el personal que la organización planea contratar tenga la capacidad de implementar el acuerdo y esté disponible durante toda la duración del proyecto?
+
+## Cerrar el acuerdo
+
+
+Si se toma la decisión de externalizar las actividades de evaluación y análisis de necesidades a un actor especializado, se aconseja a la organización incluir las siguientes cláusulas, o alguna versión personalizada de las mismas, en el acuerdo o memorando de entendimiento:
+
+## Insumos y resultados:
+
+especifique la lista de insumos a entregar con plazos claros que incluyen (si corresponde):
+  - Términos de referencia de la evaluación junto con un plan de trabajo.
+  - Marco de análisis.
+  - Plan de análisis de datos.
+  - Resultados de la evaluación final:
+    - Conjuntos de datos primarios y secundarios
+    - Registro de datos procesado tanto para datos primarios como secundarios
+    - Informe con hallazgos clave
+    - Herramientas y documentación de guía
+    - Metodología
+    - Lecciones aprendidas
+
+## Propiedad y copyright
+
+  - El/la [nombre de la organización] conserva la propiedad de los datos y tendrá acceso completo en todo momento a una copia actualizada de la base de datos. El/la [nombre de la organización] especificará los formatos en los que el subcontratista proporcionará los datos, incluidos el tipo de archivo y la estructura de datos. Al final del proyecto, el conjunto de datos completo se entregará a el/la [nombre de la organización].
+  - Los datos generados por el proyecto no deben usarse sin permiso en otros proyectos o para fines no autorizados. Además, el subcontratista debe consultar a el/la [nombre de la organización] antes de compartir o publicar información confidencial de protección que surja del proyecto.
+  - El subcontratista compartirá todas las herramientas de evaluación y documentos de orientación utilizados durante el proceso de evaluación y análisis con el/la [nombre de la organización], incluidos, pero no limitado a la metodología, cuestionarios, material de capacitación y plantillas de informes. Tanto el/la [nombre de la organización] como el subcontratista pueden adaptar, compartir y reutilizar el material durante ejercicios similares de evaluación y análisis.
+  - El subcontratista no debe acercarse a donantes adicionales para el proyecto sin notificarlo previamente a el/la [nombre de la organización].
+  - La marca del producto, la identidad visual y el estilo deben estar en línea con los estándares del el/la [nombre de la organización/plataforma/sector], a menos que se acuerde lo contrario.
+
+## Código de conducta:
+
+El subcontratista se compromete a cumplir con el código de conducta de el/la [nombre de la organización]. Los equipos de evaluación recibirán capacitación en los principios de evaluaciones sensibles a la protección, específicamente los principios de no hacer daño, responsabilidad, participación y empoderamiento y acceso significativo.
+  - El subcontratista se compromete a cumplir con los principios rectores referenciados en este documento (ver sección 2)
+  - El subcontratista se compromete a realizar la evaluación en su totalidad, contratando al personal que se necesite sin recurrir a subcontratación de una segunda organización.
+
+## Requerimientos mínimos de calidad:** consultar sección 7 de este documento.

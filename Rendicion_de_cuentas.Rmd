@@ -1,0 +1,26 @@
+---
+title: "Rendición de cuentas a poblaciones afectadas"
+---
+
+```{r options_communes, include=FALSE}
+source("options_communes.R")
+```
+
+
+<div class="important">
+This chapter is not written yet.
+</div>
+
+La rendición de cuentas a las poblaciones afectadas (AAP) puede entenderse como "un compromiso activo de los actores y organizaciones humanitarias para usar el poder de manera responsable teniendo en cuenta, dando cuenta y siendo responsabilizadas por las personas a las que buscan ayudar". Se refiere al uso responsable del poder en la acción humanitaria, combinado con una programación efectiva y de calidad que reconoce la dignidad, la capacidad y las habilidades de las comunidades de interés.
+
+Para integrar la rendición de cuentas a las poblaciones afectadas en procesos de planeación e implementación de evaluaciones de necesidades se recomienda la inclusión de las siguientes acciones, en línea con la [Norma Humanitaria Esencial](https://corehumanitarianstandard.org/files/files/Core%20Humanitarian%20Standard%20-%20Spanish.pdf) en materia de calidad y rendición de cuentas, en concreto con los compromisos 4 y 5:
+
+- Informar a las comunidades antes de empezar la evaluación de necesidades.
+- Capacitar a los enumeradores en el Código de Conducta.
+- Probar exhaustivamente las herramientas de recolección de datos con los miembros de las comunidades.
+- Organizar discusiones separadas y confidenciales con diferentes grupos dentro de la comunidad, incluidos grupos desagregados por género y edad.
+- Permitir a las comunidades expresar sus prioridades y preferencias. Se pueden consultar ejemplos de preguntas para evaluaciones de necesidades multisectoriales que faciliten esta acción en el siguiente enlace: [IASC AAP Question Bank](https://interagencystandingcommittee.org/system/files/reach_iasc_aap_psea_task_team_menu_of_aap_questions_for_needs_assessments_june_2018.pdf).
+- Vincular explícitamente las necesidades evaluadas con la capacidad para responder de las personas afectadas.
+- Compartir hallazgos y planear sesiones de seguimiento con la población afectada en el idioma local con apoyo de traductores según sea necesario.
+
+Para más información sobre conceptos clave para la inclusión de rendición de cuentas a poblaciones afectadas en ejercicios de evaluaciones de necesidades consultar el marco operacional [interagencial para AAP](https://interagencystandingcommittee.org/system/files/legacy_files/AAP%20Operational%20Framework%20Final%20Revision.pdf).
