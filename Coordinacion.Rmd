@@ -8,6 +8,7 @@ source("options_communes.R")
 
 
 <div class="important">
+
 - Establecer procedimientos operativos estándar para ayudar a guiar las actividades de evaluación y análisis a nivel regional y nacional.
 - Coordinar las evaluaciones cuando sea posible para mejorar la coherencia, la calidad y el análisis de los datos y proporcionar mensajes claros a los responsables de la toma de decisiones.
 - Antes de comenzar una evaluación, es importante comunicarse con otros actores que realizan evaluaciones de necesidades en la plataforma regional y plataformas nacionales u otras plataformas de coordinación existentes, para comprobar si las necesidades de información están cubiertas por actividades de evaluación en curso o planeadas.
