@@ -1,0 +1,15 @@
+---
+title: "Evaluación rápida conjunta de necesidades para venezolanos y su comunidad
+  de acogida (72 horas) en situaciones de desplazamiento repentino"
+output: html_document
+---
+
+```{r options_communes, include=FALSE}
+source("options_communes.R")
+```
+El Grupo Inter agencial sobre Flujos Migratorios Mixtos (GIFMM) en Colombia, ha creado la herramienta de Evaluación Conjunta de Necesidades Inicial (ECNI) para población venezolana y comunidades de acogida, la cual puede ser activada cuando se produce un cambio significativo en los eventos, requiriendo de un levantamiento de datos adicional que cubra tanto a personas refugiadas y migrantes de Venezuela como a sus comunidades de acogida. Su objetivo es informar procesos de toma de decisiones para la asignación inmediata de recursos, proporcionando una visión general de las principales necesidades, el número estimado de personas con necesidades y la probable evolución de la crisis en el futuro inmediato. 
+
+Esta herramienta está diseñada para movimientos repentinos y a gran escala de la población, pero puede adaptarse para ser utilizada para otro tipo de eventos repentinos. La evaluación multisectorial de 72 horas cubre todos los sectores según sea relevante, incluyendo Seguridad Alimentaria, Agua, Saneamiento e Higiene, Protección, Salud, Albergue y Elementos no alimentarios. Este proceso es una adaptación del enfoque MIRA de OCHA, NARE de ACNUR y está alineado con otras iniciativas de recopilación de datos existentes, como el Sistema de Monitoreo de Protección del ACNUR y la DTM de la OIM.
+No obstante, se debe tener en cuenta que esta evaluación inicial prioriza la velocidad sobre la exhaustividad. Como resultado, no abordará todos los vacíos de información existentes y no reemplazará las evaluaciones sectoriales exhaustivas, que, en cualquier caso, deberían realizarse tomando como referencia los resultados de este ejercicio.
+
+En este enlace se puede consultar la [herramienta](https://drive.google.com/open?id=1WJFlcCxv9rBiw-BUdhzOODBeR8Pc4S8c)
