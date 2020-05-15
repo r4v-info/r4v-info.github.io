@@ -1,0 +1,121 @@
+
+---
+title: "Lecciones aprendidas"
+output: html_document
+---
+
+```{r options_communes, include=FALSE}
+source("options_communes.R")
+```
+<div class="important">
+En esta sección se dan una serie de recomendaciones clave basadas en lecciones aprendidas a través de otros ejercicios de evaluación de necesidades.
+</div>
+
+## Coordinación de evaluación y análisis 
+
+•	Establecer procedimientos operativos estándar para ayudar a guiar las actividades de evaluación y análisis a nivel regional y nacional.
+
+•	Coordinar las evaluaciones cuando sea posible para mejorar la coherencia, la calidad y el análisis de los datos y proporcionar mensajes claros a los responsables de la toma de decisiones.
+
+•	Antes de comenzar una evaluación, es importante comunicarse con otros actores que realizan evaluaciones de necesidades en la plataforma regional y plataformas nacionales u otras plataformas de coordinación existentes, para comprobar si las necesidades de información están cubiertas por actividades de evaluación en curso o planeadas.
+
+•	Consultar el registro de evaluaciones para comprobar las evaluaciones que están en curso y finalizadas.
+
+•	Definir indicadores clave y ponerlos a disposición de los actores que planean una evaluación de necesidades.
+
+•	Armonizar indicadores para facilitar el análisis entre distintas evaluaciones.
+
+•	Identificar necesidades de información diferenciadas y promover la participación de organizaciones con experticia en género.
+ 
+
+## Cuestionarios dentro de la región** 
+
+•	Definir preguntas de investigación, alcance, vacíos de información y necesidades de información al comienzo del proceso de evaluación. 
+
+•	Limitar cuestionario y longitud de la entrevista. 
+
+•	Centrarse solo en la información necesaria para cumplir con el propósito de la evaluación y en la que se puede obtener de manera confiable y precisa.
+
+•	Revisar con los enumeradores, después de cada ejercicio de recopilación de datos, las preguntas que no funcionaron bien o se han entendido mal.
+
+•	Incorporar variables de género y edad en cuestionarios, así como herramientas diferenciadas según grupos de género, edad y diversidad, por ejemplo, grupos focales de mujeres y cuestionarios en lenguas indígenas.
+
+
+## Análisis
+
+•	Considerar el análisis conjunto y diferenciado como parte integral de cualquier proceso de evaluación.
+
+•	Realizar un plan de análisis desde el principio, asignando suficiente tiempo y recursos para ejercicios de análisis, como talleres de análisis conjuntos, análisis multisectorial y escalas de severidad.
+
+•	La recopilación de datos y los cuestionarios deben diseñarse en base a un plan de análisis (no al revés).
+
+•	Compartir información para contribuir a un análisis conjunto y a una comprensión común de la situación y las necesidades existentes.
+
+
+## Revisión de datos secundarios
+
+•	Para evitar la duplicación de evaluaciones de necesidades, se recomienda realizar una revisión exhaustiva de datos secundarios y del registro de evaluaciones al comienzo del proceso de evaluación, para identificar vacíos y necesidades de información.
+
+•	Compartir, almacenar y promover el uso de datos e informes a través de la plataforma regional y plataformas nacionales y otro tipo de medios disponibles como HumanitarianResponse, ReliefWeb, etc.
+
+
+## Lenguaje y comunicación
+
+•	Utilizar un lenguaje claro y directo en los cuestionarios y evitar utilizar términos demasiado técnicos y ambiguos que no se entiendan fácilmente. Los conceptos que son ambiguos o difíciles de traducir siempre deben venir acompañados de ejemplos contextualizados y estandarizados.
+
+•	Recoger comentarios de los enumeradores sobre los cuestionarios para garantizar que las preguntas estén redactadas de manera inequívoca y entendidas por todos enumeradores.
+
+•	Probar la capacidad de los enumeradores para explicar la terminología y las preguntas y respuestas con sus propias palabras, así como su sensibilidad en términos de género y diversidad.  Realizar juegos de rol durante la capacitación de los enumeradores, para que practiquen repetidamente como preguntar y responder, de forma que se garantice la coherencia y la familiaridad con los cuestionarios.
+
+•	Promover definiciones y terminología claras y consistentes en toda la comunidad humanitaria.
+
+•	Realizar cuestionarios piloto con informantes clave o grupos focales para identificar qué preguntas son difíciles de comunicar y / o necesitan revisión.
+
+
+## Encuestas de hogar
+
+•	Antes de realizar evaluaciones, se recomienda hacer entrevistas con informantes clave y discusiones con grupos focales para identificar a las personas refugiadas y migrantes de Venezuela que deben considerarse para el muestreo.
+
+•	El nivel de representatividad debe estar basado en los objetivos de los programas de respuesta.
+
+## Entrevistas a informantes clave
+
+•	Todos los datos están sesgados. Se debe ser consciente de las limitaciones de las entrevistas con informantes clave y otras personas clave dentro de las estructuras de gobierno. Aunque pueden estar bien informados sobre las necesidades generales en sus respectivas áreas de responsabilidad, puede que no estén al tanto o no estén suficientemente informados sobre los problemas que enfrentan ciertos grupos de población, como mujeres o minorías, y pueden tener razones para distorsionar la información.
+
+•	Diseñar cuestionarios basados en la experiencia de los informantes clave y por tanto la información que pueden proporcionar para evitar perder tiempo haciendo preguntas a las que probablemente darán respuestas poco fiables.
+
+
+## Discusiones de grupos focales
+
+•	Las Discusiones de Grupos Focales (DGF) deben organizarse por grupos de género y edad, de forma que todos los participantes tengan la oportunidad de hablar.
+
+•	Se deben tener en cuenta lugares que no sean obvios, como espacios de reunión para mujeres, centros de salud y escuelas. 
+
+•	Evitar realizar DGF en público para garantizar que los participantes puedan hablar libremente.
+
+•	Limitar el número de participantes.
+
+•	Llevar a cabo DGF o Discusiones de Grupos Comunitarios (DGC) cualitativas, orientadas a la investigación de otras temáticas relevantes, y aprender cómo las comunidades definen con sus propias palabras, sus problemas y necesidades prioritarias.
+
+•	Emplear DGF para desarrollar y evaluar los cuestionarios, de forma que se pueda garantizar que se entienda el lenguaje utilizado en las preguntas y opciones de respuesta. 
+
+•	Los equipos deben contar con información sobre medidas de protección y referencia de casos, por ejemplo, frente a violencia de género, trata de personas, etc.
+
+
+## Encuestas en remoto
+
+•	Incremento en la inconsistencia de la información. Triangular la información con preguntas de confirmación en diferentes secciones de la encuesta o colaborando con informantes clave.
+
+•	Manejar correctamente las expectativas de los encuestados, ya que, al recibir llamadas sin previo aviso, se pueden generar grandes expectativas de que ya fueron elegidos para recibir asistencia. 
+
+•	Evaluar la conectividad de la población es fundamental para elegir los medios de comunicación más apropiados para realizar la encuesta. 
+
+•	Decidir cuidadosamente qué datos pueden obtenerse de informantes clave a nivel comunitario frente a encuestas a nivel de hogar. Puede ser más razonable realizar encuestas a nivel comunitario más frecuentemente que a nivel de hogar.
+
+•	Si no existe capacidad para realizar encuestas telefónicas, las encuestas autoadministradas son otra opción, donde a través de puntos focales en la comunidad se puede difundir la encuesta e incluir el IMEI del teléfono para evitar valores duplicados. 
+
+•	Durante las encuestas autoadministradas se ha evidenciado una importante dificultad en la compresión lectora. Se han encontrado muchas respuestas con adiciones innecesarias, por ejemplo, respondiendo en "otra" la opción que sí aparecía antes. 
+
+
+
+

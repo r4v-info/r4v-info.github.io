@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+
+<html lang="es" xml:lang="es">
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Lecciones aprendidas</title>
+
+<script src="libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<script src="libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="libs/navigation-1.1/tabsets.js"></script>
+<meta name="robots" content="index, follow">
+<title>IFHS: Integrated Framework for Household Survey</title>
+<link rel="stylesheet" href="./include/conjut.css" />
+<script type="text/javascript" src="./libs/zeroclipboard-2.2.0/ZeroClipboard.js"></script>
+<link rel="stylesheet" href="./libs/colorbox-1.6.1/colorbox.css" />
+<script type="text/javascript" src="./libs/colorbox-1.6.1/jquery.colorbox-min.js"></script>
+<!--- favicon --->
+<link rel="apple-touch-icon" sizes="57x57" href="./images/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="./images/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="./images/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="./images/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="./images/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="./images/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="./images/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="./images/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="./images/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="./images/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+<link rel="manifest" href="./images/favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="./images/favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+<nav>
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Evaluaciones de necesidades conjuntas</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="design" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Planear <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu" id="menu_design">
+                <ul class="multi-column-dropdown">
+                  <li><a href="Objetivo.html">Definir objetivo y alcance</a></li>
+                  <li><a href="Coordinacion.html">Mecanismos de coordinación</a></li>
+                  <li><a href="Subcontratacion.html">Subcontratación de actividades </a></li>
+                </ul>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="collect" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Recolectar <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu" id="menu_collect">
+            <div class="row">
+              <div class="col-sm-8">
+                <ul class="multi-column-dropdown">
+                  <li><a href="Necesidades.html">Necesidades de información</a></li>
+                  <li><a href="Datos_secundarios.html">Datos secundarios</a></li>
+                  <li><a href="Recoleccion_de_datos.html">Recolección de datos</a></li>
+                </ul>
+              </div>
+            </div>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="analyse" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Analisar <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu" id="menu_analyse">
+            <div class="row">
+              <div class="col-sm-8">
+                <ul class="multi-column-dropdown">
+                  <li ><a href="Analisis.html">Extraer conclusiones: Análisis de necesidades</a></li>
+                  <li ><a href="Conjunto.html">Análisis conjunto</a></li>
+                </ul>
+              </div>
+            </div>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="analyse" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Distribuir <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu" id="menu_analyse">
+            <div class="row">
+              <div class="col-sm-8">
+                <ul class="multi-column-dropdown">
+                  <li ><a href="Calidad.html">Revisión de la calidad</a></li>
+                  <li ><a href="Diseminacion.html">Diseminación</a></li>
+                  <li ><a href="Rendicion_de_cuentas.html">Rendición de cuentas a poblaciones afectadas</a></li>
+                </ul>
+              </div>
+            </div>
+          </ul>
+        </li>
+        <li><a href="Evaluaciones_de_Necesidades_Conjuntas.pdf">PDF</a></li>
+      </ul>
+    <form id="rechercher" class="navbar-form navbar-right" role="search" style="padding-top: 5px;" method="get" action="https://tontonroger.org/">
+      <div class="form-group">
+        <input name="q" type="text" class="form-control input-sm" placeholder="Search">
+      </div>
+      <button type="submit" class="btn btn-default btn-sm" name="Search">
+        <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+      </button>
+    </form>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+</nav>
+
+<div class="row">
+
+<div class="col-sm-9" role="main">
+<article>
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Lecciones aprendidas</h1>
+
+</div>
+
+<div id="TOC">
+<ul>
+<li><a href="#coordinación-de-evaluación-y-análisis">Coordinación de evaluación y análisis</a></li>
+<li><a href="#cuestionarios-dentro-de-la-región">Cuestionarios dentro de la región**</a></li>
+<li><a href="#análisis">Análisis</a></li>
+<li><a href="#revisión-de-datos-secundarios">Revisión de datos secundarios</a></li>
+<li><a href="#lenguaje-y-comunicación">Lenguaje y comunicación</a></li>
+<li><a href="#encuestas-de-hogar">Encuestas de hogar</a></li>
+<li><a href="#entrevistas-a-informantes-clave">Entrevistas a informantes clave</a></li>
+<li><a href="#discusiones-de-grupos-focales">Discusiones de grupos focales</a></li>
+<li><a href="#encuestas-en-remoto">Encuestas en remoto</a></li>
+</ul>
+</div>
+
+<div class="important">
+<p>En esta sección se dan una serie de recomendaciones clave basadas en lecciones aprendidas a través de otros ejercicios de evaluación de necesidades.</p>
+</div>
+<div id="coordinación-de-evaluación-y-análisis" class="section level2">
+<h2>Coordinación de evaluación y análisis</h2>
+<p>• Establecer procedimientos operativos estándar para ayudar a guiar las actividades de evaluación y análisis a nivel regional y nacional.</p>
+<p>• Coordinar las evaluaciones cuando sea posible para mejorar la coherencia, la calidad y el análisis de los datos y proporcionar mensajes claros a los responsables de la toma de decisiones.</p>
+<p>• Antes de comenzar una evaluación, es importante comunicarse con otros actores que realizan evaluaciones de necesidades en la plataforma regional y plataformas nacionales u otras plataformas de coordinación existentes, para comprobar si las necesidades de información están cubiertas por actividades de evaluación en curso o planeadas.</p>
+<p>• Consultar el registro de evaluaciones para comprobar las evaluaciones que están en curso y finalizadas.</p>
+<p>• Definir indicadores clave y ponerlos a disposición de los actores que planean una evaluación de necesidades.</p>
+<p>• Armonizar indicadores para facilitar el análisis entre distintas evaluaciones.</p>
+<p>• Identificar necesidades de información diferenciadas y promover la participación de organizaciones con experticia en género.</p>
+</div>
+<div id="cuestionarios-dentro-de-la-región" class="section level2">
+<h2>Cuestionarios dentro de la región**</h2>
+<p>• Definir preguntas de investigación, alcance, vacíos de información y necesidades de información al comienzo del proceso de evaluación.</p>
+<p>• Limitar cuestionario y longitud de la entrevista.</p>
+<p>• Centrarse solo en la información necesaria para cumplir con el propósito de la evaluación y en la que se puede obtener de manera confiable y precisa.</p>
+<p>• Revisar con los enumeradores, después de cada ejercicio de recopilación de datos, las preguntas que no funcionaron bien o se han entendido mal.</p>
+<p>• Incorporar variables de género y edad en cuestionarios, así como herramientas diferenciadas según grupos de género, edad y diversidad, por ejemplo, grupos focales de mujeres y cuestionarios en lenguas indígenas.</p>
+</div>
+<div id="análisis" class="section level2">
+<h2>Análisis</h2>
+<p>• Considerar el análisis conjunto y diferenciado como parte integral de cualquier proceso de evaluación.</p>
+<p>• Realizar un plan de análisis desde el principio, asignando suficiente tiempo y recursos para ejercicios de análisis, como talleres de análisis conjuntos, análisis multisectorial y escalas de severidad.</p>
+<p>• La recopilación de datos y los cuestionarios deben diseñarse en base a un plan de análisis (no al revés).</p>
+<p>• Compartir información para contribuir a un análisis conjunto y a una comprensión común de la situación y las necesidades existentes.</p>
+</div>
+<div id="revisión-de-datos-secundarios" class="section level2">
+<h2>Revisión de datos secundarios</h2>
+<p>• Para evitar la duplicación de evaluaciones de necesidades, se recomienda realizar una revisión exhaustiva de datos secundarios y del registro de evaluaciones al comienzo del proceso de evaluación, para identificar vacíos y necesidades de información.</p>
+<p>• Compartir, almacenar y promover el uso de datos e informes a través de la plataforma regional y plataformas nacionales y otro tipo de medios disponibles como HumanitarianResponse, ReliefWeb, etc.</p>
+</div>
+<div id="lenguaje-y-comunicación" class="section level2">
+<h2>Lenguaje y comunicación</h2>
+<p>• Utilizar un lenguaje claro y directo en los cuestionarios y evitar utilizar términos demasiado técnicos y ambiguos que no se entiendan fácilmente. Los conceptos que son ambiguos o difíciles de traducir siempre deben venir acompañados de ejemplos contextualizados y estandarizados.</p>
+<p>• Recoger comentarios de los enumeradores sobre los cuestionarios para garantizar que las preguntas estén redactadas de manera inequívoca y entendidas por todos enumeradores.</p>
+<p>• Probar la capacidad de los enumeradores para explicar la terminología y las preguntas y respuestas con sus propias palabras, así como su sensibilidad en términos de género y diversidad. Realizar juegos de rol durante la capacitación de los enumeradores, para que practiquen repetidamente como preguntar y responder, de forma que se garantice la coherencia y la familiaridad con los cuestionarios.</p>
+<p>• Promover definiciones y terminología claras y consistentes en toda la comunidad humanitaria.</p>
+<p>• Realizar cuestionarios piloto con informantes clave o grupos focales para identificar qué preguntas son difíciles de comunicar y / o necesitan revisión.</p>
+</div>
+<div id="encuestas-de-hogar" class="section level2">
+<h2>Encuestas de hogar</h2>
+<p>• Antes de realizar evaluaciones, se recomienda hacer entrevistas con informantes clave y discusiones con grupos focales para identificar a las personas refugiadas y migrantes de Venezuela que deben considerarse para el muestreo.</p>
+<p>• El nivel de representatividad debe estar basado en los objetivos de los programas de respuesta.</p>
+</div>
+<div id="entrevistas-a-informantes-clave" class="section level2">
+<h2>Entrevistas a informantes clave</h2>
+<p>• Todos los datos están sesgados. Se debe ser consciente de las limitaciones de las entrevistas con informantes clave y otras personas clave dentro de las estructuras de gobierno. Aunque pueden estar bien informados sobre las necesidades generales en sus respectivas áreas de responsabilidad, puede que no estén al tanto o no estén suficientemente informados sobre los problemas que enfrentan ciertos grupos de población, como mujeres o minorías, y pueden tener razones para distorsionar la información.</p>
+<p>• Diseñar cuestionarios basados en la experiencia de los informantes clave y por tanto la información que pueden proporcionar para evitar perder tiempo haciendo preguntas a las que probablemente darán respuestas poco fiables.</p>
+</div>
+<div id="discusiones-de-grupos-focales" class="section level2">
+<h2>Discusiones de grupos focales</h2>
+<p>• Las Discusiones de Grupos Focales (DGF) deben organizarse por grupos de género y edad, de forma que todos los participantes tengan la oportunidad de hablar.</p>
+<p>• Se deben tener en cuenta lugares que no sean obvios, como espacios de reunión para mujeres, centros de salud y escuelas.</p>
+<p>• Evitar realizar DGF en público para garantizar que los participantes puedan hablar libremente.</p>
+<p>• Limitar el número de participantes.</p>
+<p>• Llevar a cabo DGF o Discusiones de Grupos Comunitarios (DGC) cualitativas, orientadas a la investigación de otras temáticas relevantes, y aprender cómo las comunidades definen con sus propias palabras, sus problemas y necesidades prioritarias.</p>
+<p>• Emplear DGF para desarrollar y evaluar los cuestionarios, de forma que se pueda garantizar que se entienda el lenguaje utilizado en las preguntas y opciones de respuesta.</p>
+<p>• Los equipos deben contar con información sobre medidas de protección y referencia de casos, por ejemplo, frente a violencia de género, trata de personas, etc.</p>
+</div>
+<div id="encuestas-en-remoto" class="section level2">
+<h2>Encuestas en remoto</h2>
+<p>• Incremento en la inconsistencia de la información. Triangular la información con preguntas de confirmación en diferentes secciones de la encuesta o colaborando con informantes clave.</p>
+<p>• Manejar correctamente las expectativas de los encuestados, ya que, al recibir llamadas sin previo aviso, se pueden generar grandes expectativas de que ya fueron elegidos para recibir asistencia.</p>
+<p>• Evaluar la conectividad de la población es fundamental para elegir los medios de comunicación más apropiados para realizar la encuesta.</p>
+<p>• Decidir cuidadosamente qué datos pueden obtenerse de informantes clave a nivel comunitario frente a encuestas a nivel de hogar. Puede ser más razonable realizar encuestas a nivel comunitario más frecuentemente que a nivel de hogar.</p>
+<p>• Si no existe capacidad para realizar encuestas telefónicas, las encuestas autoadministradas son otra opción, donde a través de puntos focales en la comunidad se puede difundir la encuesta e incluir el IMEI del teléfono para evitar valores duplicados.</p>
+<p>• Durante las encuestas autoadministradas se ha evidenciado una importante dificultad en la compresión lectora. Se han encontrado muchas respuestas con adiciones innecesarias, por ejemplo, respondiendo en “otra” la opción que sí aparecía antes.</p>
+</div>
+
+</article>
+</div>
+
+<div class="col-sm-3" role="complementary">
+<nav class="hidden-print hidden-xs" id="nav_sidebar">
+</nav>
+</div>
+
+</div>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+
+    // active menu
+    href = window.location.pathname;
+    href = href.substr(href.lastIndexOf('/') + 1);
+    if (href=='') href = 'index.html';
+    $('a[href="' + href + '"]').parent().addClass('active');
+    $('a[href="' + href + '"]').parent().parents('li').addClass('active');
+
+    // élargir la page d'accueil
+    if (href=='index.html') $('.col-sm-9').attr('class','col-sm-12');
+
+    // rechercher
+    $("#rechercher").submit(function(event) {
+      $('input[name="q"]').val($('input[name="q"]').val() + ' site:r4v-info.github.io');
+    });
+
+    // sidebar
+    $("#nav_sidebar").append($("#TOC").html());
+    $("#nav_sidebar ul").addClass("nav nav-stacked");
+    $("#TOC").addClass("visible-xs-block");
+    $('body').scrollspy({
+      target: '#nav_sidebar',
+      offset: 40
+    });
+
+    // Identifier les <pre> fermant
+    $('pre').next("*:not(pre)").prev().addClass('last'); // Dernier <pre> de chaque groupe contigu de <pre>
+    $('pre').parent().each(function (){
+      $(this).children('pre').last().addClass('last');
+    }); // Si <pre> est le dernier enfant de son parent
+
+    // Ajout liens rdocumentation et tooltip
+    $("code[data-pkg]").each(function( index ) {
+      pkg = $(this).attr('data-pkg');
+      if ($(this).attr('data-rdoc') !== undefined) {
+        rdocumentation = $(this).attr('data-rdoc');
+      } else {
+        rdocumentation = $(this).text();
+      }
+      fonction = $(this).text();
+      $(this).wrap('<a href="http://www.rdocumentation.org/packages/'+pkg+'/functions/'+rdocumentation+'">');
+      $(this).attr('data-toggle','tooltip');
+      $(this).attr('data-placement','top');
+      $(this).attr('title','package : ' + pkg);
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+
+    $("code.pkg").each(function( index ) {
+      $(this).wrap('<a href="http://www.rdocumentation.org/packages/'+$(this).text()+'">');
+    });
+
+    // Figures
+    $("figure").each(function( index ) {
+      if ($(this).children("figcaption").length > 0)
+        $(this).children("figcaption:first").prepend('<span class="figure-number">Figure '+(index+1)+'.</span> ');
+      else
+        $(this).append($("<figcaption>").append('<span class="figure-number">Figure '+(index+1)+'</span>'));
+    });
+
+    // Colorbox
+    jQuery('article div img').colorbox({
+      maxWidth: '90%',
+      maxHeight: '90%',
+      rel: 'figures',
+      current: "",
+      href: function(){
+        return $(this).attr('src');
+      },
+      title: function(){
+        return $(this).attr('alt');
+      }
+    });
+    jQuery('article div img').css('cursor', 'pointer');
+    jQuery('figure img').colorbox({
+      maxWidth: '90%',
+      maxHeight: '90%',
+      rel: 'figures',
+      current: "",
+      href: function(){
+        return $(this).attr('src');
+      },
+      title: function(){
+        return $(this).parent().children("figcaption").text();
+      }
+    });
+    jQuery('figure img').css('cursor', 'pointer');
+
+    // ZeroClipboard
+    $('pre.r').parent().each(function(){
+      $(this).children('pre.r').first().before('<div class="zero-clipboard hidden-print hidden-xs"><button class="btn-clipboard">Copy</button></div>');
+    }); // Il peut arriver que le pre ne soit pas précédé (cf. figures)
+    $('*:not(pre):not(.zero-clipboard) + pre.r').before('<div class="zero-clipboard hidden-print hidden-xs"><button class="btn-clipboard">Copy</button></div>');
+    $('pre.last').after(function() {
+      if ($(this).hasClass("r")) res = $(this).text(); else res = "";
+      $(this).prevUntil('*:not(pre)','pre.r').each(function() {
+        res = $(this).text() + '\n' + res;
+      });
+      return '<div class="clipboard">' + res + '</div>';
+    });
+    $('.zero-clipboard').each(function(index){
+      $(this).children('.btn-clipboard').attr('data-clipboard-target','clipboard_'+index);
+      $(this).nextAll("div.clipboard").first().attr('id','clipboard_'+index);
+    });
+    var client = new ZeroClipboard( $(".btn-clipboard") );
+    client.on( "ready", function( readyEvent ) {
+      // alert( "ZeroClipboard SWF is ready!" );
+      client.on( "aftercopy", function( event ) {
+        // `this` === `client`
+        // `event.target` === the element that was clicked
+        //event.target.style.display = "none";
+        $(event.target).parent().before('<div class="alert alert-success"><a href="#" class="close" data-dismiss="alert">&times;</a>The <strong>R</strong> code is now copied in your clipboard.</div>');
+      } );
+    } );
+
+});
+</script>
+
+<!-- disqus -->
+<div class="row">
+  <div id="disqus_thread" class="col-sm-9" role="complementary"></div>
+</div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'https-r4v-info-github-io'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Activate JavaScript to see <a href="http://disqus.com/?ref_noscript">Disqus Comments.</a></noscript>
+    <!--<a href="http://disqus.com" class="dsq-brlink">Comments are hosted by <span class="logo-disqus">Disqus</span>.</a>-->
+
+<footer>
+  <div class="row">
+    <div class="col-lg-12">
+      <p>Powered by <a href="http://www.r-project.org/" rel="nofollow">R</a>, </a><a href="http://www.rstudio.com/" rel="nofollow">RStudio</a>, <a href="http://rmarkdown.rstudio.com/" rel="nofollow">R Markdown</a>, <a href="http://yihui.name/knitr/" rel="nofollow">knitr</a>, <a href="http://pandoc.org/" rel="nofollow">pandoc</a> and <a href="http://www.princexml.com/" rel="nofollow">Prince XML</a>. Hosted by <a href="https://github.com/" rel="nofollow">GitHub</a>.</p>
+    </div>
+  </div>
+</footer>
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+
+</body>
+</html>
