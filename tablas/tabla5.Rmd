@@ -8,8 +8,8 @@ output:
   <caption>Tabla 5. Fuentes y ejemplos de información secundaria precrisis y de la crisis</caption>
   <thead>
     <tr>
-      <th>INFORMACIÓN PRECRISIS</th>
-      <th>INFORMACIÓN ESPECÍFICA DE LA CRISIS</th>
+        <th width="50%">INFORMACIÓN PRECRISIS</th>
+        <th width="50%">INFORMACIÓN ESPECÍFICA DE LA CRISIS</th>
     </tr>
   </thead>
   <tbody>
