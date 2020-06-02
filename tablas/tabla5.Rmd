@@ -1,0 +1,69 @@
+---
+output: 
+  html_document:
+    css: tablas.css
+---
+
+<table class="tabla-basica tabla4 responsive">
+  <caption>Tabla 5. Fuentes y ejemplos de información secundaria precrisis y de la crisis</caption>
+  <thead>
+    <tr>
+      <th>INFORMACIÓN PRECRISIS</th>
+      <th>INFORMACIÓN ESPECÍFICA DE LA CRISIS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+•	Oficinas nacionales de estadística, censos y ministerios relevantes
+
+•	Planes de operación en el país,
+
+•	Indicadores de desarrollo del Banco Mundial
+
+•	Perfiles epidemiológicos por país de la Organización Mundial de la Salud
+
+•	Análisis situacionales de salud
+
+•	Diagnósticos de Planes de desarrollo local
+
+•	Datos de Encuestas de Indicadores Múltiples por Conglomerados de UNICEF (MICS)
+
+•	Teledetección
+
+•	Sociedad civil e informes de agencias de la ONU 
+
+•	Índice de gestión de riesgos (INFORM)
+
+•	Revistas y libros académicos (INASP)
+ </td>
+      <td>
+•	Medios nacionales e internacionales
+
+•	ReliefWeb
+
+•	Intercambio de datos humanitarios (HDX por sus siglas en inglés) 
+
+•	Conjuntos de datos operativos comunes (CODs por sus siglas en inglés) del IASC
+
+•	Noticias IRIN
+
+•	Portal de datos y portal de mapas
+
+•	Informes de situación de organizaciones de la sociedad civil, incluyendo organizaciones
+de mujeres y personas LGBTI, gobierno y agencias de la ONU
+
+•	Explorador de noticias de European Media Monitoring
+
+•	Informes de clúster y entre clústeres, sitios web y reuniones
+
+•	Teledetección
+</td>
+    </tr>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
