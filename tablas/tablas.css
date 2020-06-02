@@ -1,0 +1,53 @@
+/* CSS COMUN A TODAS LAS TABLAS */
+.tabla-basica {
+  width: 100%;
+  font-size: 12px;
+}
+.tabla-basica td, .tabla-basica th  { padding: .5em; text-align: left; border: #fff 1px solid;}
+.tabla-basica tbody tr:nth-child(even) { background: #fff } /* filas pares */
+.tabla-basica tbody tr:nth-child(odd) { background: #E8EDE9} /* filas impares */
+.tabla-basica thead tr:nth-child(1) { background-color: #007179; color:#fff;} /* cabecera */
+.tabla-basica td { vertical-align: top; }
+.tabla-basica.responsive {
+  overflow-y: auto;  /* vertical scroll when height is up 800px */
+  max-height: 800px;
+  display: block;
+}
+/* set vertical text*/
+.tabla-basica .vertical { text-align: center; }
+.tabla-basica .vertical span {
+  writing-mode: vertical-lr;
+  -ms-writing-mode: tb-rl;
+  transform: rotate(180deg)
+}
+/* color a cell as the header*/
+.tabla-basica td.green { background-color: #007179 !important; color:#fff; vertical-align: middle !important; }
+.tabla-basica td.white { background-color: #fff !important;}
+
+
+/* CSS ESPECIFICO PARA LA TABLA 1 */
+.tabla-basica.tabla1 tr td:nth-child(1) { background-color: #007179; color:#fff; vertical-align: middle; }
+
+
+/* CSS ESPECIFICO PARA LA TABLA 2 */
+.tabla-basica.tabla2 { font-size: 11px;}
+.tabla-basica.tabla2 thead tr { height: 180px}
+.tabla-basica.tabla2 td { background: #E8EDE9; }
+.tabla-basica.tabla2 tr th:nth-child(4),
+.tabla-basica.tabla2 tr th:nth-child(5),
+.tabla-basica.tabla2 tr th:nth-child(6),
+.tabla-basica.tabla2 tr th:nth-child(7),
+.tabla-basica.tabla2 tr th:nth-child(8),
+.tabla-basica.tabla2 tr th:nth-child(9),
+.tabla-basica.tabla2 tr th:nth-child(10),
+.tabla-basica.tabla2 tr th:nth-child(11),
+.tabla-basica.tabla2 tr th:nth-child(12) { font-size: 9px; }
+
+
+/* CSS ESPECIFICO PARA LA TABLA 3 */
+.tabla-basica.tabla3 tbody tr {background: #E8EDE9; }
+
+/* CSS ESPECIFICO PARA LA TABLA 4 */
+.tabla-basica.tabla4 td, .tabla-basica.tabla4 th { border-style: none }
+
+
