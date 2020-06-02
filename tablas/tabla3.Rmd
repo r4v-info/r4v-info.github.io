@@ -1,0 +1,341 @@
+---
+output: 
+  html_document:
+    css: tablas.css
+---
+
+<table class="tabla-basica tabla3 responsive">
+  <caption>Tabla 3. Ejemplos de necesidades de información a nivel sectorial del marco de análisis</caption>
+  <thead>
+    <tr>
+      <th>CATEGORIA</th>
+      <th>SUB-CATEGORIA</th>
+      <th>ALOJAMIENTO</th>
+      <th>EDUCACION</th>
+      <th>MEDIOS DE VIDA</th>
+      <th>SALUD</th>
+      <th>SEGURIDAD ALIMENTARI</th>
+      <th>NUTRICION</th>
+      <th>PROTECCION</th>
+      <th>WASH</th>
+      <th>INTER SECTORIAL</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="4"class="green vertical"><span>CONDICIONES HUMANITARIAS</span></td>
+      <td class="green">Acceso a servicios o bienes basicos</td>
+      <td>
+Tipo de alojamiento ocupado
+
+Dificultades para acceder a alojamiento (falta de recursos económicos, xenofobia, homolesbitransfobia, etc.)
+</td>
+      <td>
+Número de niños y niñas que no asisten a educación formal, o no asisten regularmente, durante la temporada escolar
+
+Razones por las que no asisten o no asisten regularmente, diferenciada para niña y para niños
+</td>
+      <td>
+
+% adultos en desempleo (desagregado por sexo y edad)
+
+Principales fuentes de ingresos (para mujeres y hombres)
+
+Dificultades en acceso a empleo formal para mujeres y para hombres.
+</td>
+      <td>
+Acceso al sistema sanitario
+
+Acceso a controles prenatales 
+
+Razones que imposibilitan acceso al sistema de salud y seguridad social (Falta de empleo formal, etc.)
+
+Tasas de lactancia materna, exclusiva y continuada
+
+Acceso a métodos anticonceptivos
+
+Atención clínica de la violencia sexual
+</td>
+      <td>
+Número de comidas consumidas diariamente
+
+Medios de acceso a alimentos para hombres y para mujeres
+</td>
+      <td>Acceso a cantidad, calidad y variedad de alimentos para hombres y para mujeres</td>
+      <td>
+Limitaciones en acceso a servicios de protección para personas sin estatus regular.
+
+Obtención de visas y permisos (documentación)
+
+Número de víctimas de abuso, trata/explotación sexual y laboral, violencia de género
+
+Mujeres en riesgo (viajando solas, etc.)
+
+Comunidad LGTBI, cifras, barreras de acceso a derechos/servicios.
+
+Riesgos de protección para caminantes
+</td>
+      <td>
+Acceso a agua segura y saneamiento en sitios clave de tránsito, asentamientos informales y planificados.
+
+Acceso a servicios de higiene, incluyendo higiene menstrual. 
+</td>
+      <td>
+Problemas para acceder a comprar bienes en un mercado o tienda
+
+Riesgos de protección asociados, como violencia de género, diferenciados para mujeres y hombres.
+</td>
+    </tr>
+    <tr>
+      <td class="green">Bienestar físico y mental</td>
+      <td>Problemas mentales y físicos derivados en las personas en situación de calle</td>
+      <td></td>
+      <td>Estado mental derivado de no encontrar soluciones para subsistencia para responsables del hogar y sus miembros</td>
+      <td>
+Afectaciones en salud con mayor prevalencia
+
+Tasa de mortalidad infantil
+
+Salud física de las mujeres (especialmente embarazadas)  
+
+Enfermedades infecciosas y crónicas
+
+Cifras de mujeres en edad fértil, gestantes y lactantes con diagnóstico de VIH
+</td>
+      <td>Aumento de la morbilidad (hombres y mujeres) como resultado de una dieta insuficiente o inapropiada</td>
+      <td>Signos de malnutrición en niños/as menores de 5 años.</td>
+      <td>Impacto psicosocial y mental derivados del desplazamiento y de la falta de acceso a derechos/servicios básicos</td>
+      <td>Aumento de enfermedades transmitidas por el agua (como resultado de agua insuficiente o de baja calidad)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="green">Mecanismos de afrontamiento</td>
+      <td>
+Hacinamiento (riesgos de violencia de género)
+
+Ocupación del espacio público o de inmuebles privados 
+</td>
+      <td>
+Educación informal a través de personal no cualificado
+
+Enseñanza en el hogar
+</td>
+      <td>
+Mendicidad, explotación laboral, prostitución forzada, sexo por supervivencia
+
+Se establecen fuentes alternativas de ingresos, incluidos los servicios en línea.
+</td>
+      <td>
+Consultas y tratamiento por no profesionales
+
+Toma de medicamentos en mal estado
+</td>
+    <td>
+Reducción en el número de comidas consumidas diariamente
+
+Se comienza a cultivar alimentos en el huerto
+</td>
+<td>
+Cambio de dieta (consumo de comida rápida, falta de variedad en los alimentos, sustitución de alimentos, reducción de las porciones, del número y calidad de comidas al día, prolongación del sueño para evitar el desayuno de los niños y niñas, mujeres ceden su porción de comida a sus hijos e hijas, etc.)</td>
+<td>
+Mendicidad/explotación laboral 
+
+Prostitución forzada/Sexo por supervivencia
+
+Trabajo con grupos ilegales
+
+Abuso de drogas y alcohol
+
+Trabajo infantil
+</td>
+<td>Consumo insuficiente de agua o consumo de agua no segura
+- Disposición de excreta cuando infraestructura de saneamiento no está disponible
+- No disponibilidad de insumos de higiene, incluyendo higiene menstrual
+</td>
+<td>Tomar préstamos abusivos y acudir a sexo por supervivencia para poder pagar las necesidades básicas.</td>
+    </tr>
+    <tr>
+      <td class="green">Personas/Grupos con necesidades específicas</td>
+      <td>
+Niñas y mujeres
+
+Mujeres cabeza de familia
+
+Niños, niñas y adolescentes
+
+Personas con necesidades médicas 
+
+Adultos y adultas mayores
+</td>
+      <td>Niños y niñas con discapacidades</td>
+      <td>
+Adultos y adultas mayores
+
+Jóvenes en edad productiva
+
+Mujeres, niñas y adolescentes
+</td>
+      <td>
+Mujeres embarazadas y en periodo de lactancia
+
+Niños y niñas menores de 5 años
+
+Adultos y adultas mayores
+
+Víctimas /sobrevivientes de violencia de género
+
+NNA
+</td>
+      <td>
+Pueblos indígenas (especialmente mujeres, niñas y niños)
+
+Comunidades remotas
+</td>
+      <td>
+Niños, niñas y adolescentes, en particular menores de 5 años
+
+Adultos y adultas mayores
+
+Personas con necesidades médicas
+</td>
+      <td>
+
+Personas con enfermedades crónicas (incluyendo VIH). 
+
+Pueblos indígenas
+
+Población LGTBI
+
+Personas con discapacidad 
+
+NNA (especial no acompañados)
+
+Mujeres gestantes y en periodo de lactancia
+
+Afrodescendientes (hombres y mujeres)
+
+Adultos y adultas mayores
+</td>
+      <td>
+Mujeres em riesgo: Cabeza de hogar, embarazadas y en periodo de lactancia
+
+Niños, niñas y adolescentes 
+
+Personas con necesidades médicas particulares
+
+Adultos y adultas mayores
+</td>
+      <td>Personas sobrevivientes de violencia de género</td>
+    </tr>
+<tr>
+<tr>
+  <tr>
+    <td rowspan="3"class="green vertical"><span>RESPUESTA</span></td>
+    <td class="green">Respuesta del gobierno local/nacional</td>
+      <td>Número de personas alojadas en albergues de autoridades locales (desagregadas por sexo y edad)</td>
+      <td></td>
+      <td>Número de mujeres cabeza de familia que acceden a proyectos productivos </td>
+      <td>
+Número de personas orientadas en el sistema de salud de Colombia (desagregadas por sexo y edad)
+
+Número de personas afiliadas al sistema de salud (desagregadas por sexo y edad)
+            
+Número de niños/as menores de 5 años vacunados  
+
+Número de eventos de interés público reportados al sistema nacional de vigilancia epidemiológica (desagregados por sexo y edad) 
+            
+Generación de política pública para el acceso al sistema sanitario para la población proveniente de Venezuela
+      </td>
+      <td>Número de mujeres cabeza de familia que son apoyadas con proyectos alimentarios</td>
+      <td>Número de mujeres gestantes y en periodo de lactancia que acceden a servicios nutricionales</td>
+      <td>Número de personas sobrevivientes de violencia de género que acceden a servicios, desagregados por sexo y edad. </td>
+      <td>Iniciativas del gobierno para proveer servicios de acceso a saneamiento, higiene, incluyendo higiene menstrual, y fuentes de agua mejoradas</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="green">Respuesta cooperación local/internacional</td>
+      <td>Número de personas que reciben subsidios de arriendo (desagregadas por sexo y edad)</td>
+      <td></td>
+      <td>Número de mujeres cabeza de familia que acceden a proyectos productivos</td>
+      <td>Número de mujeres gestantes y en periodo de lactancia que acceden a servicios de salud</td>
+      <td>Número de mujeres cabeza de familia que son apoyadas con proyectos alimentarios</td>
+      <td>
+Número de atenciones en salud primaria
+          
+Número de consultas médicas para todas las edades, consultas prenatales, atención a pacientes crónicos, apoyo psicosocial
+          
+Número de vacunaciones a mujeres embarazadas y niños y niñas menores de 5 años
+      </td>
+      <td>Número de personas víctimas de trata que acceden a servicios, desagregados por sexo y edad.</td>
+      <td>Número de personas que acceden a servicios de saneamiento, higiene, incluyendo higiene menstrual, y fuentes de agua mejoradas</td>
+      <td></td>
+    </tr>
+    <td class="green">Perspectivas sobre las prioridades</td>
+      <td>Diseño de alojamiento temporal preferido y considerando dimensiones de género, edad y etnia. </td>
+      <td>Apoyo preferido para transportar niños y niñas a la escuela primaria o secundaria.</td>
+      <td>La perspectiva de la población (hombres y mujeres) sobre las principales intervenciones requeridas para aumentar el acceso a fuentes de ingresos sostenibles.</td>
+      <td>Preferencias de la población sobre la forma de dar a luz y medidas de seguridad relacionadas.</td>
+      <td>Percepción sobre mecanismos de acceso a alimentos provistos, diferenciados por género y edad.</td>
+      <td>Percepción sobre acceso a medicamentos y sistema de salud.</td>
+      <td>Perspectivas de la población sobre prioridades para sentirse más seguros en el país de acogida, considerando dimensiones de género, edad y diversidad.</td>
+      <td></td>
+      <td>Modalidad de transferencia preferida por la población (por ejemplo, efectivo en mano, pagos por teléfono móvil, etc.)</td>
+    </tr>
+</tr>
+</tr>
+<tr>
+<tr>
+  <tr>
+    <td rowspan="3"class="green vertical"><span>CAPACIDADES</span></td>
+    <td class="green">Capacidad de la población afectada</td>
+      <td>Establecimiento de alojamientos colectivos y otros mecanismos de solidaridad.</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Capacidad de producción para autoconsumo o consumo local</td>
+      <td></td>
+      <td>Establecimiento de vigilancias vecinales y otros mecanismos de protección basados en la comunidad. </td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="green">Capacidad del gobierno local/nacional</td>
+      <td>Número de plazas disponibles en albergues del gobierno local/nacional</td>
+      <td>
+Cupos en las aulas 
+          
+Personal docente disponible
+      </td>
+      <td></td>
+      <td>
+Servicios de urgencias de los hospitales 
+
+Secretarías de salud departamentales vigilan eventos de interés en salud 
+
+Planes de contingencia incluyen salud
+
+Planes financieros de choque o apoyo a la crisis migratoria
+
+Planes de salud sexual y reproductiva
+      </td>
+      <td></td>
+      <td>Número de cupos nuevos en el Programa de Alimentación Escolar (PAE) cubiertos por fondos municipales/departamentales</td>
+      <td></td>
+      <td></td>
+      <td></td>
+  </tr>
+  <td class="green">Capacidad cooperación local/internacional</td>
+      <td>Número de plazas disponibles en albergues habilitados por la cooperación</td>
+      <td></td>
+      <td></td>
+      <td>Centros de atención primaria, brigadas móviles, remisiones a hospitales, actividades de prevención y educación</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+  </tr>
+  </tr>
+</tr>
+</tbody>
+</table>
