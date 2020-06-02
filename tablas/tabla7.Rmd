@@ -9,8 +9,8 @@ output:
   <thead>
       <tr>
         <th width="20%">TIPO DE ERROR</th>
-        <th width="20%">CUANTITATIVO</th>
-        <th width="60%">CUALITATIVO</th>
+        <th width="40%">CUANTITATIVO</th>
+        <th width="40%">CUALITATIVO</th>
     </tr>
   </thead>
   <tbody>
