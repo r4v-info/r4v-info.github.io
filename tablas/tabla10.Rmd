@@ -1,0 +1,61 @@
+---
+output: 
+  html_document:
+    css: tablas.css
+---
+
+<table class="tabla-basica tabla1">
+  <caption>Tabla 10. Métodos probabilisticos</caption>
+  <thead>
+      <tr>
+        <th width="20%">TIPO</th>
+        <th width="40%">METODO</th>
+        <th width="40%">CUANDO APLICARLO</th>
+    </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>MUESTREO ALEATORIO SIMPLE</td>
+    <td>Utiliza números generados aleatoriamente para la selección de la muestra.
+</td>
+    <td>Este método es apropiado si la población es homogénea y si hay disponible una lista completa de todas las unidades de muestreo en la población, por ejemplo, en un distrito donde todas las familias que albergan refugiados son conocidas y están en la lista.
+</td>
+  </tr>
+  <tr>
+    <td>MUESTREO SISTEMÁTICO</td>
+    <td>	Este método implica seleccionar elementos de un marco de muestreo ordenado desde el cual la selección sistemática es fácilmente posible. Por ejemplo, el número total de hogares se divide por el tamaño de muestra requerido y ofrece un intervalo de muestreo regular.</td>
+    <td>Este método es apropiado si la población de la muestra es geográficamente homogénea y está organizada en filas ordenadas (por ejemplo, un campo de refugiados bien planificado).
+Si hay patrones ocultos, no se recomienda utilizar este método.
+
+</td>
+  </tr>
+<tr>
+    <td>MUESTREO ESTRATIFICADO</td>
+    <td>
+•	La estratificación es el proceso de división de la población en subgrupos homogéneos antes del muestreo. Cada estrato debe ser mutuamente excluyente, con cada elemento en la población asignado a un solo estrato.
+
+•	Los estratos también deben ser colectivamente exhaustivos, sin que ningún elemento de la población quede excluido.
+
+•	Una vez que se han establecido los estratos, se puede aplicar muestreo aleatorio o muestreo sistemático para calcular el tamaño de la muestra de cada estrato.
+</td>
+    <td>Este método es útil para muestrear cada subpoblación (cualquier estrato con características comunes) independientemente si la población de la muestra es heterogénea.</td>
+</tr>
+</tr>
+
+ </tr>
+  <tr>
+    <td>MUESTREO POR CONGLOMERADOS</td>
+    <td>Este método identifica una característica que permita dividir la población en grupos disjuntos (sin solapamiento) y de forma exhaustiva (todos los individuos deben estar en un grupo) de tal manera que los grupos no difieran entre sí en relación con aquello que queremos medir. Una vez hemos definido estos conglomerados, seleccionaremos al azar algunos de ellos para estudiarlos. </td>
+    <td>Este método es usado cuando ya existen agrupaciones “naturales” y relativamente homogéneas entre la población de interés. Un criterio habitual para definir conglomerados es el geográfico. Por ejemplo, si queremos estudiar qué proporción de la población venezolana en Ecuador tiene estudios universitarios, podemos dividir el total de la población en provincias y seleccionar algunas de ellas para ser estudiadas.
+</td>
+  </tr>
+</tr>
+<tr>
+    <td>MUESTREO POR ETAPAS MULTIPLES</td>
+    <td>También conocido como muestreo de conglomerados de etapas múltiples, es una forma más compleja de muestreo de conglomerados que contiene dos o más etapas en la selección de la muestra.</td>
+    <td>Este método se puede usar cuando no es factible tomar al azar una muestra, por ejemplo, si la población esta dispersa, el área de muestreo es muy amplia o no hay marco de muestreo apropiado.
+</td>
+  </tr>
+</tr>
+  </tbody>
+</table>
