@@ -8,7 +8,7 @@ source("options_communes.R")
 
 
 <div class="important">
-- Realizar un plan de análisis desde el principio, asignando suficiente tiempo y recursos para ejercicios de análisis, como talleres de análisis conjuntos, análisis multisectorial y escalas de severidad.
+Realizar un plan de análisis desde el principio, asignando suficiente tiempo y recursos para ejercicios de análisis, como talleres de análisis conjuntos, análisis multisectorial y escalas de severidad.
 </div>
 
 
@@ -20,7 +20,7 @@ Una vez definida una lista inicial de necesidades de información, se deberá re
 
 En la siguiente sección se introduce una metodología que ayuda a guiar el proceso de definición de necesidades de información a través de un marco de análisis.
 
-### Marco analítico regional**
+### Marco analítico regional
 
 Las necesidades de información se pueden detallar y estructurar de diferentes formas, y un método común es la utilización de un marco analítico. Este método ayuda a hacer un seguimiento de que datos deben ser recopilados, recolectados y de cómo analizarlos.
 
@@ -30,114 +30,19 @@ El marco analítico propuesto en la Ilustración 1, está basado en el trabajo g
 
 _Ilustración 1. Marco de análisis_
 
+![](images/marco_analisis.jpg)
+
 El marco contempla por un lado información de contexto, de la crisis, perfiles de desplazamiento, acceso humanitario e integración y soluciones sostenibles; por otro, información sectorial sobre las condiciones humanitarias, capacidad, respuesta y perspectivas de la población.
 
-_Tabla 2. Descripción y ejemplos de categorías transversales del marco de análisis_
 
-| **CATEGORIA** | **DESCRIPCIÓN** | **EJEMPLO (esta información puede ser relevante a uno o más sectores)** |
-| --- | --- | --- |
-| **CONTEXTO** | Información que contribuye a la comprensión de la situación general o del entorno operativo y no se relaciona con un sector específico: Datos demográficos, políticos, marcos legales, elementos socioeconómicos y culturales, situación de seguridad, medio ambiente, etc. | **Marco legal** - Normatividad específica para atender las crisis de personas refugiadas y migrantes provenientes de otros países.- Marco normativo para la regulación de la migración internacional (VISAS, permisos, etc.) **Político** - Gobierno nacional comprometido internacionalmente a apoyar a la población proveniente de Venezuela.- Elecciones locales que se llevarán a cabo el próximo mes de octubre, podría contener mensajes nacionalistas que afecten a las personas refugiadas y migrantes provenientes de Venezuela. **Seguridad** - Comunidades de acogida con presencia de grupos armados no estatales (persiste el conflicto, control social y territorial)- Reclutamiento forzado, violencia de género, trata de personas, especialmente explotación sexual y laboral, y tráfico de migrantes (trochas) **Medio ambiente** - Análisis de posibles impactos negativos al medio ambiente de proyectos de la cooperación internacional- Conocimiento / el nivel de conciencia de la población refugiada y migrante referente a los desafíos ambientales y su mitigación**Sociocultural (incluyendo dimensiones de género, edad, etnia, etc.)** - Diferencias culturales derivando en casos de xenofobia- Se ha agudizado la discriminación de género y los roles de género han cambiado, generando una mayor afectación y carga en las mujeres y niñas. **Demografía** - Un 55% de la población son hombres y el 45% son mujeres. - La mayor proporción de la población se concentra en el grupo etario de 18 a 30 años con un 57%, seguido por un 33% del grupo de 30 a 45 años. - 60% declaró ser soltero, 37% está casado o convive con alguien  |
-| **EVENTO/CRISIS** | Descripción del evento o crisis que se evalúa/analiza, factores agravantes y vulnerabilidades preexistentes. Por ejemplo, desastre natural o conflicto – Crisis repentinas, de evolución lenta o prolongada, incluyendo impacto diferenciado según grupos de género y edad. | **Crisis prolongada** de carácter político, económico y social, que tuvo comienzo en 2013 y ha provocado la salida de más de cuatro millones y medio de personas de Venezuela a otros países de la región y otros continentes. **Factores agravantes** - Escasez sistémica de comida y medicamentos, agravada por la marcha del país de médicos y detención de trabajadores de salud que denuncian el estado del sistema sanitario.- Represión durante protestas sociales resultando en violaciones de derechos humanos.- Caída de los precios de petróleo, expropiaciones y restricciones del control de cambio de la moneda. **Vulnerabilidades preexistentes** - Comunidades tradicionalmente marginadas, incluidas las que viven por debajo del umbral de pobreza, ¿han sido las más afectadas por la crisis venezolana?  |
-| **DESPLAZAMIENTO** | Número de personas desplazadas y tipos de desplazamiento, factores de empuje y detalles sobre las intenciones de movimiento. | **Número de personas por perfiles de desplazamiento** - Personas refugiadas y migrantes venezolanas con vocación de permanencia (desagregados por sexo y edad)- Personas refugiadas y migrantes venezolanas pendular (movimiento en frontera para acceso a servicios y compra de bienes básicos; desagregados por sexo y edad)- Personas refugiadas y migrantes venezolanas en tránsito a terceros países (desagregados por sexo y edad)- Personas colombianas retornadas (desagregados por sexo y edad)- Personas desplazadas internas (desagregados por sexo y edad)- Población de acogida (desagregados por sexo y edad) **Factores de empuje** -Los continuos acontecimientos políticos, socioeconómicos y de derechos humanos en la República Bolivariana de Venezuela han provocado la salida de más de cuatro millones y medio de personas venezolanas a países vecinos y más lejanos **Intenciones** -82,9% del total de encuestados manifestó su intención de desplazarse a otros países en la región. De ellos el 35% son mujeres y el 65% son hombres. |
-| **ACCESO HUMANITARIO** | Limitaciones en la entrega de asistencia humanitaria y a que razones puede deberse.  | - Comunidades de acogida donde aún persiste el conflicto armado y hay control de grupos armados ilegales (control social y territorial).   - Zonas afectadas por desastres naturales.- Monto individual para transferencias monetarias controladas por el gobierno, en concreto a caminantes. |
-| **INTEGRACION Y SOLUCIONES SOSTENIBLES** | Soluciones que permiten la integración de los desplazados en los países de acogida, y otras, como reasentamiento o repatriación voluntaria. | - Número de personas que necesitan ser reasentadas en otros países de la región.- Número de niños y niñas de familias venezolanas nacidos en Colombia que han recibido la nacionalidad.  |
+```{r child = './tablas/tabla1.Rmd'}
+```
 
-_Tabla 3. Descripción de categorías y subcategorías del marco de análisis_
+```{r child = './tablas/tabla2.Rmd'}
+```
 
-|
-
-**CATEGORIA** | **SUB-CATEGORIA** | **DESCRIPCIÓN** | **ALOJAMIENTO** | **AGUA, SANEAMIE, HIGIENE** | **EDUCACION** | **NUTRICION** | **MEDIOS DE VIDA** | **PROTECCION** | **SALUD** | **SEGURIDAD ALIMENTARIA** | **INTERSECTORIAL** |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| **CONDICIONES HUMANITARIAS** | **Acceso a servicios o bienes básicos**  | Consecuencias directas relacionadas con el acceso, disponibilidad, conciencia, uso y calidad de bienes y servicios básicos/esenciales. Por ejemplo, número de niños y niñas con acceso a educación formal, número de doctores por número de pacientes, etc.  |  |  |  | | |  | | |  |
-| **Bienestar físico y mental** | Impacto directo en la salud física o mental de un individuo que puede ser como consecuencia de la falta de acceso a servicios y bienes básicos. Por ejemplo, tiempo prolongado sin acceso a alimentos resultando en casos de malnutrición o muerte.  |  |  |  | | |  | | |  |
-| **Mecanismos de afrontamiento**
- | Actividades adoptadas por personas, comunidades, etc., que utilizan habilidades y recursos a su alcance, para afrontar riesgos y condiciones adversas. La información sobre los mecanismos de afrontamiento generalmente se refiere a actividades negativas, como mujeres que acuden al sexo por supervivencia, pero también pueden ser positivas.  |  |  |  | | |  | | |  |
-| **Personas/Grupos con necesidades específicas** | Grupos de población que pueden ser particularmente vulnerables debido a género, edad, etnia o discapacidad y que tienen derecho a asistencia especial. Generalmente se considera que tienen necesidades específicas los siguientes grupos: las niñas y los niños, incluidos los niños no acompañados o separados, mujeres en riesgo (gestantes, en periodo de lactancia, viajando solas, jefas de hogar), víctimas de trata de personas, sobrevivientes de violencia de género, las personas con enfermedades crónicas graves, los ancianos, las personas con discapacidad, hogares liderados por mujeres y personas con una orientación sexual o identidad de género diversa tienen necesidades específicas. |  |  |  |  | | |  | | |  |
-| **Riesgos y vulnerabilidades nuevas o agravadas** | Situaciones que potencialmente podrían deteriorar, si no se abordan las necesidades actuales. El riesgo se define como una función del peligro, la exposición, la vulnerabilidad y la capacidad, y debe estar relacionado con un evento, marco de tiempo y sistema específicos.  |  |  |  | | |  | | |  |
-| **RESPUESTA** | **Gobierno nacional/local** | Proyectos y recursos del gobierno nacional y local, o de las comunidades de acogida para responder a una crisis en curso. |  |  |  |  | | |  | | |  |
-| **Cooperación internacional/local**  | Proyectos y recursos de la cooperación local e internacional, para responder a una crisis en curso. |  |  |  |  | | |  | | |  |
-| **Perspectivas sobre las prioridades de la población afectada** | Perspectivas de la población afectada sobre las intervenciones de respuesta requeridas/preferidas, diferenciadas de acuerdo a grupos de género y edad. |  |  |  |  | | |  | | |  |
-| **CAPACIDADES** | **Comunidad de acogida**  | Capacidad y recursos de las comunidades de acogida para responder a una crisis. |  |  |  |  | | |  | | |  |
-| **Gobierno nacional/local**  | Capacidad y recursos de las comunidades de acogida para responder a una crisis, diferenciadas de acuerdo a grupos de género y edad. |  |  |  |  | | |  | | |  |
-| **Cooperación internacional/local**
- | Proyectos y recursos de la cooperación local e internacional, para responder a una crisis en curso. |  |  |  |  | | |  | | |  |
-
-_Tabla 4. Ejemplos de necesidades de información a nivel sectorial del marco de análisis_
-
-| **CATEGORIA** | **SUB-CATEGORIA** | **ALOJAMIENTO** | **EDUCACION** | **MEDIOS DE VIDA** | **SALUD** | **SEGURIDAD ALIMENTARIA** | **NUTRICION** | **PROTECCION** | **WASH** | **INTER**** SECTORIAL** |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|
- |
- |
- |
- |
- |
- |
- |
- |
- |
- |
- |
-| **CONDICIONES HUMANITARIAS** | **Acceso a servicios o bienes básicos**
- | - Tipo de alojamiento ocupado- Dificultades para acceder a alojamiento (falta de recursos económicos, xenofobia, homolesbitransfobia, etc.)
- | - Número de niños y niñas que no asisten a educación formal, o no asisten regularmente, durante la temporada escolar- Razones por las que no asisten o no asisten regularmente, diferenciada para niña y para niños | - % adultos en desempleo (desagregado por sexo y edad)- Principales fuentes de ingresos (para mujeres y hombres)- Dificultades en acceso a empleo formal para mujeres y para hombres.
- | - Acceso al sistema sanitario- Acceso a controles prenatales - Razones que imposibilitan acceso al sistema de salud y seguridad social (Falta de empleo formal, etc.)- Tasas de lactancia materna, exclusiva y continuada- Acceso a métodos anticonceptivos- Atención clínica de la violencia sexual
-
- | - Número de comidas consumidas diariamente- Medios de acceso a alimentos para hombres y para mujeres
- | - Acceso a cantidad, calidad y variedad de alimentos para hombres y para mujeres
-` | - Limitaciones en acceso a servicios de protección para personas sin estatus regular.- Obtención de visas y permisos (documentación)- Número de víctimas de abuso, trata/explotación sexual y laboral, violencia de género- Mujeres en riesgo (viajando solas, etc.)- Comunidad LGTBI, cifras, barreras de acceso a derechos/servicios.- Riesgos de protección para caminantes | - Acceso a agua segura y saneamiento en sitios clave de tránsito, asentamientos informales y planificados.- Acceso a servicios de higiene, incluyendo higiene menstrual.
- | Problemas para acceder a comprar bienes en un mercado o tienda
-- Riesgos de protección asociados, como violencia de género, diferenciados para mujeres y hombres. |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| **Bienestar físico y mental** | Problemas mentales y físicos derivados en las personas en situación de calle |
- | Estado mental derivado de no encontrar soluciones para subsistencia para responsables del hogar y sus miembros | - Afectaciones en salud con mayor prevalencia- Tasa de mortalidad infantil- Salud física de las mujeres (especialmente embarazadas)  - Enfermedades infecciosas y crónicas- Cifras de mujeres en edad fértil, gestantes y lactantes con diagnóstico de VIH | Aumento de la morbilidad (hombres y mujeres) como resultado de una dieta insuficiente o inapropiada | Signos de malnutrición en niños/as menores de 5 años. | Impacto psicosocial y mental derivados del desplazamiento y de la falta de acceso a derechos/servicios básicos | Aumento de enfermedades transmitidas por el agua (como resultado de agua insuficiente o de baja calidad) |
- |
-| **Mecanismos de afrontamiento**
- | - Hacinamiento (riesgos de violencia de género)- Ocupación del espacio público o de inmuebles privados | - Educación informal a través de personal no cualificado- Enseñanza en el hogar | - Mendicidad, explotación laboral, prostitución forzada, sexo por supervivencia- Se establecen fuentes alternativas de ingresos, incluidos los servicios en línea. | - Consultas y tratamiento por no profesionales- Toma de medicamentos en mal estado | - Reducción en el número de comidas consumidas diariamente- Se comienza a cultivar alimentos en el huerto | Cambio de dieta (consumo de comida rápida, falta de variedad en los alimentos, sustitución de alimentos, reducción de las porciones, del número y calidad de comidas al día, prolongación del sueño para evitar el desayuno de los niños y niñas, mujeres ceden su porción de comida a sus hijos e hijas, etc.)
-
- | - Mendicidad/explotación laboral - Prostitución forzada/Sexo por supervivencia- Trabajo con grupos ilegales- Abuso de drogas y alcohol- Trabajo infantil | - Consumo insuficiente de agua o consumo de agua no segura- Disposición de excreta cuando infraestructura de saneamiento no está disponible- No disponibilidad de insumos de higiene, incluyendo higiene menstrual
- | Tomar préstamos abusivos y acudir a sexo por supervivencia para poder pagar las necesidades básicas. |
-| **Personas/Grupos con necesidades específicas** | - Niñas y mujeres- Mujeres cabeza de familia- Niños, niñas y adolescentes- Personas con necesidades médicas - Adultos y adultas mayores | Niños y niñas con discapacidades | - Adultos y adultas mayores- Jóvenes en edad productiva- Mujeres, niñas y adolescentes | - Mujeres embarazadas y en periodo de lactancia- Niños y niñas menores de 5 años- Adultos y adultas mayores- Víctimas /sobrevivientes de violencia de género- NNA | - Pueblos indígenas (especialmente mujeres, niñas y niños)- Comunidades remotas | - Niños, niñas y adolescentes, en particular menores de 5 años- Adultos y adultas mayores- Personas con necesidades médicas | - Personas con enfermedades crónicas (incluyendo VIH). - Pueblos indígenas- Población LGTBI- Personas con discapacidad - NNA (especial no acompañados)- Mujeres gestantes y en periodo de lactancia-Afrodescendientes (hombres y mujeres)- Adultos y adultas mayores | - Mujeres em riesgo: Cabeza de hogar, embarazadas y en periodo de lactancia- Niños, niñas y adolescentes - Personas con necesidades médicas particulares- Adultos y adultas mayores | Personas sobrevivientes de violencia de género |
-| **Riesgos y vulnerabilidades nuevas o agravadas** | - Principales actores proveedores de alojamiento incluyendo subsidios de arriendo finalicen sus actividades- Ocurrencia de violencia de género por hacinamiento | Reducción de oportunidades laborales y mayor informalidad para hombres y mujeres | - Mendicidad, explotación laboral, prostitución forzada, sexo por supervivencia- Aumento de hogares con cabeza de hogar femenina | - Falta de tratamiento para enfermedades como sífilis, VIH, tuberculosis- Deuda acumulada de los hospitales en departamentos de frontera- Falta de atención en salud sexual y reproductiva, especialmente salud materna y frente a violencia de género.
- |
- | Personas en riesgo nutricional enfrentando problemas de seguridad alimentaria, especialmente niñas, niños y mujeres. | - Incremento de violencia de género, especialmente violencia sexual y contra mujeres y niñas. | - Disminución de acceso a servicios e insumos de higiene, incluida higiene menstrual
- |
- |
-| **RESPUESTA** | **Respuesta del gobierno local/nacional**
- | - Número de personas alojadas en albergues de autoridades locales (desagregadas por sexo y edad)
- |
- | - Número de mujeres cabeza de familia que acceden a proyectos productivos. | - Número de personas orientadas en el sistema de salud de Colombia (desagregadas por sexo y edad)- Número de personas afiliadas al sistema de salud (desagregadas por sexo y edad)- Número de niños/as menores de 5 años vacunados  - Número de eventos de interés público reportados al sistema nacional de vigilancia epidemiológica (desagregados por sexo y edad) - Generación de política pública para el acceso al sistema sanitario para la población proveniente de Venezuela | Número de mujeres cabeza de familia que son apoyadas con proyectos alimentarios | Número de mujeres gestantes y en periodo de lactancia que acceden a servicios nutricionales | Número de personas sobrevivientes de violencia de género que acceden a servicios, desagregados por sexo y edad. | - Iniciativas del gobierno para proveer servicios de acceso a saneamiento, higiene, incluyendo higiene menstrual, y fuentes de agua mejoradas |
- |
-| **Respuesta cooperaci**** ón local-internacional**
- | - Número de personas que reciben subsidios de arriendo (desagregadas por sexo y edad) |
- | - Número de mujeres cabeza de familia que acceden a proyectos productivos. | Número de mujeres gestantes y en periodo de lactancia que acceden a servicios de salud | Número de mujeres cabeza de familia que son apoyadas con proyectos alimentarios | - Número de atención primaria de salud,- Número de consultas médicas para todas las edades, consultas prenatales, atención a pacientes crónicos, apoyo psicosocial- Número de vacunaciones a mujeres embarazadas y niños y niñas menores de 5 años | Número de personas víctimas de trata que acceden a servicios, desagregados por sexo y edad. | - Número de personas que acceden a servicios de saneamiento, higiene, incluyendo higiene menstrual, y fuentes de agua mejoradas. |
- |
-| **Perspectivas sobre las prioridades**
- | Diseño de alojamiento temporal preferido y considerando dimensiones de género, edad y etnia. | Apoyo preferido para transportar niños y niñas a la escuela primaria o secundaria. | La perspectiva de la población (hombres y mujeres) sobre las principales intervenciones requeridas para aumentar el acceso a fuentes de ingresos sostenibles. | Preferencias de la población sobre la forma de dar a luz y medidas de seguridad relacionadas. | Percepción sobre mecanismos de acceso a alimentos provistos, diferenciados por género y edad. | Percepción sobre acceso a medicamentos y sistema de salud | Perspectivas de la población sobre prioridades para sentirse más seguros en el país de acogida, considerando dimensiones de género, edad y diversidad. |
- | Modalidad de transferencia preferida por la población (por ejemplo, efectivo en mano, pagos por teléfono móvil, etc.) |
-| **CAPACIDADES** | **Capacidad de la población afectada** | Establecimiento de alojamientos colectivos y otros mecanismos de solidaridad. |
- |
- |
- | Capacidad de producción para autoconsumo o consumo local |
- | Establecimiento de vigilancias vecinales y otros mecanismos de protección basados en la comunidad. |
- |
- |
-| **Capacidad del gobierno local/nacional**
- | Número de plazas disponibles en albergues del gobierno local/nacional | - Cupos en las aulas - Personal docente disponible |
- | - Servicios de urgencias de los hospitales. - Secretarías de salud departamentales vigilan eventos de interés en salud - Planes de contingencia incluyen salud- Planes financieros de choque o apoyo a la crisis migratoria- Planes de salud sexual y reproductiva |
- | - Número de cupos nuevos en el Programa de Alimentación Escolar (PAE) cubiertos por fondos municipales/departamentales |
- |
- |
- |
-| **Capacidad cooperaci**** ón local-internacional**
- | Número de plazas disponibles en albergues habilitados por la cooperación |
- |
- | - Centros de atención primaria, brigadas móviles, remisiones a hospitales, actividades de prevención y educación |
- |
- |
- |
- |
- |
+```{r child = './tablas/tabla3.Rmd'}
+```
 
 ## Plan de análisis de datos
 
@@ -158,35 +63,7 @@ Para desarrollar el plan de análisis:
 4. Describir los resultados analíticos planeados y las distintas relaciones entre elementos.
 5. Actualizar el plan de análisis de datos a medida que surge nueva información durante el ciclo de la evaluación de necesidades.
 
-_Tabla 5. Ejemplo de plan de análisis de datos según varios ejemplos de necesidades de información definidos en la Tabla 6 y una vez realizada la revisión de datos secundarios._
+```{r child = './tablas/tabla4.Rmd'}
+```
 
-| **CATEGORIA MA**
- **# 8** | **SUBCATEGORIA MA** | **SECTOR MA** | **NECESIDAD DE INFORMACION**** PREGUNTA ANALITICA ****MA** | **DATOS REQUERIDOS** | **FUENTE** | **TIPO** | **CONFIABILIDAD** | **ESTADO** | **ANALISIS**** COMPARACION** |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| **Condiciones humanitarias** | Bienestar físico y mental | Salud | Tendencias en la incidencia de enfermedades | % de hogares de Venezuela con al menos un miembro que requiere atención médica en los barrios X, Y y Z. | Encuesta de hogares
- | Primaria | N/A | PlaneadaInicio 2019 – fin de 2019 | Entre áreas geográficas |
- |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| **Condiciones humanitarias** | Bienestar físico y mental | Salud | Tendencias en la incidencia de enfermedades | Patrones de morbilidad y mortalidad de la población venezolana en los barrios X, Y y Z. | Ministerio de Salud | Secundaria | Confiable (Representativa) | CompletadaFebrero 2019 | Entre áreas geográficasEntre sexo y edad |
- |
-| **Condiciones humanitarias** | Acceso a servicios o bienes básicos | Salud | Barreras para acceder a la atención médica | % de hogares de Venezuela con al menos un miembro que requiere atención médica incapaz de recibir tratamiento ahora mismo, más la explicación del por qué, en los barrios X, Y y Z | Encuesta de hogares
- | Primaria | N/A | PlaneadaInicio 2019 – fin de 2019 | Entre áreas geográficas |
- |
-|
-**Respuesta** | Respuesta cooperación local-internacional
- | Salud | Apoyo a los sistemas de salud. | Brechas en presencia y cobertura de actores de salud locales, nacionales e internacionales en los barrios X, Y y Z.
- | Ministerio de Salud Clúster de Salud
- | Secundaria | Confiable (Representativa) | Completada | Entre áreas geográficas |
- |
-| **Capacidades** | Gobierno nacional/local
- | Salud | Capacidad de la infraestructura sanitaria para satisfacer un incremento en la demanda | Número promedio de personal de salud y camas de hospital por población en los barrios X, Y y Z.
-Hospitales que reportan capacidad y recursos insuficientes para atender la demanda en los barrios X, Y y Z. | Ministerio de Salud Clúster de Salud | Secundaria | Confiable (Representativa) | Completada | Entre áreas geográficas |
- |
-| **Respuesta** | Acceso a servicios o bienes básicos | Salud | Acceso a atención sanitaria oportuna y adecuada para mujeres lactantes | Número de mujeres lactantes que reportan haber recibido atención sanitaria oportuna y adecuada en los barrios X, Y y Z | Ministerio de Salud Clúster de Salud | Primaria | Confiable (Representativa) | Completada | Entre áreas geográficas |
- |
-| **Condiciones humanitarias** | Acceso a servicios o bienes básicos | Educación | Acceso a educación | Número de niños y niñas que no asisten a la escuela | Ministerio de Educación | Secundaria | Confiable(Representativa) | Completada | Entre áreas geográficas |
- |
-| **Condiciones humanitarias** | Bienestar físico y mental | Agua,Saneamiento e Higiene | Tendencia en la incidencia de enfermedades relacionadas con el agua | Patrones de morbilidad y mortalidad de la población venezolana en los barrios X, Y y Z. | Ministerio de SaludClúster WASH | Secundaria | Confiable(Representativa) | Completada | Entre áreas geográficas |
- |
-| **Respuesta** | Perspectivas | Intersectorial | Perspectivas de la población sobre modalidades de respuesta | % de hogar de población venezolana que prefieren recibir apoyo en efectivo en los barrios X, Y y Z | Evaluación conjunta de Necesidades Caribe GIFMM | Primaria | Confiable(Representativa) | Completada | Entre áreas geográficas |
- |
+
