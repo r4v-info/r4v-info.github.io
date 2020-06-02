@@ -1,0 +1,35 @@
+---
+output: 
+  html_document:
+    css: tablas.css
+---
+
+<table class="tabla-basica tabla4 responsive">
+  <caption>Tabla 6. Ejemplo de estructura de etiquetado</caption>
+  <thead>
+    <tr>
+      <th>Fuente</th>
+      <th>Fecha</th>
+      <th>Área geográfica</th>
+      <th>Narrativo</th>
+      <th>Sector</th>
+      <th>Confiabilidad</th>
+      <th>Confidencialidad</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Ministerio de salud</td>
+      <td>Noviembre 2019</td>
+      <td>Arauca</td>
+      <td>En el año 2017, hubo 348 atenciones en migrantes. En el año 2018, hubo 2.083 atenciones en migrantes. En lo que va de año en 2019, van 3.235 atenciones a migrantes. Este es un hospital de segundo nivel que en la actualidad tiene un déficit presupuestal cercano a los 24 mil millones de pesos.</td>
+      <td>Salud </td>
+      <td>Confiable[enlace](https://en.wikipedia.org/wiki/Intelligence_source_and_information_reliability)</td>
+      <td>Abierto</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
