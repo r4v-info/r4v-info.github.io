@@ -19,7 +19,7 @@ Antes de comenzar a recolectar datos en terreno es fundamental hacer una revisi�
 
 Los datos secundarios se definen como fuentes de información que han sido recolectadas por otros actores, con propósitos distintos a los de la evaluación que se quiere llevar a cabo.
 
-Basándose en el plan de análisis de datos (sección 4.3.2), la revisión de datos secundaria establece la información conocida y no conocida sobre una situación concreta y su impacto, incluyendo detalles del volumen y el estado de las poblaciones afectadas y la severidad de sus condiciones humanitarias. La revisión involucra la recolección y análisis de información previa a la crisis y específica de la crisis, estadísticas, demografías y otros datos relevantes.
+Basándose en el plan de análisis de datos, la revisión de datos secundaria establece la información conocida y no conocida sobre una situación concreta y su impacto, incluyendo detalles del volumen y el estado de las poblaciones afectadas y la severidad de sus condiciones humanitarias. La revisión involucra la recolección y análisis de información previa a la crisis y específica de la crisis, estadísticas, demografías y otros datos relevantes.
 
 Las principales tareas que hay que llevar a cabo durante una revisión de datos secundarios son detalladas a continuación:
 
@@ -27,38 +27,11 @@ Las principales tareas que hay que llevar a cabo durante una revisión de datos 
 
 Localizar informes, conjuntos de datos y productos con análisis de información precrisis y de la crisis. Un registro de evaluaciones es un buen punto de partida, ya que proporciona un listado de los informes, estudios, evaluaciones de necesidades etc. que ya han sido realizados por otros actores. En este [enlace](https://r4v.info/es/documents/details/71288) puede consultar el registro de evaluaciones del Grupo Inter agencial sobre Flujos Migratorios Mixtos en Colombia. Por otra parte, se [puede consultar este documento](http://pim.guide/wp-content/uploads/2018/05/Framework-for-Data-Sharing-in-Practice.pdf), el cual provee una guía para establecer un sistema para compartir información.
 
-Fuentes y ejemplos de información secundaria precrisis y de la crisis_
+```{r child = './tablas/tabla5.Rmd'}
+```
 
-### Información precrisis 
 
-- Oficinas nacionales de estadística, censos y ministerios relevantes
-- Planes de operación en el país,
-- Indicadores de desarrollo del Banco Mundial
-- Perfiles epidemiológicos por país de la Organización Mundial de la Salud
-- Análisis situacionales de salud
-- Diagnósticos de Planes de desarrollo local
-- Datos de Encuestas de Indicadores Múltiples por Conglomerados de UNICEF (MICS)
-- Teledetección
-- Sociedad civil e informes de agencias de la ONU
-- Índice de gestión de riesgos (INFORM)
-- Revistas y libros académicos (INASP)
 
-### Información específica de la crisis
-
-- Medios nacionales e internacionales
-- ReliefWeb
-- Intercambio de datos humanitarios (HDX por sus siglas en inglés)
-- Conjuntos de datos operativos comunes (CODs por sus siglas en inglés) del IASC
-- Noticias IRIN
-- Portal de datos y portal de mapas
-- Informes de situación de organizaciones de la sociedad civil, incluyendo organizaciones de mujeres y personas LGBTI, gobierno y agencias de la ONU
-- Explorador de noticias de European Media Monitoring
-- Informes de clúster y entre clústeres, sitios web y reuniones
-- Teledetección
-- Redes sociales, otros medios, blogs, crowdsourcing
-- Redes personales
-- Apelaciones de fondos
-- 3, 4 o 5Ws
 
 Una vez se han recolectado las fuentes de datos, se deben almacenar de forma que se puedan encontrar fácilmente. Para ello, se recomienda utilizar un formato estandarizado para nombrar archivos, que incluya información sobre el autor, el título del informe, la fecha del informe y cómo se deben tratar los datos según su confidencialidad, por ejemplo: 20181104\_GIFMM\_EvaluaciónNecesidades\_Protegido.
 
@@ -74,11 +47,8 @@ Las categorías más comunes de etiquetado incluyen:
 - **Confidencialidad** : proporcionar detalles sobre si los datos son: abiertos, restringidos, protegidos o confidenciales.
 - **Confiabilidad de la fuente** : definir si las fuentes son confiables, no confiables, etc. Existen varias técnicas para definir la confiabilidad de los datos, puede encontrar un ejemplo en este [enlace](https://en.wikipedia.org/wiki/Intelligence_source_and_information_reliability).
 
-_Tabla 7. Ejemplo de estructura de etiquetado_
-
-| **Fuente** | **Fecha** | **Área geográfica** | **Narrativo** | **Sector** | **Confiabilidad** | **Confidencialidad** |
-| --- | --- | --- | --- | --- | --- | --- |
-| **Ministerio**** de Salud** | Noviembre2019 | Arauca | En el año 2017, hubo 348 atenciones en migrantes. En el año 2018, hubo 2.083 atenciones en migrantes. En lo que va de año en 2019, van 3.235 atenciones a migrantes. Este es un hospital de segundo nivel que en la actualidad tiene un déficit presupuestal cercano a los 24 mil millones de pesos. | Salud | Confiable | Abierto |
+```{r child = './tablas/tabla6.Rmd'}
+```
 
 Para el etiquetado y almacenamiento de los datos usualmente se utilizan hojas de cálculo de Excel. Sin embargo, han surgido plataformas más fáciles de utilizar en los últimos años.
 
@@ -95,15 +65,9 @@ Después de que se haya sistematizado toda la información, se selecciona la inf
 - Comparabilidad: ¿permite la comparación con otros conjuntos de datos importantes para su revisión?
 - Confiabilidad: Al observar la fuente de la información y el método utilizado para recopilar la información, ¿es confiable la información? Hay que tener cuidado con la inclusión de datos que provienen de informes sin una descripción detallada de la metodología y el cuestionario.
 
-_Tabla 8. Errores comunes en estudios cualitativos y cuantitativos_
+```{r child = './tablas/tabla7.Rmd'}
+```
 
-
-| **Cuantitativo** | **Cualitativo** | |
-| --- | --- | --- |
-| **Error en el diseño** | ¿El marco de muestreo incluye todas las poblaciones de interés? **Ejemplo** : La muestra aleatoria está basada en un listado de hogares de refugiados venezolanos desactualizada y no representativa de las condiciones que enfrentan las nuevas llegadas | ¿El procedimiento de selección de los participantes ha influenciado en los hallazgos? **Ejemplo** : ¿Todos los participantes de un grupo focal fueron seleccionados por líderes comunitarios masculinos? Probablemente la selección de los participantes se ha visto influenciada hacia aquellos que apoyan el liderazgo del líder comunitario. |
-
-| **Error en la medida** | ¿Están todos los conceptos bien definidos? **Ejemplo:** El resultado de la evaluación seria errónea sí la encuesta está dirigida a hogares y los encuestados no entienden la diferencia entre hogar y una familia. | ¿Cómo fueron las opiniones disidentes motivadas y capturadas? **Ejemplo:** Existe un alto riesgo de que los participantes más influentes lideren la discusión. ¿Se capturaron otras opiniones o solo se expresaron opiniones dominantes? |
-| **Error en el procesamiento y medida de los datos** | ¿Las diferencias resaltadas son realmente significativas? Si no hay un estadístico cerca, use calculadoras de intervalos de confianza en línea para verificar los rangos. **Ejemplo** : la diferencia entre 49% y 51% es poco probable que sea significativa, ya que es un reflejo del diseño de la muestra, en lugar de una diferencia en la situación real. | ¿Se extrapolan las conclusiones a toda la población objetivo sin destacar las limitaciones de la muestra no representativa? **Ejemplo** : Los resultados de las discusiones de grupos focales con un pequeño número de mujeres seleccionadas para su participación en un proyecto específico, pueden ser indicativas, pero no representativas de la situación de otras mujeres. |
 
 ## Paso 4. Consolidación de la información
 
@@ -115,7 +79,7 @@ En los casos en los que la información sea inconsistente o conflictiva, hay dos
 
 ## Paso 5. Análisis de la información
 
-Una vez que todos los datos han sido consolidados se deberán analizar (ver sección 5), sí es posible en grupos formados por expertos y responsables de tomas de decisión (ver sección 5.1 Análisis conjunto), mediante:
+Una vez que todos los datos han sido consolidados se deberán analizar, sí es posible en grupos formados por expertos y responsables de tomas de decisión, mediante:
 
 - Explicar las relaciones entre los distintos problemas, observando posibles causas, efectos y factores subyacentes.
 - Interpretar los hallazgos priorizando áreas geográficas, grupos poblaciones y necesidades.
