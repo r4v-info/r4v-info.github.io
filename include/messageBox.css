@@ -1,0 +1,13 @@
+.message { margin-bottom: 1em; }
+.message blockquote {
+  font-size: 14px;
+  margin-bottom: 0;
+  border-left-style: solid;
+  border-left-width: 5px;
+}
+.message blockquote i { padding-right: .5em; }
+.message blockquote .title { font-size: 14px; font-weight: bold;}
+.message-important blockquote { border-color: firebrick; background-color: #FAECEA; }
+.message-important blockquote i { color: firebrick; }
+.message-info blockquote { border-color: #0A1DBA; background-color: #E3F0FD; }
+.message-info blockquote i { color: #0A1DBA; }
