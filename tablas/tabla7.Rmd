@@ -1,0 +1,52 @@
+---
+output: 
+  html_document:
+    css: tablas.css
+---
+
+<table class="tabla-basica tabla1">
+  <caption>Tabla 7. Errores comunes en estudios cualitativos y cuantitativos</caption>
+  <thead>
+      <tr>
+        <th width="20%">TIPO DE ERROR</th>
+        <th width="20%">CUANTITATIVO</th>
+        <th width="60%">CUALITATIVO</th>
+    </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>ERROR EN EL DISEÑO</td>
+    <td>¿El marco de muestreo incluye todas las poblaciones de interés?
+
+**Ejemplo:** La muestra aleatoria está basada en un listado de hogares de refugiados venezolanos desactualizada y no representativa de las condiciones que enfrentan las nuevas llegadas
+</td>
+    <td>¿El procedimiento de selección de los participantes ha influenciado en los hallazgos?
+
+**Ejemplo:** ¿Todos los participantes de un grupo focal fueron seleccionados por líderes comunitarios masculinos? Probablemente la selección de los participantes se ha visto influenciada hacia aquellos que apoyan el liderazgo del líder comunitario.
+</td>
+  </tr>
+  <tr>
+    <td>ERROR EN LA MEDIDA</td>
+    <td>¿Están todos los conceptos bien definidos?
+
+**Ejemplo:** El resultado de la evaluación seria errónea sí la encuesta está dirigida a hogares y los encuestados no entienden la diferencia entre hogar y una familia.
+</td>
+    <td>¿Cómo fueron las opiniones disidentes motivadas y capturadas?
+
+**Ejemplo:** Existe un alto riesgo de que los participantes más influentes lideren la discusión. ¿Se capturaron otras opiniones o solo se expresaron opiniones dominantes?
+</td>
+  </tr>
+<tr>
+    <td>ERROR EN EL PROCESAMIENTO Y MEDIDA DE LOS DATOS</td>
+    <td>¿Las diferencias resaltadas son realmente significativas? Si no hay un estadístico cerca, use calculadoras de intervalos de confianza en línea para verificar los rangos. 
+
+**Ejemplo:** la diferencia entre 49% y 51% es poco probable que sea significativa, ya que es un reflejo del diseño de la muestra, en lugar de una diferencia en la situación real.
+</td>
+    <td>¿Se extrapolan las conclusiones a toda la población objetivo sin destacar las limitaciones de la muestra no representativa?
+
+**Ejemplo:** Los resultados de las discusiones de grupos focales con un pequeño número de mujeres seleccionadas para su participación en un proyecto específico, pueden ser indicativas, pero no representativas de la situación de otras mujeres.
+</td>
+</tr>
+</tr>
+  </tbody>
+</table>
