@@ -8,10 +8,10 @@ output:
   <caption>Tabla 8. Técnicas de recolección de datos</caption>
   <thead>
       <tr>
-        <th width="10%">TIPO</th>
+        <th width="5%">TIPO</th>
         <th width="30%">MÉTODOS DE RECOLECCIÓN</th>
-        <th width="15%">TIPO ENCUESTADOS</th>
-        <th width="35%">PROPÓSITO</th>
+        <th width="13%">TIPO ENCUESTADOS</th>
+        <th width="33%">PROPÓSITO</th>
         <th width="10%">TIPO EVALUACIÓN</th>
         <th width="10%">EJEMPLOS</th>
     </tr>
