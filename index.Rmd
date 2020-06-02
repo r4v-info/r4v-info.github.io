@@ -16,8 +16,9 @@ require(lubridate)
 
 <div class="jumbotron">
 
-<h1>![](images/r4vlogo.png) Evaluaciones de Necesidades Conjuntas<br /></h1>
-<h2>Manual para la implementación</h2>
+![](images/r4vlogo.png) 
+<h1>Evaluaciones de Necesidades Conjuntas<br /></h1>
+<h2>Manual de implementación</h2>
 <p>Last update : `r I(format(today(), "%e %B %Y"))`</p>
 </div>
 
@@ -52,6 +53,8 @@ Antes de embarcarnos en la planificación de una nueva evaluación, existen una 
 - **Coordinación:** las actividades de recopilación de datos primarios deben coordinarse y realizarse conjuntamente siempre que sea posible para evitar la duplicación de evaluaciones y la saturación de las poblaciones encuestadas. Esto se puede conseguir a través de evaluaciones conjuntas donde las agencias colaboran para **llevar a cabo el mismo ejercicio de recopilación de datos, o evaluaciones armonizadas con agencias que acuerdan un conjunto mínimo de datos para recopilar, y una metodología estándar para garantizar que la información sea comparable.**
 - **Intercambio y transparencia:** comparta información sobre las evaluaciones planificadas y los resultados de la evaluación lo antes posible, de acuerdo con la estrategia regional de diseminación e intercambio de datos.
 </div>
+
+![](images/pasosECN.png)
 
 > Esto documento y las herramientas que lo acompañan no pretenden sustituir a ninguna herramienta y/o metodología existente. Este documento está en continuo desarrollo y mejora. Para cualquier corrección, recomendación, comentario o referencia a material relevante en español, contacten con [Carmen Asenjo](mailto:asenjo@unhcr.org) de ACNUR y [Johan Gonzalez](mailto:jgonzalez@iom.int) de OIM.
   
