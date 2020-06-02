@@ -1,0 +1,175 @@
+---
+output: 
+  html_document:
+    css: tablas.css
+---
+
+<table class="tabla-basica tabla2 responsive">
+  <caption>Tabla2. Descripción de categorías y subcategorías del marco de análisis</caption>
+  <thead>
+    <tr>
+      <th width="5%">CATEGORIA</th>
+      <th width="13%">SUB-CATEGORIA</th>
+      <th width="42%">DESCRIPCION</th>
+      <th width="2%" class="vertical"><span>ALOJAMENTO</span></th>
+      <th width="2%" class="vertical"><span>AGUA</span></th>
+      <th width="2%" class="vertical"><span>EDUCACION</span></th>
+      <th width="2%" class="vertical"><span>NUTRICION</span></th>
+      <th width="2%" class="vertical"><span>MEDIO DE VIDA</span></th>
+      <th width="2%" class="vertical"><span>PROTECCION</span></th>
+      <th width="2%" class="vertical"><span>SALUD</span></th>
+      <th width="2%" class="vertical"><span>SEGURIDAD ALIMENTARIA</span></th>
+      <th width="2%" class="vertical"><span>INTERSECTORIAL</span></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="5" class="green vertical"><span>CONDICIONES HUMANITARIAS</span></td>
+      <td class="green">Accesos a servicios o bienes basicos</td>
+      <td class="white">Consecuencias directas relacionadas con el acceso, disponibilidad, conciencia, uso y calidad de bienes y servicios básicos/esenciales.  Por ejemplo, número de niños y niñas con acceso a educación formal, número de doctores por número de pacientes, etc.</td>
+      <td/>
+      <td/>
+      <td/>
+      <td/>
+      <td/>
+      <td/>
+      <td/>
+      <td/>
+      <td/>
+    </tr>
+    <tr>
+      <td class="green">Bienestar fisico o mental</td>
+      <td class="white">Impacto directo en la salud física o mental de un individuo que puede ser como consecuencia de la falta de acceso a servicios y bienes básicos. Por ejemplo, tiempo prolongado sin acceso a alimentos resultando en casos de malnutrición o muerte. </td>
+      <td/>
+      <td/>
+      <td/>
+      <td/>
+      <td/>
+      <td/>
+      <td/>
+      <td/>
+      <td/>
+    </tr>
+    <tr>
+      <td class="green">Mecanismos de afromtamiento</td>
+      <td class="white">Actividades adoptadas por personas, comunidades, etc., que utilizan habilidades y recursos a su alcance, para afrontar riesgos y condiciones adversas. La información sobre los mecanismos de afrontamiento generalmente se refiere a actividades negativas, como mujeres que acuden al sexo por supervivencia, pero también pueden ser positivas.</td>
+      <td/>
+      <td/>
+      <td/>
+      <td/>
+      <td/>
+      <td/>
+      <td/>
+      <td/>
+      <td/>
+    </tr>
+    <tr>
+      <td class="green">Personas/Grupos con necesidades especiales</td>
+      <td class="white">Grupos de población que pueden ser particularmente vulnerables debido a género, edad, etnia o discapacidad y que tienen derecho a asistencia especial. Generalmente se considera que tienen necesidades específicas los siguientes grupos:  las niñas y los niños, incluidos los niños no acompañados o separados, mujeres en riesgo (gestantes, en periodo de lactancia, viajando solas, jefas de hogar), víctimas de trata de personas, sobrevivientes de violencia de género, las personas con enfermedades crónicas graves, los ancianos, las personas con discapacidad, hogares liderados por mujeres y personas con una orientación sexual o identidad de género diversa tienen necesidades específicas. </td>
+      <td/>
+      <td/>
+      <td/>
+      <td/>
+      <td/>
+      <td/>
+      <td/>
+      <td/>
+      <td/>
+    </tr>
+    <tr>
+      <td class="green">Riesgos y vulnerabilidades nuevas o agravadas</td>
+      <td class="white">Situaciones que potencialmente podrían deteriorar, si no se abordan las necesidades actuales. El riesgo se define como una función del peligro, la exposición, la vulnerabilidad y la capacidad, y debe estar relacionado con un evento, marco de tiempo y sistema específicos.</td>
+      <td/>
+      <td/>
+      <td/>
+      <td/>
+      <td/>
+      <td/>
+      <td/>
+      <td/>
+      <td/>
+    </tr> 
+    <tr>
+      <td rowspan="3"class="green vertical"><span>RESPUESTA</span></td>
+      <td class="green">Gobierno nacional/local</td>
+      <td class="white">Proyectos y recursos del gobierno nacional y local, o de las comunidades de acogida para responder a una crisis en curso.</td>
+      <td/>
+      <td/>
+      <td/>
+      <td/>
+      <td/>
+      <td/>
+      <td/>
+      <td/>
+      <td/>
+    </tr>
+    <tr>
+      <td class="green">Cooperacion internacional/local</td>
+      <td class="white">Proyectos y recursos de la cooperación local e internacional, para responder a una crisis en curso.</td>
+      <td/>
+      <td/>
+      <td/>
+      <td/>
+      <td/>
+      <td/>
+      <td/>
+      <td/>
+      <td/>
+    </tr>
+    <tr>
+      <td class="green">Perspectivas sobre las prioridades de la poblacion afectada</td>
+      <td class="white">Perspectivas de la población afectada sobre las intervenciones de respuesta requeridas/preferidas, diferenciadas de acuerdo a grupos de género y edad.t</td>
+      <td/>
+      <td/>
+      <td/>
+      <td/>
+      <td/>
+      <td/>
+      <td/>
+      <td/>
+      <td/>
+    </tr>
+    <tr>
+      <td rowspan="3"class="green vertical"><span>CAPACIDADES</span></td>
+      <td class="green">Comunidad de acogida</td>
+      <td class="white">Capacidad y recursos de las comunidades de acogida para responder a una crisis.</td>
+      <td/>
+      <td/>
+      <td/>
+      <td/>
+      <td/>
+      <td/>
+      <td/>
+      <td/>
+      <td/>
+    </tr>
+    <tr>
+      <td class="green">Gobierno nacional local</td>
+      <td class="white">Capacidad y recursos de las comunidades de acogida para responder a una crisis, diferenciadas de acuerdo a grupos de género y edad.</td>
+      <td/>
+      <td/>
+      <td/>
+      <td/>
+      <td/>
+      <td/>
+      <td/>
+      <td/>
+      <td/>
+    </tr>
+    <tr>
+      <td class="green">Cooperación internacional/local</td>
+      <td class="white">Proyectos y recursos de la cooperación local e internacional, para responder a una crisis en curso.</td>
+      <td/>
+      <td/>
+      <td/>
+      <td/>
+      <td/>
+      <td/>
+      <td/>
+      <td/>
+      <td/>
+    </tr>
+  </tbody>
+</table>
+
+
