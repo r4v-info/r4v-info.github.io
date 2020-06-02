@@ -1,0 +1,127 @@
+---
+output: 
+  html_document:
+    css: tablas.css
+---
+
+<table class="tabla-basica tabla1">
+  <caption>Tabla 8. Técnicas de recolección de datos</caption>
+  <thead>
+      <tr>
+        <th width="10%">TIPO</th>
+        <th width="30%">MÉTODOS DE RECOLECCIÓN</th>
+        <th width="15%">TIPO ENCUESTADOS</th>
+        <th width="35%">PROPÓSITO</th>
+        <th width="10%">TIPO EVALUACIÓN</th>
+        <th width="10%">EJEMPLOS</th>
+    </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>ENTREVISTAS INFORMANTES CLAVE (EIC)</td>
+    <td>Cuestionarios semiestructurados  adaptados al conocimiento esperado de las personas encuestadas.
+
+[_Más información sobre esta técnica_](https://www.acaps.org/sites/acaps/files/resources/files/direct_observation_and_key_informant_interview_techniques_for_primary_data_collection_during_rapid_assessments_october_2011.pdf)
+</td>
+    <td>Individuales con conocimiento especifico de un problema, situación, grupo poblacional o localización</td>
+    <td>Recopilar información sobre el impacto que tiene una crisis entre distintos grupos de población</td>
+    <td>
+Inicial
+
+Rápida
+
+Exhaustiva
+
+Monitoreo
+</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>OBSERVACIÓN DIRECTA (OD)</td>
+    <td>Observaciones estructuradas (se busca un tipo de información en concreto) y no estructuradas (sonidos, olores, impresiones, la presencia y ausencia de cosas y personas, etc.) 
+
+[_Más información sobre esta técnica_](https://www.acaps.org/sites/acaps/files/resources/files/direct_observation_and_key_informant_interview_techniques_for_primary_data_collection_during_rapid_assessments_october_2011.pdf) 
+</td>
+    <td>N/A</td>
+    <td>
+Descubrir condiciones y características de un sitio afectado o una población
+Descubrir que hay o no hay, que se siente o que esta fuera de lo normal
+Triangular con información obtenida a través de otras técnicas</td>
+    <td>
+Inicial
+
+Rápida
+
+Exhaustiva
+
+Monitoreo
+</td>
+    <td></td>
+  </tr>
+<tr>
+    <td>DISCUSIONES DE GRUPOS FOCALES</td>
+    <td>Entrevistas semiestructuradas con un grupo de individuos para obtener información sobre condiciones, situaciones, experiencias, expectaciones o percepciones a través de la interacción del grupo</td>
+    <td>Grupos pequeños de la población que comparten ciertas características como por ejemplo edad, sexo, estatus económico, etc.</td>
+    <td>
+Escuchar a la población afectada
+Identificar prioridades, necesidades, capacidades y riesgos de protección identificados por distintos grupos específicos.
+Entender factores subyacentes, riesgos, amenazas y causas.
+Profundizar en el conocimiento ganado a través de otras técnicas
+Asegurar, en lo posible, grupos con mujeres por separado</td>
+    <td>Exhaustiva
+Monitoreo
+</td>
+    <td>[Diagnósticos participativos Costa Rica ACNUR](https://www.acnur.org/fileadmin/Documentos/Publicaciones/2016/10908.pdf?file=fileadmin/Documentos/Publicaciones/2016/10908)</td>
+</tr>
+<tr>
+    <td>DISCUSIONES DE GRUPOS COMUNITARIOS</td>
+    <td>Discusiones con un grupo diverso de individuos de una comunidad especifica</td>
+    <td>Grupos diversos de individuos de comunidades seleccionadas que representan diferentes grupos, hogares, situaciones y características</td>
+    <td>
+Obtener información sobre condiciones, experiencia, expectaciones o percepciones para asegurar distintos puntos de vista
+Identificar prioridades, necesidades y riesgos de protección identificados por la comunidad
+Profundizar en el conocimiento ganado a través de otras técnicas
+Asegurar, en lo posible, grupos con mujeres por separado</td>
+    <td>Rápida
+
+Monitoreo
+</td>
+    <td></td>
+</tr>
+<tr>
+    <td>VISISTAS A HOGARES</td>
+    <td>Entrevistas estructuradas  con miembros de hogares para obtener información sobre condiciones humanitarias, experiencias, expectaciones, o percepciones.
+Los equipos de recolección de información observan las condiciones de vida de los hogares encuestados.
+</td>
+    <td>Representantes/Responsables del hogar </td>
+    <td>
+Entender las condiciones y situación de los hogares basados en indicadores predefinidos
+Identificar prioridades, necesidades y riesgos de protección identificados por los representantes del hogar
+</td>
+    <td>Exhaustiva
+
+Monitoreo
+</td>
+    <td>[Gran Encuesta Integrada de Hogares 2019 Colombia](http://microdatos.dane.gov.co/index.php/catalog/599/get_microdata)</td>
+</tr>
+<tr>
+    <td>TELEDETECCIÓN</td>
+    <td>Evaluación y determinación de otro tipo de información que se puede capturar visualmente cuando el acceso a la población afectada está restringido debido a diversos factores.</td>
+    <td>N/A</td>
+    <td>
+Obtener información confiable de áreas de difícil acceso.
+Identificar prioridades, necesidades y riesgos de protección identificados por los representantes del hogar.
+</td>
+    <td>Inicial
+
+Rápida
+
+Exhaustiva
+
+Monitoreo
+</td>
+    <td>[Mapeo UNOSAT](http://unosat-maps.web.cern.ch/unosat-maps/CO%5COT20180419COL/UNOSAT_A3_Quebrada Lizama_Cano_Muerto_OT20180410COL.pdf)</td>
+</tr>
+</tr>
+  </tbody>
+</table>
