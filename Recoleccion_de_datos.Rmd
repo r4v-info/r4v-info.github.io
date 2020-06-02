@@ -86,17 +86,11 @@ Un **muestreo no probabilístico** es por ejemplo aquel, en el que un equipo de 
 
 Los métodos no probabilísticos no utilizan métodos de selección aleatoria, lo cual significa que no es posible extrapolar los resultados a una población más amplia. Este tipo de métodos solo deberían de ser utilizados cuando el contexto y los recursos no permiten utilizar un muestreo probabilístico o cuando se necesita más información sobre grupos específicos y vulnerabilidades de la población objetivo.
 
-La Tabla 10 presenta cuatro métodos de muestreo no probabilístico.
+La Tabla 9 presenta cuatro métodos de muestreo no probabilístico.
 
-_Tabla 10. Métodos no probabilísticos_
+```{r child = './tablas/tabla9.Rmd'}
+```
 
-| **Tipo** | **Método** | **Cuando aplicarlo** |
-| --- | --- | --- |
-| **MUESTREO POR CONVENIENCIA** | La muestra se selecciona en función de la accesibilidad y proximidad a los encuestados. Debido a que el sesgo de selección puede ocurrir fácilmente, es considerada una técnica de muestreo débil, y se recomienda utilizarla solo cuando sea absolutamente necesario.Es muy importante registrar las limitaciones de este método, particularmente la falta de capacidad para generalizar los hallazgos. | En algunos casos, quizás debido a problemas de acceso, se puede adoptar un muestreo de conveniencia.Se considera eficiente y rentable, y se usa más comúnmente en evaluaciones de necesidades iniciales cuando el acceso a la población afectada es limitado. |
-| --- | --- | --- |
-| **MUESTREO INTENCIONAL** | La muestra es seleccionada y construida para un propósito específico. En un muestreo intencional, el tamaño de la muestra se determina en base al concepto de saturación y no puede ser planificado con precisión antes de la evaluación. | Este método es el más apropiado cuando se necesita obtener información que es relevante y creíble en un determinado entorno y en un marco de tiempo relativamente rápido. |
-| **MUESTREO DE BOLA DE NIEVE O DIRIGIDO POR LOS PROPIOS ENCUESTADOS (RDS, POR SUS SIGLAS EN INGLES)** | Este método intenta descubrir nuevos informantes preguntando a las personas que ya han sido entrevistadas sobre otras personas que conozcan y que sepan de un tema en particular. | Esta técnica es particularmente útil para localizar poblaciones "ocultas", por ejemplo, desplazados internos en entornos urbanos. |
-| **muestreo opoRtunistico** | Guiado por un propósito específico, la muestra es seleccionada según las necesidades. Por ejemplo, si un asesor conoce a alguien que puede proporcionar información útil, o si las personas de interés ya están presentes en una ubicación para recibir información o un servicio. | Esta técnica es útil cuando queda poco tiempo disponible para evaluación. Se puede usar enparalelo a la entrega de ayuda. Aunque es eficiente y rentable, puede estar sujeta a un sesgo considerable. |
 
 **Métodos probabilísticos**
 
@@ -109,24 +103,13 @@ Una **muestra representativa** debe tener las mismas características que la tot
 
 Dado que solo estamos recopilando datos sobre un subgrupo de la población cuando se realiza el muestreo, es importante recordar que el resultado obtenido solo será una estimación de los indicadores que se van a medir.
 
-En la Tabla 11 se describen cinco tipos de muestreo probabilísticos.
+En la Tabla 10 se describen cinco tipos de muestreo probabilísticos.
 
-_Tabla 11. Métodos de muestreo probabilísticos_
+```{r child = './tablas/tabla10.Rmd'}
+```
 
-| **Tipo** | **Método** | **Cuando aplicarlo** |
-| --- | --- | --- |
-| **Muestreo Aleatorio Simple** | Utiliza números generados aleatoriamente para la selección de la muestra.
- | Este método es apropiado si la población es homogénea y si hay disponible una lista completa de todas las unidades de muestreo en la población, por ejemplo, en un distrito donde todas las familias que albergan refugiados son conocidas y están en la lista. |
-| --- | --- | --- |
-| **Muestreo sistemático** | Este método implica seleccionar elementos de un marco de muestreo ordenado desde el cual la selección sistemática es fácilmente posible. Por ejemplo, el número total de hogares se divide por el tamaño de muestra requerido y ofrece un intervalo de muestreo regular. | Este método es apropiado si la población de la muestra es geográficamente homogénea y está organizada en filas ordenadas (por ejemplo, un campo de refugiados bien planificado).Si hay patrones ocultos, no se recomienda utilizar este método. |
-| **Muestreo estratificado** |
-- La estratificación es el proceso de división de la población en subgrupos homogéneos antes del muestreo. Cada estrato debe ser mutuamente excluyente, con cada elemento en la población asignado a un solo estrato.
-- Los estratos también deben ser colectivamente exhaustivos, sin que ningún elemento de la población quede excluido.
-- Una vez que se han establecido los estratos, se puede aplicar muestreo aleatorio o muestreo sistemático para calcular el tamaño de la muestra de cada estrato.
- | Este método es útil para muestrear cada subpoblación(cualquier estrato con características comunes) independientemente si la población de la muestra es heterogénea. |
-| **Muestreo por conglomerados** | Este método identifica una característica que permita dividir la población en grupos disjuntos (sin solapamiento) y de forma exhaustiva (todos los individuos deben estar en un grupo) de tal manera que los grupos no difieran entre sí en relación con aquello que queremos medir. Una vez hemos definido estos conglomerados, seleccionaremos al azar algunos de ellos para estudiarlos.
- | Este método es usado cuando ya existen agrupaciones "naturales" y relativamente homogéneas entre la población de interés. Un criterio habitual para definir conglomerados es el geográfico. Por ejemplo, si queremos estudiar qué proporción de la población venezolana en Ecuador tiene estudios universitarios, podemos dividir el total de la población en provincias y seleccionar algunas de ellas para ser estudiadas. |
-| **Muestreo POR ETAPAS MULTIPLES** | También conocido como muestreo de conglomerados de etapas múltiples, es una forma más compleja de muestreo de conglomerados que contiene dos o más etapas en la selección de la muestra. | Este método se puede usar cuando no es factible tomar al azar una muestra, por ejemplo, si la población esta dispersa, el área de muestreo es muy amplia o no hay marco de muestreo apropiado. |
+
+
 
 En general, las evaluaciones iniciales o rápidas emplean métodos de muestreo no probabilísticos debido a la falta de tiempo, mientras que las evaluaciones exhaustivas utilizan métodos probabilísticos. Además, los métodos probabilísticos en general, consumen más recursos. Por tanto, a la hora de elegir el método, se buscará un balance entre la representatividad y la diversidad de la muestra, y la eficiencia y la rapidez con la cual se pueden recolectar los datos.
 
@@ -172,7 +155,7 @@ Tradicionalmente, los datos han sido recolectados con papel y lápiz, y después
 
 Actualmente, la recolección de datos se hace por lo general con sistemas móviles de recolección de datos, a través de tabletas o celulares, permitiendo recolectar, almacenar, analizar y compartir los datos en tiempo real. Existen numerosas herramientas para recolección móvil de datos, pero la más utilizada en el sector humanitario es el **Open Data Kit (ODK)** o la versión personalizada [**KoBoToolbox**](https://www.kobotoolbox.org/), la cual facilita la construcción de cuestionarios para personas sin un perfil técnico.
 
-Para más información sobre herramientas y últimos desarrollos tecnológicos para mejorar la recolección móvil de datos, se puede consultar el proyecto [**NOMAD**](https://humanitarian-nomad.org/)(Humanitarian Operations Mobile Acquisition of Data, por sus siglas en ingles), liderado por iMMAP y CartONG.
+Para más información sobre herramientas y últimos desarrollos tecnológicos para mejorar la recolección móvil de datos, se puede consultar el proyecto [**NOMAD**](https://humanitarian-nomad.org/) (Humanitarian Operations Mobile Acquisition of Data, por sus siglas en ingles), liderado por iMMAP y CartONG.
 
 ### Paso 5. Capacitar a los equipos de recolección de datos 
 
