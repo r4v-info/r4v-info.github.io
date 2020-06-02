@@ -1,0 +1,49 @@
+---
+output: 
+  html_document:
+    css: tablas.css
+---
+
+<table class="tabla-basica tabla1">
+  <caption>Tabla 9. Métodos no probabilísticos</caption>
+  <thead>
+      <tr>
+        <th width="20%">TIPO</th>
+        <th width="40%">METODO</th>
+        <th width="40%">CUANDO APLICARLO</th>
+    </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>MUESTREO POR CONVENIENCIA</td>
+    <td>La muestra se selecciona en función de la accesibilidad y proximidad a los encuestados. Debido a que el sesgo de selección puede ocurrir fácilmente, es considerada una técnica de muestreo débil, y se recomienda utilizarla solo cuando sea absolutamente necesario.
+Es muy importante registrar las limitaciones de este método, particularmente la falta de capacidad para generalizar los hallazgos.
+</td>
+    <td>En algunos casos, quizás debido a problemas de acceso, se puede adoptar un muestreo de conveniencia.
+Se considera eficiente y rentable, y se usa más comúnmente en evaluaciones de necesidades iniciales cuando el acceso a la población afectada es limitado.
+</td>
+  </tr>
+  <tr>
+    <td>MUESTREO INTENCIONAL</td>
+    <td>La muestra es seleccionada y construida para un propósito específico. En un muestreo intencional, el tamaño de la muestra se determina en base al concepto de saturación  y no puede ser planificado con precisión antes de la evaluación.</td>
+    <td>Este método es el más apropiado cuando se necesita obtener información que es relevante y creíble en un determinado entorno y en un marco de tiempo relativamente rápido.
+</td>
+  </tr>
+<tr>
+    <td>MUESTREO DE BOLA DE NIEVE O DIRIGIDO POR LOS PROPIOS ENCUESTADOS (RDS, POR SUS SIGLAS EN INGLES)</td>
+    <td>Este método intenta descubrir nuevos informantes preguntando a las personas que ya han sido entrevistadas sobre otras personas que conozcan y que sepan de un tema en particular.</td>
+    <td>Esta técnica es particularmente útil para localizar poblaciones "ocultas", por ejemplo, desplazados internos en entornos urbanos.</td>
+</tr>
+</tr>
+
+ </tr>
+  <tr>
+    <td>MUESTREO OPORTUNISTICO</td>
+    <td>Guiado por un propósito específico, la muestra es seleccionada según las necesidades. Por ejemplo, si un asesor conoce a alguien que puede proporcionar información útil, o si las personas de interés ya están presentes en una ubicación para recibir información o un servicio.</td>
+    <td>Esta técnica es útil cuando queda poco tiempo disponible para evaluación. Se puede usar en
+paralelo a la entrega de ayuda. Aunque es eficiente y rentable, puede estar sujeta a un sesgo considerable.
+</td>
+  </tr>
+</tr>
+  </tbody>
+</table>
