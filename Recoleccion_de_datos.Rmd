@@ -8,7 +8,7 @@ source("options_communes.R")
 
 
 <div class="important">
-This chapter is not written yet.
+El contenido de este capítulo deber ser revisado.
 </div>
 
 
@@ -25,7 +25,9 @@ Los vacíos de información se pueden identificar en el plan de análisis de dat
 
 Si durante la revisión de datos secundarios se identifican vacíos de información entonces será necesario recolectar datos primarios. Antes de comenzar con el diseño de la metodología de recolección de datos, basándonos en los hallazgos resultantes de la revisión de datos secundarios, se deberán revisar los objetivos de la evaluación de necesidades para refinar el propósito y el alcance de la recolección de datos primarios. El plan de análisis de datos deberá ser revisado en este punto para identificar los indicadores y los vacíos de necesidades de información existentes.
 
-### Paso 1. Diseñar metodología: Técnicas de recolección de datos y unidades de análisis**
+### Paso 1. Diseñar metodología
+
+#### Técnicas de recolección de datos
 
 La idoneidad y viabilidad de las diferentes metodologías de recopilación de datos dependerán de los objetivos del ejercicio de recopilación de datos primarios (es decir, preguntas de la investigación), limitaciones (tiempo, recursos, acceso, etc.) y beneficios y costos esperados (en términos de resultados de protección, riesgos de seguridad, etc.). El contexto también es importante, y los principales elementos a considerar son:
 
@@ -51,85 +53,14 @@ Para cada ejercicio de recolección de datos se puede utilizar más de una técn
 Distintas herramientas y estándares han sido desarrollados para hacer evaluaciones de necesidades para diferentes propósitos y contextos. En el Anexo 4 se puede consultar un listado de las herramientas y enfoques más comúnmente utilizadas en el contexto humanitario y en particular en la región.
 
 
-
 Existen __distintas técnicas de recolección de datos primarios__, cada una tiene sus ventajas y desventajas, y cada una provee información cuantitativa o cualitativa. Normalmente se combinan varias técnicas durante una evaluación de necesidades para complementar la información y asegurar que se incluyen puntos de vista diferentes. La Tabla 9 provee un resumen de las técnicas de recolección de datos más utilizadas en diferentes evaluaciones de necesidades.
 
+```{r child = './tablas/tabla8.Rmd'}
+```
 
 
-#### Entrevistas Informantes Clave (EIC)** | Cuestionarios semiestructurados
 
-Adaptados al conocimiento esperado de las personas encuestadas.[_Más información sobre esta técnica_](https://www.acaps.org/sites/acaps/files/resources/files/direct_observation_and_key_informant_interview_techniques_for_primary_data_collection_during_rapid_assessments_october_2011.pdf)
- 
- Individuales con conocimiento especifico de un problema, situación, grupo poblacional o localización 
- Recopilar información sobre el impacto que tiene una crisis entre distintos grupos de población | InicialRápidaExhaustivaMonitoreo 
- 
-
-####  OBSERVACION DIRECTA (OD)
-
-Observaciones estructuradas (se busca un tipo de información en concreto) y no estructuradas (sonidos, olores, impresiones, la presencia y ausencia de cosas y personas, etc.) [_Más información sobre esta técnica_](https://www.acaps.org/sites/acaps/files/resources/files/direct_observation_and_key_informant_interview_techniques_for_primary_data_collection_during_rapid_assessments_october_2011.pdf) 
-
-- Descubrir condiciones y características de un sitio afectado o una población
-- Descubrir que hay o no hay, que se siente o que esta fuera de lo normal
-- Triangular con información obtenida a través de otras técnicas
-
- InicialRápidaExhaustivaMonitoreo
-
-#### DISCUSIONES DE GRUPO FOCALES
-
-Entrevistas semiestructuradas con un grupo de individuos para obtener información sobre condiciones, situaciones, experiencias, expectaciones o percepciones a través de la interacción del grupo 
-Grupos pequeños de la población que comparten ciertas características como por ejemplo edad, sexo, estatus económico, etc. 
-
-- Escuchar a la población afectada
-- Identificar prioridades, necesidades, capacidades y riesgos de protección identificados por distintos grupos específicos.
-- Entender factores subyacentes, riesgos, amenazas y causas.
-- Profundizar en el conocimiento ganado a través de otras técnicas
-- Asegurar, en lo posible, grupos con mujeres por separado
-
-
-ExhaustivaMonitoreo 
-[Diagnósticos participativos Costa Rica ACNUR](https://www.acnur.org/fileadmin/Documentos/Publicaciones/2016/10908.pdf?file=fileadmin/Documentos/Publicaciones/2016/10908) 
-
-#### DISCUSIONES DE GRUPOS COMUNITARIOS
-
-Discusiones con un grupo diverso de individuos de una comunidad especifica
-
-Grupos diversos de individuos de comunidades seleccionadas que representan diferentes grupos, hogares, situaciones y características 
-
-- Obtener información sobre condiciones, experiencia, expectaciones o percepciones para asegurar distintos puntos de vista
-- Identificar prioridades, necesidades y riesgos de protección identificados por la comunidad
-- Profundizar en el conocimiento ganado a través de otras técnicas
-- Asegurar, en lo posible, grupos con mujeres por separado
-
-
-RápidaMonitoreo 
-
-####  VISITAS A HOGARES
-
-Entrevistas estructuradas con miembros de hogares para obtener información sobre condiciones humanitarias, experiencias, expectaciones, o percepciones.Los equipos de recolección de información observan las condiciones de vida de los hogares encuestados. 
-
-Representantes/Responsables del hogar 
-
-- Entender las condiciones y situación de los hogares basados en indicadores predefinidos
-- Identificar prioridades, necesidades y riesgos de protección identificados por los representantes del hogar
-
-
-ExhaustivaMonitoreo
-[Gran Encuesta Integrada de Hogares 2019 Colombia](http://microdatos.dane.gov.co/index.php/catalog/599/get_microdata) |
-
-#### TELEDETECCION
-
-Evaluación y determinación de otro tipo de información que se puede capturar visualmente cuando el acceso a la población afectada está restringido debido a diversos factores. 
-
-- Obtener información confiable de áreas de difícil acceso.
-- Identificar prioridades, necesidades y riesgos de protección identificados por los representantes del hogar.
-
-
-InicialRápidaExhaustivaMonitoreo
-
-[Mapeo UNOSAT](http://unosat-maps.web.cern.ch/unosat-maps/CO%5COT20180419COL/UNOSAT_A3_Quebrada%20Lizama_Cano_Muerto_OT20180410COL.pdf) |
-
-
-**Unidades de medida**
+#### Unidades de medida
 
 Los datos generalmente se recolectan a un determinado nivel que viene definido por la unidad de medida. Existen cuatro unidades de medida que se utilizan en el ámbito humanitario y se explican a continuación. Es importante tener en cuenta que no se deben combinar en un solo formulario de recopilación de datos.
 
