@@ -28,6 +28,67 @@ Las principales tareas que hay que llevar a cabo durante una revisión de datos 
 Localizar informes, conjuntos de datos y productos con análisis de información precrisis y de la crisis. Un registro de evaluaciones es un buen punto de partida, ya que proporciona un listado de los informes, estudios, evaluaciones de necesidades etc. que ya han sido realizados por otros actores. En este [enlace](https://r4v.info/es/documents/details/71288) puede consultar el registro de evaluaciones del Grupo Inter agencial sobre Flujos Migratorios Mixtos en Colombia. Por otra parte, se [puede consultar este documento](http://pim.guide/wp-content/uploads/2018/05/Framework-for-Data-Sharing-in-Practice.pdf), el cual provee una guía para establecer un sistema para compartir información.
 
 
+<table class="tabla-basica tabla4 responsive">
+  <caption>Tabla 5. Fuentes y ejemplos de información secundaria precrisis y de la crisis</caption>
+  <thead>
+    <tr>
+        <th width="50%">INFORMACIÓN PRECRISIS</th>
+        <th width="50%">INFORMACIÓN ESPECÍFICA DE LA CRISIS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+•	Oficinas nacionales de estadística, censos y ministerios relevantes
+
+•	Planes de operación en el país,
+
+•	Indicadores de desarrollo del Banco Mundial
+
+•	Perfiles epidemiológicos por país de la Organización Mundial de la Salud
+
+•	Análisis situacionales de salud
+
+•	Diagnósticos de Planes de desarrollo local
+
+•	Datos de Encuestas de Indicadores Múltiples por Conglomerados de UNICEF (MICS)
+
+•	Teledetección
+
+•	Sociedad civil e informes de agencias de la ONU 
+
+•	Índice de gestión de riesgos (INFORM)
+
+•	Revistas y libros académicos (INASP)
+ </td>
+      <td>
+•	Medios nacionales e internacionales
+
+•	ReliefWeb
+
+•	Intercambio de datos humanitarios (HDX por sus siglas en inglés) 
+
+•	Conjuntos de datos operativos comunes (CODs por sus siglas en inglés) del IASC
+
+•	Noticias IRIN
+
+•	Portal de datos y portal de mapas
+
+•	Informes de situación de organizaciones de la sociedad civil, incluyendo organizaciones
+de mujeres y personas LGBTI, gobierno y agencias de la ONU
+
+•	Explorador de noticias de European Media Monitoring
+
+•	Informes de clúster y entre clústeres, sitios web y reuniones
+
+•	Teledetección
+</td>
+    </tr>
+    </tr>
+  </tbody>
+</table>
+
+
 
 Una vez se han recolectado las fuentes de datos, se deben almacenar de forma que se puedan encontrar fácilmente. Para ello, se recomienda utilizar un formato estandarizado para nombrar archivos, que incluya información sobre el autor, el título del informe, la fecha del informe y cómo se deben tratar los datos según su confidencialidad, por ejemplo: 20181104\_GIFMM\_EvaluaciónNecesidades\_Protegido.
 
@@ -42,6 +103,36 @@ Las categorías más comunes de etiquetado incluyen:
 - **Temática** : usar una estructura preexistente de etiquetado, basada en el plan de análisis de datos. Esto es un requerimiento esencial si más de una analista está trabajando en el etiquetado.
 - **Confidencialidad** : proporcionar detalles sobre si los datos son: abiertos, restringidos, protegidos o confidenciales.
 - **Confiabilidad de la fuente** : definir si las fuentes son confiables, no confiables, etc. Existen varias técnicas para definir la confiabilidad de los datos, puede encontrar un ejemplo en este [enlace](https://en.wikipedia.org/wiki/Intelligence_source_and_information_reliability).
+
+
+
+<table class="tabla-basica tabla4 responsive">
+  <caption>Tabla 6. Ejemplo de estructura de etiquetado</caption>
+  <thead>
+    <tr>
+      <th>Fuente</th>
+      <th>Fecha</th>
+      <th>Área geográfica</th>
+      <th>Narrativo</th>
+      <th>Sector</th>
+      <th>Confiabilidad</th>
+      <th>Confidencialidad</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Ministerio de salud</td>
+      <td>Noviembre 2019</td>
+      <td>Arauca</td>
+      <td>En el año 2017, hubo 348 atenciones en migrantes. En el año 2018, hubo 2.083 atenciones en migrantes. En lo que va de año en 2019, van 3.235 atenciones a migrantes. Este es un hospital de segundo nivel que en la actualidad tiene un déficit presupuestal cercano a los 24 mil millones de pesos.</td>
+      <td>Salud </td>
+      <td>[Confiable](https://en.wikipedia.org/wiki/Intelligence_source_and_information_reliability)</td>
+      <td>Abierto</td>
+    </tr>
+  </tbody>
+</table>
+
+
 
 
 Para el etiquetado y almacenamiento de los datos usualmente se utilizan hojas de cálculo de Excel. Sin embargo, han surgido plataformas más fáciles de utilizar en los últimos años.
@@ -59,6 +150,55 @@ Después de que se haya sistematizado toda la información, se selecciona la inf
 - Comparabilidad: ¿permite la comparación con otros conjuntos de datos importantes para su revisión?
 - Confiabilidad: Al observar la fuente de la información y el método utilizado para recopilar la información, ¿es confiable la información? Hay que tener cuidado con la inclusión de datos que provienen de informes sin una descripción detallada de la metodología y el cuestionario.
 
+
+
+<table class="tabla-basica tabla1">
+  <caption>Tabla 7. Errores comunes en estudios cualitativos y cuantitativos</caption>
+  <thead>
+      <tr>
+        <th width="20%">TIPO DE ERROR</th>
+        <th width="40%">CUANTITATIVO</th>
+        <th width="40%">CUALITATIVO</th>
+    </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>ERROR EN EL DISEÑO</td>
+    <td>¿El marco de muestreo incluye todas las poblaciones de interés?
+
+**Ejemplo:** La muestra aleatoria está basada en un listado de hogares de refugiados venezolanos desactualizada y no representativa de las condiciones que enfrentan las nuevas llegadas
+</td>
+    <td>¿El procedimiento de selección de los participantes ha influenciado en los hallazgos?
+
+**Ejemplo:** ¿Todos los participantes de un grupo focal fueron seleccionados por líderes comunitarios masculinos? Probablemente la selección de los participantes se ha visto influenciada hacia aquellos que apoyan el liderazgo del líder comunitario.
+</td>
+  </tr>
+  <tr>
+    <td>ERROR EN LA MEDIDA</td>
+    <td>¿Están todos los conceptos bien definidos?
+
+**Ejemplo:** El resultado de la evaluación seria errónea sí la encuesta está dirigida a hogares y los encuestados no entienden la diferencia entre hogar y una familia.
+</td>
+    <td>¿Cómo fueron las opiniones disidentes motivadas y capturadas?
+
+**Ejemplo:** Existe un alto riesgo de que los participantes más influentes lideren la discusión. ¿Se capturaron otras opiniones o solo se expresaron opiniones dominantes?
+</td>
+  </tr>
+<tr>
+    <td>ERROR EN EL PROCESAMIENTO Y MEDIDA DE LOS DATOS</td>
+    <td>¿Las diferencias resaltadas son realmente significativas? Si no hay un estadístico cerca, use calculadoras de intervalos de confianza en línea para verificar los rangos. 
+
+**Ejemplo:** la diferencia entre 49% y 51% es poco probable que sea significativa, ya que es un reflejo del diseño de la muestra, en lugar de una diferencia en la situación real.
+</td>
+    <td>¿Se extrapolan las conclusiones a toda la población objetivo sin destacar las limitaciones de la muestra no representativa?
+
+**Ejemplo:** Los resultados de las discusiones de grupos focales con un pequeño número de mujeres seleccionadas para su participación en un proyecto específico, pueden ser indicativas, pero no representativas de la situación de otras mujeres.
+</td>
+</tr>
+</tr>
+  </tbody>
+</table>
+  
 
 ## Paso 4. Consolidación de la información
 

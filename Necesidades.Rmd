@@ -381,7 +381,63 @@ El marco contempla por un lado información de contexto, de la crisis, perfiles 
 </table>
 
 
+<table class="tabla-basica tabla3 responsive">
+  <caption>Tabla 3. Ejemplos de necesidades de información a nivel sectorial del marco de análisis</caption>
+  <thead>
+    <tr>
+      <th>CATEGORIA</th>
+      <th>SUB-CATEGORIA</th>
+      <th>ALOJAMIENTO</th>
+      <th>EDUCACION</th>
+      <th>MEDIOS DE VIDA</th>
+      <th>SALUD</th>
+      <th>SEGURIDAD ALIMENTARI</th>
+      <th>NUTRICION</th>
+      <th>PROTECCION</th>
+      <th>WASH</th>
+      <th>INTER SECTORIAL</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="4"class="green vertical"><span>CONDICIONES HUMANITARIAS</span></td>
+      <td class="green">Acceso a servicios o bienes basicos</td>
+      <td>
+Tipo de alojamiento ocupado
 
+Dificultades para acceder a alojamiento (falta de recursos económicos, xenofobia, homolesbitransfobia, etc.)
+</td>
+      <td>
+Número de niños y niñas que no asisten a educación formal, o no asisten regularmente, durante la temporada escolar
+
+Razones por las que no asisten o no asisten regularmente, diferenciada para niña y para niños
+</td>
+      <td>
+
+% adultos en desempleo (desagregado por sexo y edad)
+
+Principales fuentes de ingresos (para mujeres y hombres)
+
+Dificultades en acceso a empleo formal para mujeres y para hombres.
+</td>
+      <td>
+Acceso al sistema sanitario
+
+Acceso a controles prenatales 
+
+Razones que imposibilitan acceso al sistema de salud y seguridad social (Falta de empleo formal, etc.)
+
+Tasas de lactancia materna, exclusiva y continuada
+
+Acceso a métodos anticonceptivos
+
+Atención clínica de la violencia sexual
+</td>
+      <td>
+Número de comidas consumidas diariamente
+
+Medios de acceso a alimentos para hombres y para mujeres
+</td>
 
 ## Plan de análisis de datos
 
@@ -401,5 +457,153 @@ Para desarrollar el plan de análisis:
 3. Evaluar el nivel de confianza de la fuente y la información.
 4. Describir los resultados analíticos planeados y las distintas relaciones entre elementos.
 5. Actualizar el plan de análisis de datos a medida que surge nueva información durante el ciclo de la evaluación de necesidades.
+
+
+<table class="tabla-basica tabla4 responsive">
+  <caption>Tabla 4. Ejemplo de plan de análisis de datos según varios ejemplos de necesidades de información definidos en la Tabla 3 y una vez realizada la revisión de datos secundarios</caption>
+  <thead>
+    <tr>
+      <th>CATEGORIA MARCO ANALISIS</th>
+      <th>SUBCATEGORIA MARCO ANALISIS</th>
+      <th>SECTOR MARCO ANALISIS</th>
+      <th>NECESIDAD DE INFORMACTION- PREGUNTA ANALITICA</th>
+      <th>DATOS REQUERIDOS</th>
+      <th>FUENTE</th>
+      <th>TIPO</th>
+      <th>CONFIABILIDAD</th>
+      <th>ESTADO</th>
+      <th>ANALISIS COMPARACION</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Condiciones humanitarias </td>
+      <td>Bienestar físico y mental</td>
+      <td>Salud</td>
+      <td>Tendencias en la incidencia de enfermedades</td>
+      <td>% de hogares de Venezuela con al menos un miembro que requiere atención médica en los barrios X, Y y Z.</td>
+      <td>Encuesta de hogares </td>
+      <td>Primaria</td>
+      <td>N/A</td>
+      <td>Planeada Inicio 2019 – fin de 2019</td>
+      <td>Entre áreas geográficas</td>
+    </tr>
+    <tr>
+      <td>Condiciones humanitarias </td>
+      <td>Bienestar físico y mental</td>
+      <td>Salud</td>
+      <td>Tendencias en la incidencia de enfermedades</td>
+      <td>Patrones de morbilidad y mortalidad de la población venezolana en los barrios X, Y y Z.</td>
+      <td>Ministerio de Salud</td>
+      <td>Secundaria</td>
+      <td>Confiable (Representativa)</td>
+      <td>Completada Febrero 2019</td>
+      <td>
+Entre áreas geográficas
+
+Entre sexo y edad
+</td>
+    </tr>
+    <tr>
+      <td>Condiciones humanitarias </td>
+      <td>Bienestar físico y mental</td>
+      <td>Salud</td>
+      <td>Barreras para acceder a la atención médica</td>
+      <td>% de hogares de Venezuela con al menos un miembro que requiere atención médica incapaz de recibir tratamiento ahora mismo, más la explicación del por qué, en los barrios X, Y y Z</td>
+      <td>Encuesta de hogares </td>
+      <td>Primaria</td>
+      <td>N/A</td>
+      <td>Planeada
+Inicio 2019 – fin de 2019
+</td>
+      <td>Entre áreas geográficas</td>
+    </tr>
+    <tr>
+      <td>Respuesta</td>
+      <td>Respuesta cooperación local-internacional</td>
+      <td>Salud</td>
+      <td>Apoyo a los sistemas de salud.</td>
+      <td>Brechas en presencia y cobertura de actores de salud locales, nacionales e internacionales en los barrios X, Y y Z.</td>
+      <td>Ministerio de Salud 
+Clúster de Salud
+</td>
+      <td>Secundaria</td>
+      <td>Confiable (Representativa)</td>
+      <td>Completada</td>
+      <td>Entre áreas geográficas</td>
+    </tr>
+    <tr>
+      <td>Capacidades</td>
+      <td>Gobierno nacional/local</td>
+      <td>Salud</td>
+      <td>Capacidad de la infraestructura sanitaria para satisfacer un incremento en la demanda</td>
+      <td>Número promedio de personal de salud y camas de hospital por población en los barrios X, Y y Z.
+
+Hospitales que reportan capacidad y recursos insuficientes para atender la demanda en los barrios X, Y y Z.
+</td>
+      <td>Ministerio de Salud Clúster de Salud</td>
+      <td>Secundaria</td>
+      <td>Confiable (Representativa)</td>
+      <td>Completada</td>
+      <td>Entre áreas geográficas</td>
+    </tr> 
+    <tr>
+      <td>Respuesta</td>
+      <td>Acceso a servicios o bienes básicos</td>
+      <td>Salud</td>
+      <td>Acceso a atención sanitaria oportuna y adecuada para mujeres lactantes</td>
+      <td>Número de mujeres lactantes que reportan haber recibido atención sanitaria oportuna y adecuada en los barrios X, Y y Z </td>
+      <td>Ministerio de Salud Clúster de Salud</td>
+      <td>Primaria</td>
+      <td>Confiable (Representativa)</td>
+      <td>Completada</td>
+      <td>Entre áreas geográficas</td>
+    </tr>
+    <tr>
+      <td>Condiciones humanitarias</td>
+      <td>Acceso a servicios o bienes básicos</td>
+      <td>Educación</td>
+      <td>Acceso a educación </td>
+      <td>Número de niños y niñas que no asisten a la escuela </td>
+      <td>Ministerio de Educación</td>
+      <td>Secundaria</td>
+      <td>Confiable
+(Representativa)
+</td>
+      <td>Completada</td>
+      <td>Entre áreas geográficas</td>
+    </tr>
+    <tr>
+      <td>Condiciones humanitarias</td>
+      <td>Bienestar físico y mental</td>
+      <td>Agua, Saneamiento e Higiene</td>
+      <td>Tendencia en la incidencia de enfermedades relacionadas con el agua</td>
+      <td>Patrones de morbilidad y mortalidad de la población venezolana en los barrios X, Y y Z.</td>
+      <td>
+Ministerio de Salud
+      
+Clúster WASH
+</td>
+      <td>Secundaria</td>
+      <td>Confiable
+(Representativa)
+</td>
+      <td>Completada</td>
+      <td>Entre áreas geográficas</td>
+    </tr>
+    <tr>
+      <td>Respuesta</td>
+      <td>Perspectivas</td>
+      <td>Intersectorial</td>
+      <td>Perspectivas de la población sobre modalidades de respuesta</td>
+      <td>% de hogar de población venezolana que prefieren recibir apoyo en efectivo en los barrios X, Y y Z</td>
+      <td>Evaluación conjunta de Necesidades Caribe GIFMM</td>
+      <td>Primaria</td>
+      <td>Confiable (Representativa)</td>
+      <td>Completada</td>
+      <td>Entre áreas geográficas</td>
+    </tr>
+  </tbody>
+</table>
 
 
