@@ -55,10 +55,6 @@ Distintas herramientas y estándares han sido desarrollados para hacer evaluacio
 
 Existen __distintas técnicas de recolección de datos primarios__, cada una tiene sus ventajas y desventajas, y cada una provee información cuantitativa o cualitativa. Normalmente se combinan varias técnicas durante una evaluación de necesidades para complementar la información y asegurar que se incluyen puntos de vista diferentes. La Tabla 9 provee un resumen de las técnicas de recolección de datos más utilizadas en diferentes evaluaciones de necesidades.
 
-```{r child = './tablas/tabla8.Rmd'}
-```
-
-
 
 #### Unidades de medida
 
@@ -88,9 +84,6 @@ Los métodos no probabilísticos no utilizan métodos de selección aleatoria, l
 
 La Tabla 9 presenta cuatro métodos de muestreo no probabilístico.
 
-```{r child = './tablas/tabla9.Rmd'}
-```
-
 
 **Métodos probabilísticos**
 
@@ -104,9 +97,6 @@ Una **muestra representativa** debe tener las mismas características que la tot
 Dado que solo estamos recopilando datos sobre un subgrupo de la población cuando se realiza el muestreo, es importante recordar que el resultado obtenido solo será una estimación de los indicadores que se van a medir.
 
 En la Tabla 10 se describen cinco tipos de muestreo probabilísticos.
-
-```{r child = './tablas/tabla10.Rmd'}
-```
 
 
 

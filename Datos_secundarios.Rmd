@@ -27,10 +27,6 @@ Las principales tareas que hay que llevar a cabo durante una revisión de datos 
 
 Localizar informes, conjuntos de datos y productos con análisis de información precrisis y de la crisis. Un registro de evaluaciones es un buen punto de partida, ya que proporciona un listado de los informes, estudios, evaluaciones de necesidades etc. que ya han sido realizados por otros actores. En este [enlace](https://r4v.info/es/documents/details/71288) puede consultar el registro de evaluaciones del Grupo Inter agencial sobre Flujos Migratorios Mixtos en Colombia. Por otra parte, se [puede consultar este documento](http://pim.guide/wp-content/uploads/2018/05/Framework-for-Data-Sharing-in-Practice.pdf), el cual provee una guía para establecer un sistema para compartir información.
 
-```{r child = './tablas/tabla5.Rmd'}
-```
-
-
 
 
 Una vez se han recolectado las fuentes de datos, se deben almacenar de forma que se puedan encontrar fácilmente. Para ello, se recomienda utilizar un formato estandarizado para nombrar archivos, que incluya información sobre el autor, el título del informe, la fecha del informe y cómo se deben tratar los datos según su confidencialidad, por ejemplo: 20181104\_GIFMM\_EvaluaciónNecesidades\_Protegido.
@@ -47,8 +43,6 @@ Las categorías más comunes de etiquetado incluyen:
 - **Confidencialidad** : proporcionar detalles sobre si los datos son: abiertos, restringidos, protegidos o confidenciales.
 - **Confiabilidad de la fuente** : definir si las fuentes son confiables, no confiables, etc. Existen varias técnicas para definir la confiabilidad de los datos, puede encontrar un ejemplo en este [enlace](https://en.wikipedia.org/wiki/Intelligence_source_and_information_reliability).
 
-```{r child = './tablas/tabla6.Rmd'}
-```
 
 Para el etiquetado y almacenamiento de los datos usualmente se utilizan hojas de cálculo de Excel. Sin embargo, han surgido plataformas más fáciles de utilizar en los últimos años.
 
@@ -64,9 +58,6 @@ Después de que se haya sistematizado toda la información, se selecciona la inf
 - Nivel de detalle: ¿proporciona el nivel de detalle requerido?
 - Comparabilidad: ¿permite la comparación con otros conjuntos de datos importantes para su revisión?
 - Confiabilidad: Al observar la fuente de la información y el método utilizado para recopilar la información, ¿es confiable la información? Hay que tener cuidado con la inclusión de datos que provienen de informes sin una descripción detallada de la metodología y el cuestionario.
-
-```{r child = './tablas/tabla7.Rmd'}
-```
 
 
 ## Paso 4. Consolidación de la información
