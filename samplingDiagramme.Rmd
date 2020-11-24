@@ -1,0 +1,99 @@
+```{r, echo= FALSE}
+
+## R Markdown
+library(DiagrammeR)
+
+grViz("
+  digraph rmarkdown {
+       # node definitions with substituted label text
+       node [fontname = Helvetica, fontsize = 12, shape = rectangle] 
+       tab1 [label = '@@1']
+       tab2 [label = '@@2', fontname='helvetica-bold', style='bold']
+       tab3 [label = '@@3']
+       tab4 [label = '@@4']
+       tab5 [label = '@@5']
+       tab6 [label = '@@6']
+       tab7 [label = '@@7']
+       tab8 [label = '@@8', fontname='helvetica-bold', style='bold']
+       tab9 [label = '@@9', fontname='helvetica-bold', style='bold']
+       tab10 [label = '@@10', fontname='helvetica-bold', style='bold']
+       tab11 [label = '@@11']
+       tab12 [label = '@@12']
+       tab13 [label = '@@13', fontname='helvetica-bold', style='bold']
+       tab14 [label = '@@14']
+       tab15 [label = '@@15', fontname='helvetica-bold', style='bold']
+       tab16 [label = '@@16']
+       tab17 [label = '@@17', fontname='helvetica-bold', style='bold']
+       tab18 [label = '@@18', style='dashed']
+       tab19 [label = '@@19', fontname='helvetica-bold', style='bold']
+       tab20 [label = '@@20']
+       tab21 [label = '@@21', fontname='helvetica-bold', style='bold']
+       tab22 [label = '@@22']
+       tab23 [label = '@@23', fontname='helvetica-bold', style='bold']
+       tab24 [label = '@@24']
+       tab25 [label = '@@25', fontname='helvetica-bold', style='bold']
+       tab26 [label = '@@26', fontname='helvetica-bold', style='bold']
+       tab27 [label = '@@27']
+       
+
+       # edge definitions with the node IDs
+       tab1 -> tab2 [label='Yes', fontname = Helvetica, fontsize = 8]
+       tab1 -> tab3 [label='No', fontname = Helvetica, fontsize = 8]
+       tab3 -> tab4 [label='Yes', fontname = Helvetica, fontsize = 8]
+       tab3 -> tab7 [label='No', fontname = Helvetica, fontsize = 8] 
+       tab4 -> tab5 [label='Yes', fontname = Helvetica, fontsize = 8] 
+       tab4 -> tab6 [label='No', fontname = Helvetica, fontsize = 8] 
+       tab4 -> tab12 [label='Yes or No', fontname = Helvetica, fontsize = 8] 
+       tab5 -> tab8 [label='Yes',fontname = Helvetica, fontsize = 8] 
+       tab5 -> tab9 [label='No',fontname = Helvetica, fontsize = 8]
+       tab6 -> tab10 [label='Yes',fontname = Helvetica, fontsize = 8] 
+       tab6 -> tab11 [label='No',fontname = Helvetica, fontsize = 8] 
+       tab12 -> tab13 [label='Yes to both',fontname = Helvetica, fontsize = 8]
+       tab12 -> tab14 [style='dashed']
+       tab12 -> tab27 [style='dashed']
+       tab14 -> tab5 [style='dashed']
+       tab11 -> tab15 [label='Yes',fontname = Helvetica, fontsize = 8]
+       tab11 -> tab16 [label='No',fontname = Helvetica, fontsize = 8]
+       tab16 -> tab17 [label='Yes',fontname = Helvetica, fontsize = 8]
+       tab16 -> tab18 [label='No',fontname = Helvetica, fontsize = 8]
+       tab18 -> tab7 
+       tab7 -> tab20 [label='Yes',fontname = Helvetica, fontsize = 8]
+       tab7 -> tab19 [label='No', fontname = Helvetica, fontsize = 8]
+       tab20 -> tab21 [label='Yes',fontname = Helvetica, fontsize = 8]
+       tab20 -> tab22 [label='No',fontname = Helvetica, fontsize = 8]
+       tab22 -> tab23 [label='Yes',fontname = Helvetica, fontsize = 8]
+       tab22 -> tab24 [label='No',fontname = Helvetica, fontsize = 8]
+       tab24 -> tab25 [label='Yes',fontname = Helvetica, fontsize = 8]
+       tab24 -> tab26 [label='No',fontname = Helvetica, fontsize = 8]
+       tab27 -> tab5 [style='dashed']
+    }
+    [1]: 'Is the study population small enough to capture every unit?'
+    [2]: 'CENSUS'
+    [3]: 'Do I need to statistically generalize my results? \\n(i.e. Do I require a probability sample?)'
+    [4]: 'Can I get a \\nsampling frame of \\nelementary units?'
+    [5]: 'Am I interested in \\nsub-groups that are \\nunder-represented \\nin the population?'
+    [6]: 'Can the sampling units be \\npre-counted and selected in \\nan orderly & defined way?'
+    [7]: 'Do I have control over \\nwhat I know & how I sample?'
+    [8]: 'STRATIFIED \\nRANDOM'
+    [9]: 'SIMPLE RANDOM'
+       [10]: 'SYSTEMATIC'
+       [11]: 'Is the population hidden \\nand socially connected?'
+       [12]: '1 Is the study population\\n spread over a geographic \\narea too large to \\nlogistically cover, \\n AND 2 Can the population be \\ndivided into discemable \\ncluster groups?'
+       [13]: 'CLUSTER'
+       [14]: 'No to 2 only.\\n Narrow your \\nstudy population'
+       [15]: 'RDS'
+       [16]: 'Does the study population \\ncongregate in known areas?'
+       [17]: 'TIME-SPACE'
+       [18]: 'Probability sample not feasible. \\nStart over from the box above.'
+       [19]: 'CONVENIENCE'
+       [20]: 'Is the population hidden \\nand socially connected?'
+       [21]: 'SNOWBALL'
+       [22]: 'Do I have the flexibility & \\ntime to sample iteratively?'
+       [23]: 'THEORETICAL'
+       [24]: 'Am I interested in \\nsub-groups that are \\nunder-represented \\nin the population?'
+       [25]: 'QUOTA'
+       [26]: 'PURPOSIVE'
+       [27]: 'No to 1 only\\nor 1 & 2'
+")
+```
+
