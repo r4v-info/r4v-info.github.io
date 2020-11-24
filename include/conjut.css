@@ -215,9 +215,9 @@ h1, .h1 {
     margin-top: 40px;
 }
 
-/* Alignement */
+/* Alignement 
 
-p {text-align: justify;}
+p {text-align: justify;}*/
 
 /* Guillemets */
 
@@ -410,11 +410,11 @@ code.pkg {
 .main-container > footer li.pull-right {float: left; margin-right: 0;}
 .main-container > footer p {font-size: 90%;}
 
-/*Posicion icono bombilla - ejemplos
-/* warning section */
+/*POSICION BOMBILLA
+ warning section 
 .warning-section { display: flex;}
 .warning-section img { float: left; height: 50px; width: 50px; }
-.warning-section .warning-text { display: block; padding-top: .7em; }  
+.warning-section .warning-text { display: block; padding-top: .7em; }*/
 
 /* CSS COMUN A TODAS LAS TABLAS */
 .tabla-basica {
@@ -467,4 +467,53 @@ code.pkg {
 
 /* CSS ESPECIFICO PARA LA TABLA 4 */
 .tabla-basica.tabla4 td, .tabla-basica.tabla4 th { border-style: none }
+
+/* CSS ESPECIFICO jumbotron */
+.jumbotron { padding-bottom: 15px; }
+.jumbotron h1, .jumbotron .h1 { font-size: 30px; margin-top: .5em; }
+.jumbotron h2, .jumbotron .h2 { font-size: 25px; padding-top: 2em;}
+.jumbotron img { width: 200px; height: auto; }
+
+@media screen and (min-width: 768px) {
+  .jumbotron { padding-bottom: 30px; }
+  .jumbotron h1, .jumbotron .h1 { font-size: 70px; }
+  .jumbotron h2, .jumbotron .h2 { font-size: 30px; padding-top: 2em; }
+  .jumbotron img { width: 300px; height: auto; }
+}
+
+/* CSS para mostrar mensajes dentro de una caja*/
+
+/* Estilo comun a todos los mensajes */
+.message { margin: 1em 0; }
+.message blockquote {
+  font-size: 14px;
+  margin-bottom: 0;
+  border-left-style: solid;
+  border-left-width: 5px;
+  margin: 0;
+}
+.message blockquote i { padding-right: .5em; }
+.message blockquote .title { font-size: 16px; font-weight: bold;}
+.message blockquote p { font-size: 15px; font-style: normal; }
+
+
+
+
+/* Estilo para mensaje tipo important */
+.message-important blockquote {
+  border-color: firebrick;
+  background-color: #FAECEA;
+}
+.message-important blockquote p { font-size: 15px; font-style: italic;}
+
+
+/* Estilo para mensaje tipo example */
+.message-example blockquote {
+  border-color: #00AAAD;
+  background-color: #F0F7F1;
+}
+.message-example blockquote p { font-size: 15px; font-style: italic;}
+
+
+
 

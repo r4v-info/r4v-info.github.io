@@ -56,7 +56,7 @@ Antes de embarcarnos en la planificación de una nueva evaluación, existen una 
 
 
 
-## Table of Contents{#tdm}
+## Tabla de contenidos
 
 
 ```{r tdm semi-programmatique, results='hide', message=FALSE, echo=FALSE,  warning=FALSE, include=FALSE, cache=FALSE }
@@ -93,7 +93,6 @@ tdm <- function(section) {
 }
 ```
 
-### Assessment methodology & form design
 
 ```{r, results='asis', echo=FALSE, message=FALSE}
 cat(tdm("design"))
@@ -101,5 +100,5 @@ cat(tdm("design"))
 
 
 
-> Esto documento y las herramientas que lo acompañan no pretenden sustituir a ninguna herramienta y/o metodología existente. Este documento está en continuo desarrollo y mejora. Para cualquier corrección, recomendación, comentario o referencia a material relevante en español, contacten con [Carmen Asenjo] de ACNUR y [Johan Gonzalez]de OIM.
+> Esto documento y las herramientas que lo acompañan no pretenden sustituir a ninguna herramienta y/o metodología existente. Este documento está en continuo desarrollo y mejora. Para cualquier corrección, recomendación, comentario o referencia a material relevante en español, pueden dejar sus comentarios directamente en esta web o enviar un email a r4v-vensit@gmail.com
   

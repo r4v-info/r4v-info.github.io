@@ -208,10 +208,6 @@ El marco contempla por un lado información de contexto, de la crisis, perfiles 
   </tbody>
 </table>
 
-
-
-
-
 <table class="tabla-basica tabla2 responsive">
   <caption>Tabla2. Descripción de categorías y subcategorías del marco de análisis</caption>
   <thead>

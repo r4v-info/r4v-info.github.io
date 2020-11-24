@@ -1,13 +1,32 @@
-.message { margin-bottom: 1em; }
+/* CSS para mostrar mensajes dentro de una caja
+Podemos definir diferente tipos de mensajes, pero que todos sigan una
+misma guia de estilo. Por ejemplo
+- message-important: fondo rojo y sin icono
+- message-example: fondo blaco pero linea verde
+- etc
+*/
+
+/* Estilo comun a todos los mensajes */
+.message { margin: 1em 0; }
 .message blockquote {
   font-size: 14px;
   margin-bottom: 0;
   border-left-style: solid;
   border-left-width: 5px;
+  margin: 0;
 }
 .message blockquote i { padding-right: .5em; }
-.message blockquote .title { font-size: 14px; font-weight: bold;}
+.message blockquote .title { font-size: 16px; font-weight: bold;}
+.message blockquote p { font-size: 15px; font-style: normal; }
+
+
+/* Estilo para mensaje tipo importante */
 .message-important blockquote { border-color: firebrick; background-color: #FAECEA; }
-.message-important blockquote i { color: firebrick; }
-.message-info blockquote { border-color: #0A1DBA; background-color: #E3F0FD; }
-.message-info blockquote i { color: #0A1DBA; }
+
+
+/* Estilo para mensaje tipo example */
+.message-example blockquote {
+  border-color: #00AAAD;
+  background-color: #fff;
+}
+.message-example blockquote p { font-size: 15px; font-style: italic;}

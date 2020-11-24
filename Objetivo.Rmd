@@ -10,11 +10,14 @@ source("options_communes.R")
 htmltools::tagList(rmarkdown::html_dependency_font_awesome())
 ```
 
-<div class="important">
-<div class="fa fa-exclamation-circle"> Definir preguntas de investigacion, alcance, vacios de informacion y necesidades de informacion al comienzo del proceso de evaluacion.
-  </div>
+
+<div class="message message-important">
+<blockquote>
+<p>Definir preguntas de investigación, alcance, vacíos de información y necesidades de información al comienzo del proceso de evaluación.</p>
+</blockquote>
 </div>
- 
+
+
 
 El primer paso durante la planificación de una evaluación de necesidades consiste en la definición del objetivo y el alcance del ejercicio. Para ello, se deben considerar una serie de parámetros clave que son descritos a continuación.
 
@@ -30,45 +33,51 @@ Proporcionar a los responsables de toma de decisiones con información robusta y
 
 - Riesgos de protección y amenazas diferenciadas para las poblaciones afectadas y comunidades de acogida según grupos de género y edad.
 
-<div class="warning-section">
-  ![](images/favicon/bulbgreen.png)
-  <div class="warning-text">_Ejemplo escenario_: Apoyar la priorización de las intervenciones de respuesta en 2020 entre los actores humanitarios clave, a través de información actualizada sobre necesidades y prioridades multisectoriales para los hogares de población refugiada y migrante del país de Venezuela en los departamentos fronterizos de Colombia. Este análisis servirá de línea de base y permitirá el seguimiento de las condiciones de los/las refugiados/as y migrantes en 2020.
-  </div>
+<div class="message message-example">
+<blockquote>
+<p>_**Ejemplo escenario:**_
+
+_Apoyar la priorización de las intervenciones de respuesta en 2020 entre los actores humanitarios clave, a través de información actualizada sobre necesidades y prioridades multisectoriales para los hogares de población refugiada y migrante del país de Venezuela en los departamentos fronterizos de Colombia. Este análisis servirá de línea de base y permitirá el seguimiento de las condiciones de los/las refugiados/as y migrantes en 2020_.
+</p>
+</blockquote>
 </div>
+
 
 ## Preguntas de la investigación
 
+<div class="message message-important">
+<blockquote>
+<p>Un número limitado de preguntas de investigación hace que sea más fácil cubrir los temas en profundidad y proporcionar una dirección más clara para mapear y obtener datos relevantes.</p>
+</blockquote>
+</div>
+
 Definir las preguntas de investigación que se quieren responder con la evaluación de necesidades, teniendo en cuenta que deben ser:
 
-1. **Claras**: proporcionan suficientes detalles para que la audiencia pueda comprender fácilmente su propósito sin necesidad de una explicación adicional.
+- **Claras**: proporcionan suficientes detalles para que la audiencia pueda comprender fácilmente su propósito sin necesidad de una explicación adicional.
 
-2. **Focalizadas**: son suficientemente cerradas para que puedan ser respondidas por completo, pero sin llegar a ser pregunta abiertas.
+- **Focalizadas**: son suficientemente cerradas para que puedan ser respondidas por completo, pero sin llegar a ser pregunta abiertas.
 
-3. **Concisas**: se expresan con la menor cantidad de palabras posible.
+- **Concisas**: se expresan con la menor cantidad de palabras posible.
 
-4. **Complejas**: no se responden con un simple "si" o "no", requieren sintesis y analisis de ideas y otras fuentes de informacion antes de componer una respuesta.
+- **Complejas**: no se responden con un simple "si" o "no", requieren sintesis y analisis de ideas y otras fuentes de informacion antes de componer una respuesta.
 
-5. **Discutibles**: sus posibles respuestas están abiertas a debate.
+- **Discutibles**: sus posibles respuestas están abiertas a debate.
 
-6. **Relevantes**: están vinculadas a acciones humanitarias, ya sea en términos de abogacia o diseno de programas.
+- **Relevantes**: están vinculadas a acciones humanitarias, ya sea en términos de abogacia o diseno de programas.
 
 
-<div class="important">
-<div class="fa fa-exclamation-circle"> Un número limitado de preguntas de investigación hace que sea más fácil cubrir los temas en profundidad y proporcionar una dirección más clara para mapear y obtener datos relevantes.
-  </div>
-</div>
-
-<div class="warning-section">
-![](images/favicon/bulbgreen.png)
-<div class="warning-text">_Ejemplo escenario:_</div>
-</div>
-
+<div class="message message-example">
+<blockquote>
+<p>_**Ejemplo escenario:**_
 
 - _**Condiciones humanitarias**: ¿Cuál es la prevalencia y severidad de las necesidades multisectoriales?; ¿En qué medida estas necesidades son diferentes en función del sexo, edad y otras variables diferenciales?; ¿Cuáles son los factores inmediatos y estructurales asociados con estas necesidades?_
 
 - _**Respuesta**: ¿Qué proporción ha recibido asistencia humanitaria?_
 
-- _**Perspectivas**: ¿Cuáles son las prioridades de la población objetivo?_
+- _**Perspectivas**: ¿Cuáles son las prioridades de la población objetivo?_</p>
+</blockquote>
+</div>
+
 
 ## Alcance y cobertura geográfica
 
@@ -80,9 +89,12 @@ Establecer el alcance geográfico y las unidades de medida y análisis:
 
 - **Unidad de análisis**: Estatus regular vs estatus irregular; Áreas afectadas vs. áreas no afectadas; Población en viviendas vs. población en asentamientos informales; Entornos urbanos versus rurales,etc.
 
-<div class="warning-section">
-![](images/favicon/bulbgreen.png)
-<div class="warning-text"> _Ejemplo escenario: Encuestas de hogar en los barrios con mayor concentración de población venezolana en los departamentos fronterizos de Arauca, Cesar, La Guajira y Norte de Santander._</div>
+<div class="message message-example">
+<blockquote>
+<p>_**Ejemplo escenario:**_
+
+_Encuestas de hogar en los barrios con mayor concentración de población venezolana en los departamentos fronterizos de Arauca, Cesar, La Guajira y Norte de Santander._</p>
+</blockquote>
 </div>
 
 ## Grupos poblacionales meta
@@ -95,37 +107,46 @@ Definir claramente los grupos a evaluar:
 
 - Género de las personas (Mujeres, hombres, transgeneristas), edad (menores de 18 años vs 18 y más años, etc.), etnia, discapacidad, identidad de género, etc.
 
-<div class="warning-section">
-![](images/favicon/bulbgreen.png)
-<div class="warning-text"> _Ejemplo escenario: Personas refugiadas y migrantes de Venezuela con vocación de permanencia, pendulares y en tránsito desagregados por género, edad y minorías étnicas._</div>
-</div>
+<div class="message message-example">
+<blockquote>
+<p>_**Ejemplo escenario:**_
 
+_Personas refugiadas y migrantes de Venezuela con vocación de permanencia, pendulares y en tránsito desagregados por género, edad y minorías étnicas._</p>
+</blockquote>
+</div>
 
 ## Sectores/Temática
 
 Definir claramente los sectores/temas que van a ser evaluados. Ejemplo: agua, saneamiento e higiene, educación, prevención de violencia basada en género, trata de personas, seguridad alimentaria, nutrición, salud, medios de vida, etc.
 
-<div class="warning-section">
-![](images/favicon/bulbgreen.png)
-<div class="warning-text"> _Ejemplo escenario: Alojamiento, Agua, Saneamiento e Higiene, Educación, Nutrición, Medios de vida, Nutrición, Protección, Salud, Seguridad Alimentaria y Protección._</div>
+<div class="message message-example">
+<blockquote>
+<p>_**Ejemplo escenario:**_
+
+_Alojamiento, Agua, Saneamiento e Higiene, Educación, Nutrición, Medios de vida, Nutrición, Protección, Salud, Seguridad Alimentaria y Protección._</p>
+</blockquote>
 </div>
 
 ## Periodo de tiempo
 
 Establecer tiempos realistas, basados en el objetivo, recursos disponibles, tiempo de recopilación, procesamiento y análisis de datos requerido para informar decisiones en forma y tiempos relevantes.
 
-<div class="warning-section">
-![](images/favicon/bulbgreen.png)
-<div class="warning-text">[_Ejemplo plan de trabajo para evaluación de necesidades conjunta._](https://drive.google.com/open?id=1fXTt2DqTO1mtPqX4CWSCzDnWhfZb8CLO)</div>
+<div class="message message-example">
+<blockquote>
+<p>_**[Ejemplo plan de trabajo para evaluación de necesidades conjunta.](https://drive.google.com/open?id=1fXTt2DqTO1mtPqX4CWSCzDnWhfZb8CLO)**_</p>
+</blockquote>
 </div>
+
+
 
 ## Mecanismos de coordinación
 
 Identificar organizaciones, agencias o individuos a cargo de la coordinación de la evaluación, y definir sus respectivos roles y responsabilidades.
 
-<div class="warning-section">
-![](images/favicon/bulbgreen.png)
-<div class="warning-text">[_Ejemplo términos de referencia para evaluación de necesidades conjunta._](https://drive.google.com/open?id=1z1ord6BKHVjbSZKsiFJAJTQrYPCRxKvU)</div>
+<div class="message message-example">
+<blockquote>
+<p>_**[Ejemplo términos de referencia para evaluación de necesidades conjunta.](https://drive.google.com/open?id=1z1ord6BKHVjbSZKsiFJAJTQrYPCRxKvU)**_</p>
+</blockquote>
 </div>
 
 ## Resultados
